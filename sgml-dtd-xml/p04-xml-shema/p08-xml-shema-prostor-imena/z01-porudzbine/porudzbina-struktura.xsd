@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:zaj="http://uvit.math.rs/zajednicko" 
+targetNamespace="http://uvit.math.rs/porudzbina" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    <xsd:import schemaLocation="zajednicko-struktura.xsd" 
+    namespace="http://uvit.math.rs/zajednicko" />
+    <xsd:complexType name="PorudzbinaType">
+        <xsd:sequence>
+            <xsd:element maxOccurs="unbounded" name="elemenat">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="nazivProizvoda" type="xsd:string" />
+                        <xsd:element name="kolicina" type="xsd:int" />
+                        <xsd:element name="jedinicnaCena" type="zaj:CenaType" />
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+</xsd:schema>

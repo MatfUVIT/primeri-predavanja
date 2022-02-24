@@ -1,0 +1,5 @@
+<!ELEMENT pismo (prima,salje,naslov,tekst)>
+<!ELEMENT prima (#PCDATA)>
+<!ELEMENT salje (#PCDATA)>
+<!ELEMENT naslov (#PCDATA)>
+<!ELEMENT tekst (#PCDATA)>

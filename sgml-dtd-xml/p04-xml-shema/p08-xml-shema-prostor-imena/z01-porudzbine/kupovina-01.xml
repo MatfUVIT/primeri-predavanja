@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<k:kupovina xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://uvit.math.rs/kupovina kupovina-struktura.xsd" 
+xmlns:k="http://uvit.math.rs/kupovina" 
+xmlns:p="http://uvit.math.rs/porudzbina" 
+xmlns:m="http://uvit.math.rs/musterija" 
+xmlns:z="http://uvit.math.rs/zajednicko">
+    <k:porudzbina>
+        <p:elemenat>
+            <p:nazivProizvoda>Žvake</p:nazivProizvoda>
+            <p:kolicina>1</p:kolicina>
+            <p:jedinicnaCena>3.42</p:jedinicnaCena>
+        </p:elemenat>
+        <p:elemenat>
+            <p:nazivProizvoda>Čokolada</p:nazivProizvoda>
+            <p:kolicina>4</p:kolicina>
+            <p:jedinicnaCena>13.42</p:jedinicnaCena>
+        </p:elemenat>
+    </k:porudzbina>
+    <k:metodPlacanja>VISA</k:metodPlacanja>
+    <k:musterija>
+        <m:naziv>Vladimir Filipović</m:naziv>
+        <m:adresaZaIsporuku>
+            <z:linija1>Studentski trg 16</z:linija1>
+            <z:linija2>Beograd</z:linija2>
+        </m:adresaZaIsporuku>
+        <m:adresaZaPlacanje>
+            <z:linija1></z:linija1>
+            <z:linija2></z:linija2>
+        </m:adresaZaPlacanje>
+    </k:musterija>
+</k:kupovina>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- OK 
+-->
+
+<listaPoruka xmlns="http://uvit.math.rs" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://uvit.math.rs lista-poruka-struktura.xsd">
+  <pismo redniBroj="1">
+    <prima>
+      <ime>Владимир</ime>
+      <prezime>Филиповић</prezime>
+      <adresa>
+        <ulica>Студентски трг</ulica>
+        <broj>12</broj>
+        <tacnaLokacija></tacnaLokacija>
+        <grad>Београд</grad>
+        <drzava>Србија</drzava>
+        <gradPostanskiBroj>11000</gradPostanskiBroj>
+        <adresaPAK>123456</adresaPAK>
+      </adresa>
+      <datumRodjenja>
+        1968-06-17
+      </datumRodjenja>
+    </prima>
+    <salje>
+      <ime>Софија</ime>
+      <prezime>Филиповић</prezime>
+      <adresa>
+        <ulica></ulica>
+        <broj></broj>
+        <tacnaLokacija></tacnaLokacija>
+        <grad></grad>
+        <drzava></drzava>
+        <gradPostanskiBroj></gradPostanskiBroj>
+        <adresaPAK></adresaPAK>
+      </adresa>
+      <datumRodjenja>2003-12-17</datumRodjenja>
+    </salje>
+    <naslov>Подсетник</naslov>
+    <tekst>Купи карте за утакмицу.</tekst>
+  </pismo>
+  <pismo redniBroj="2">
+    <salje>
+      <ime>Владимир</ime>
+      <prezime>Филиповић</prezime>
+      <adresa>
+        <ulica>Студентски трг</ulica>
+        <broj>12</broj>
+        <tacnaLokacija></tacnaLokacija>
+        <grad>Београд</grad>
+        <drzava>Србија</drzava>
+        <gradPostanskiBroj>11000</gradPostanskiBroj>
+        <adresaPAK>123456</adresaPAK>
+      </adresa>
+      <datumRodjenja> 1968-06-17 </datumRodjenja>
+    </salje>
+    <prima>
+      <ime>Софија</ime>
+      <prezime>Филиповић</prezime>
+      <adresa>
+        <ulica></ulica>
+        <broj></broj>
+        <tacnaLokacija></tacnaLokacija>
+        <grad></grad>
+        <drzava></drzava>
+        <gradPostanskiBroj></gradPostanskiBroj>
+        <adresaPAK></adresaPAK>
+      </adresa>
+      <datumRodjenja>2003-12-17</datumRodjenja>
+    </prima>
+    <naslov>Коју?</naslov>
+    <tekst>Коју утакмицу? Кошарка или одбојка?</tekst>
+  </pismo>
+</listaPoruka>

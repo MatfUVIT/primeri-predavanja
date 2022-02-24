@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="sr">
+
+<head>
+    <title>Nove HTML komponente</title>
+    <meta charset="UTF-8" />
+    <script>
+        class Student extends HTMLElement {
+            constructor() {
+                super(); // always call super() first in the constructor.
+            }
+            connectedCallback() {
+                this.innerHTML = '<h2>Ovo je student!</h2>';
+            }
+            disconnectedCallback() {}
+            attributeChangedCallback(attrName, oldVal, newVal) {}
+        }
+        // new element
+        let StudentComponent = customElements.define('uvit-student', Student);
+    </script>
+</head>
+
+<body>
+    <h1>Илустрација нових <code>HTML</code> компоненти</h1>
+    <p>
+        <script>
+            document.body.appendChild(new StudentComponent());
+        </script>
+    </p>
+    <p>
+        Статичан садржај веб стране...
+    </p>
+    <uvit-student></uvit-student>
+
+</body>
+
+</html>

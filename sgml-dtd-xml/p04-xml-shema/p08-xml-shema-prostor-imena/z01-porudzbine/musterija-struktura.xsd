@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:zaj="http://uvit.math.rs/zajednicko" 
+targetNamespace="http://uvit.math.rs/musterija" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+elementFormDefault="qualified">
+    <xsd:import schemaLocation="zajednicko-struktura.xsd" 
+    namespace="http://uvit.math.rs/zajednicko" />
+    <xsd:complexType name="MusterijaType">
+        <xsd:sequence>
+            <xsd:element name="naziv" type="xsd:string" />
+            <xsd:element name="adresaZaIsporuku" type="zaj:AdresaType" />
+            <xsd:element name="adresaZaPlacanje" type="zaj:AdresaType" />
+        </xsd:sequence>
+    </xsd:complexType>
+</xsd:schema>
