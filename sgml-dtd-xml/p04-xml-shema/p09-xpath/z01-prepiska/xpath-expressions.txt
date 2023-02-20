@@ -1,0 +1,12 @@
+URL aplikacije za evaluaciju XPATH izraza:
+http://xpather.com/
+
+Izrazi:
+
+1) Elemenat `datumRodjenja`, koji se nalazi u okviru elementa `prima` u okviru elementa `pismo` - pocev od korena 
+
+//pismo/prima/datumRodjenja
+
+2) Elemenat `ime`, koji se nalazi u okviru elementa `salje` u okviru elementa `pismo` - pocev od korena 
+
+//pismo/salje/ime
