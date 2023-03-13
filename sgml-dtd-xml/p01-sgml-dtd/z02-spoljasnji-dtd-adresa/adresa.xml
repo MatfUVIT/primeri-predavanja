@@ -1,4 +1,4 @@
-<!DOCTYPE adresa SYSTEM "adresa.dtd">
+<!DOCTYPE adresa SYSTEM "adresa-struktura.dtd">
 
 <adresa>
    <ime>Vladimir Filipovic</ime>

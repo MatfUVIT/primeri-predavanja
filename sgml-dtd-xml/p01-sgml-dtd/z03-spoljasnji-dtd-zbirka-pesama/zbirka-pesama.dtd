@@ -3,4 +3,4 @@
 <!ATTLIST pesma autor CDATA #REQUIRED>
 <!ELEMENT naslov - O (#PCDATA)>
 <!ELEMENT strofa - O (stih+)>
-<!ELEMENT stih O O (#PCDATA)>
+<!ELEMENT stih - O (#PCDATA)>

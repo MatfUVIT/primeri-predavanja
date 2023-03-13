@@ -5,9 +5,9 @@
 <pismo xmlns="http://uvit.math.rs" 
 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 xsi:schemaLocation="http://uvit.math.rs poruka-struktura.xsd">
+  <naslov>Podsetnik</naslov>
   <prima>Sanja</prima>
   <salje>Vlado</salje>
-  <naslov>Podsetnik</naslov>
   <tekst>Kupi karte za utakmicu</tekst>
   <medijum>
     <telefon>123-123-123</telefon>
