@@ -1,0 +1,29 @@
+<porudzbina xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="porudzbina-structure.xsd">
+    <broj>123ABBCC123</broj>
+    <elementi>
+        <kosulja broj="557">
+            <kolicina>1</kolicina>
+            <boja opis="plava" />
+        </kosulja>
+        <kosulja broj="557">
+            <kolicina>1</kolicina>
+            <boja opis="siva" />
+        </kosulja>
+        <kapa broj="563">
+            <kolicina>1</kolicina>
+        </kapa>
+    </elementi>
+    <proizvodi>
+        <proizvod>
+            <broj>557</broj>
+            <naziv>Short-Sleeved Linen Blouse</naziv>
+            <cena valuta="USD">29.99</cena>
+        </proizvod>
+        <proizvod>
+            <broj>563</broj>
+            <naziv>Ten-Gallon Hat</naziv>
+            <cena valuta="USD">69.99</>
+        </proizvod>
+    </proizvodi>
+</porudzbina>

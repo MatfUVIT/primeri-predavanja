@@ -1,0 +1,55 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:element name="porudzbina" type="PorudzbinaType">
+        <xsd:keyref name="brojProizvodaKeyRef" refer="brojProizvodaKey">
+            <xsd:selector xpath="elelmenti/*" />
+            <xsd:field xpath="@broj" />
+        </xsd:keyref>
+        <xsd:key name="brojProizvodaKey">
+            <xsd:selector xpath=".//proizvod" />
+            <xsd:field xpath="broj" />
+        </xsd:key>
+    </xsd:element>
+    <xsd:complexType name="PorudzbinaType">
+        <xsd:sequence>
+            <xsd:element name="broj" type="xsd:string" />
+            <xsd:element name="elementi" type="ElementiType" />
+            <xsd:element name="proizvodi" type="ProizvodiType" />
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="ElementiType">
+        <xsd:choice maxOccurs="unbounded">
+            <xsd:element name="kosulja" type="ProizvodPorudzbinaType" />
+            <xsd:element name="kapa" type="ProizvodPorudzbinaType" />
+        </xsd:choice>
+    </xsd:complexType>
+    <xsd:complexType name="ProizvodPorudzbinaType">
+        <xsd:sequence>
+            <xsd:element name="kolicina" type="xsd:integer" />
+            <xsd:element name="boja" type="BojaType" minOccurs="0" />
+        </xsd:sequence>
+        <xsd:attribute name="broj" type="xsd:integer" />
+    </xsd:complexType>
+    <xsd:complexType name="ProizvodiType">
+        <xsd:sequence>
+            <xsd:element name="proizvod" type="ProizvodType"
+                maxOccurs="unbounded" />
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="ProizvodType">
+        <xsd:sequence>
+            <xsd:element name="broj" type="xsd:integer" />
+            <xsd:element name="naziv" type="xsd:string" />
+            <xsd:element name="cena" type="CenaType" />
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="BojaType">
+        <xsd:attribute name="opis" type="xsd:string" />
+    </xsd:complexType>
+    <xsd:complexType name="CenaType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:decimal">
+                <xsd:attribute name="valuta" type="xsd:token" />
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+</xsd:schema>
