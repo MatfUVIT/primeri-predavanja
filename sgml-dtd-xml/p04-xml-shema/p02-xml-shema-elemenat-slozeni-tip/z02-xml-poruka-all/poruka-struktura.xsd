@@ -3,8 +3,8 @@
 targetNamespace="http://uvit.math.rs" 
 xmlns="http://uvit.math.rs" 
 elementFormDefault="qualified">
-  <xsd:element name="pismo" type="PismoTip"/>
-    <xsd:complexType name="PismoTip">
+  <xsd:element name="pismo">
+    <xsd:complexType>
       <xsd:all>
         <xsd:element name="prima" type="xsd:string" />
         <xsd:element name="salje" type="xsd:string" />

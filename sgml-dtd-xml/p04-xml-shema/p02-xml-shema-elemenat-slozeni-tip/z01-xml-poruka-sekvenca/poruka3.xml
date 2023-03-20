@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- ovde nema nedostajucih elelemnata, ali je redosled pogresan 
+-->
 
 <pismo xmlns="http://uvit.math.rs" 
 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
@@ -9,5 +10,3 @@ xsi:schemaLocation="http://uvit.math.rs poruka-struktura.xsd">
   <tekst>Kupi karte za utakmicu</tekst>
   <salje>Vlado</salje>
 </pismo>
-
--->
