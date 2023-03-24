@@ -16,6 +16,11 @@ xmlns:z="http://uvit.math.rs/zajednicko">
             <p:kolicina>4</p:kolicina>
             <p:jedinicnaCena>13.42</p:jedinicnaCena>
         </p:elemenat>
+        <p:elemenat>
+            <p:nazivProizvoda>Čips</p:nazivProizvoda>
+            <p:kolicina>4</p:kolicina>
+            <p:jedinicnaCena>10.1</p:jedinicnaCena>
+        </p:elemenat>
     </k:porudzbina>
     <k:metodPlacanja>VISA</k:metodPlacanja>
     <k:musterija>

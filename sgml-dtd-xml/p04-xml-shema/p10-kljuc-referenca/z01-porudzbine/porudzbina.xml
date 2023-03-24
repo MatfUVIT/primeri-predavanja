@@ -2,11 +2,11 @@
     xsi:noNamespaceSchemaLocation="porudzbina-structure.xsd">
     <broj>123ABBCC123</broj>
     <elementi>
-        <kosulja broj="557">
+        <kosulja broj="520">
             <kolicina>1</kolicina>
             <boja opis="plava" />
         </kosulja>
-        <kosulja broj="557">
+        <kosulja broj="520">
             <kolicina>1</kolicina>
             <boja opis="siva" />
         </kosulja>
@@ -16,14 +16,19 @@
     </elementi>
     <proizvodi>
         <proizvod>
-            <broj>557</broj>
+            <broj>525</broj>
             <naziv>Short-Sleeved Linen Blouse</naziv>
             <cena valuta="USD">29.99</cena>
         </proizvod>
         <proizvod>
             <broj>563</broj>
             <naziv>Ten-Gallon Hat</naziv>
-            <cena valuta="USD">69.99</>
+            <cena valuta="USD">69.99</cena>
+        </proizvod>
+        <proizvod>
+            <broj>520</broj>
+            <naziv>plava kosialja</naziv>
+            <cena valuta="USD">69.99</cena>
         </proizvod>
     </proizvodi>
 </porudzbina>

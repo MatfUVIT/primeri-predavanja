@@ -5,11 +5,11 @@
 <odecaRaspolozivo xmlns="http://uvit.math.rs" 
 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 xsi:schemaLocation="http://uvit.math.rs odeca-zalihe-struktura.xsd">
-  <naRaspolaganju velicine="small">
+  <naRaspolaganju velicine="small large">
     <naziv>Jakna</naziv>
     <opis>Stara kožna jakna</opis>
   </naRaspolaganju>
-  <naRaspolaganju velicine="extra-large small large">
+  <naRaspolaganju velicine="extra-large ">
     <naziv>Košulja</naziv>
     <opis>Nova košulja</opis>
   </naRaspolaganju>

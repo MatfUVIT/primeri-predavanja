@@ -10,7 +10,7 @@ xsi:schemaLocation="http://uvit.math.rs poruka-struktura.xsd">
   <naslov>Podsetnik</naslov>
   <tekst>Kupi karte za utakmicu</tekst>
   <medijum>
-    <eMail>vladofilipovic@hotmail.com</eMail>
     <telefon>123-123-123</telefon>
+    <eMail>vladofilipovic@hotmail.com</eMail>
   </medijum>
 </pismo>

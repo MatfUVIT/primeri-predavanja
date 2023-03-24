@@ -1,7 +1,7 @@
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     <xsd:element name="porudzbina" type="PorudzbinaType">
         <xsd:keyref name="brojProizvodaKeyRef" refer="brojProizvodaKey">
-            <xsd:selector xpath="elelmenti/*" />
+            <xsd:selector xpath="elementi/*" />
             <xsd:field xpath="@broj" />
         </xsd:keyref>
         <xsd:key name="brojProizvodaKey">

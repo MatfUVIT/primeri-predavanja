@@ -5,7 +5,7 @@ elementFormDefault="qualified">
     <xsd:element name="zbirka" type="ZbirkaType" />
     <xsd:complexType name="ZbirkaType">
         <xsd:sequence>
-            <xsd:element name="pesma" type="PesmaType" maxOccurs="unbounded" />
+            <xsd:element name="pesma" type="PesmaType" minOccurs="2" maxOccurs="unbounded" />
         </xsd:sequence>
     </xsd:complexType>
     <xsd:complexType name="PesmaType">
