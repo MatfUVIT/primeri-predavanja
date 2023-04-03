@@ -5,7 +5,7 @@ console.log(" Trla baba lan, da joj prođe dan ");
 /* алтернативни запис ниске */
 console.log(' Trla baba lan, da joj prođe dan ');
 
-/* коришћћење знака \ омогућава да се ниска пружа кроз више редова */
+/* коришћење знака \ омогућава да се ниска пружа кроз више редова */
 console.log(
     ' Trla baba lan, \
 da joj prođe dan '

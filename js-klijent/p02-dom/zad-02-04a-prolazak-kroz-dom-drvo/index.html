@@ -12,6 +12,7 @@
         <a href="http://eloquentjavascript.net">here</a>.</p>
 
     <script>
+
 function talksAbout(node, string) {
     if (node.nodeType == document.ELEMENT_NODE) {
         for (var i = 0; i < node.childNodes.length; i++) {
@@ -24,6 +25,7 @@ function talksAbout(node, string) {
     }
 }
 console.log(talksAbout(document.body, "page"));
+console.log(talksAbout(document.body, "book"));
     </script>
 
 </body>

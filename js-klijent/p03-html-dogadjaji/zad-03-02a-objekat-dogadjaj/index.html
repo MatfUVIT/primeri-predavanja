@@ -1,4 +1,12 @@
-<button>Pritisni me kako god mislis da je najpametnije</button>
+<!doctype html>
+<html>
+
+<head>
+    <title>Osluskivac misa</title>
+</head>
+
+<body>
+  <button>Pritisni me kako god mislis da je najpametnije</button>
 <script>
   let button = document.querySelector("button");
   button.addEventListener("mousedown", function(event) {
@@ -10,5 +18,6 @@
       console.log("Right button");
     console.log(`(x,y):(${event.pageX},${event.pageY})`);
   });
-
 </script>
+</body>
+</html>

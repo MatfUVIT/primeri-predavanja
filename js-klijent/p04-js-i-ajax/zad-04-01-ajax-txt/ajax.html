@@ -1,10 +1,12 @@
+<!doctype html>
 <html>
 
 <head>
     <title>AJAX demo</title>
     <script type="text/javascript">
         function loadXMLDoc() {
-            xmlhttp = new XMLHttpRequest();
+            let fileName = document.getElementById("fileName").value;
+            let xmlhttp = new XMLHttpRequest();
             xmlhttp.onreadystatechange = function() {
                 if (xmlhttp.readyState == 4 &&
                     xmlhttp.status == 200) {
@@ -14,16 +16,15 @@
                 if (xmlhttp.status != 200 && xmlhttp.status != 0)
                     console.log("Greška: " + xmlhttp.status + ": " + xmlhttp.statusText);
             }
-            xmlhttp.open("GET", "ajax.txt", true);
+            xmlhttp.open("GET", fileName, true);
             xmlhttp.send();
         }
     </script>
 </head>
-
 <body>
-
     <h2>Odgovor dobijen putem AJAX-a</h2>
     <div id="myDiv"></div>
+    <input id="fileName" type="text" value="ajax.txt">
     <button type="button" onclick="loadXMLDoc()"> Pošalji AJAX zahtev</button>
 
 </body>

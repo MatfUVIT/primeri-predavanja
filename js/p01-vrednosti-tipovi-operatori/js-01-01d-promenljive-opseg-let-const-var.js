@@ -19,8 +19,8 @@ console.log(osoba3 + " " + osoba2)
 // rad sa promenljivom deklarisanom
 // pomocu let
 {
-    let osoba4 = "Јован"
-    console.log(osoba4)
+    let оsoba4 = "Јован"
+    console.log(оsoba4)
 }
 // nemoguce - pokusaj pristupa
 // promenljvoj van njenog opsega

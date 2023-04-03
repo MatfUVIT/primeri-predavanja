@@ -1,4 +1,4 @@
-const ukupnoBacanjaUEksperimentu = 30000;
+const ukupnoBacanjaUEksperimentu = 300000;
 
 let i = 0;
 let kockaJePalaNa = undefined;
@@ -10,7 +10,7 @@ let brojPojaveBroja5 = 0;
 let brojPojaveBroja6 = 0;
 while (i < ukupnoBacanjaUEksperimentu) {
     kockaJePalaNa = Math.floor(Math.random() * 6 + 1);
-    console.log(kockaJePalaNa);
+    //console.log(kockaJePalaNa);
     switch (kockaJePalaNa) {
         case 1:
             brojPojaveBroja1++;
