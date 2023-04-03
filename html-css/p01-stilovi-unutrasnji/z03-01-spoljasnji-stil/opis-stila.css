@@ -1,5 +1,5 @@
 body {
-    background-color: lightgrey;
+    background-color: rgb(179, 215, 233);
 }
 
 h1 {
@@ -17,3 +17,6 @@ a{
     color:blue;
     font-size: 2em;
 }
+
+p a{ color:lightgreen;
+    font-size: 1em;}
