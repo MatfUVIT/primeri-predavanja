@@ -4,13 +4,18 @@
 <head>
     <title>Nove HTML komponente</title>
     <meta charset="UTF-8" />
+    <style type="text/css">
+        uvit-student {
+            color:red;    
+        }
+    </style>
     <script>
         class Student extends HTMLElement {
             constructor() {
                 super(); // always call super() first in the constructor.
             }
             connectedCallback() {
-                this.innerHTML = '<h2>Ovo je student!</h2>';
+                this.innerHTML = '<h2>Paja Patak!</h2>';
             }
             disconnectedCallback() {}
             attributeChangedCallback(attrName, oldVal, newVal) {}

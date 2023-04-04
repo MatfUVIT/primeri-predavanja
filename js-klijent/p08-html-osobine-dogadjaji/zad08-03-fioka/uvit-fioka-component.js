@@ -1,0 +1,81 @@
+fetch("uvit-fioka-component.html")
+    .then(stream => stream.text())
+    .then(text => define(text));
+
+function define(html) {
+
+    class Fioka extends HTMLElement {
+        constructor() {
+            // увек у конструктору на почетку позвати super()
+            super();
+            // придруживање ДОМ сенке уз корен 
+            let senkaKoren = this.attachShadow({ mode: 'open' });
+            senkaKoren.innerHTML = html;
+            // постављање ослушкивача догађаја за click
+            this.addEventListener('click', e => {
+                // АКо је ослушкивач онемогућен, клик се игнорише
+                if (this.disabled)
+                    return;
+                this.pomeriFioku();
+            });
+
+        }
+
+        connectedCallback() { }
+
+        disconnectedCallback() { }
+
+        // A getter/setter for an open property.
+        get otvoreno() {
+            return this.hasAttribute('otvoreno');
+        }
+
+        set otvoreno(val) {
+            // Reflect the value of the open property as an HTML attribute.
+            if (val) {
+                this.setAttribute('otvoreno', 'XXX');
+            } else {
+                this.removeAttribute('otvoreno');
+            }
+        }
+
+        // A getter/setter for a disabled property.
+        get disabled() {
+            return this.hasAttribute('disabled');
+        }
+
+        set disabled(val) {
+            // Reflect the value of the disabled property as an HTML attribute.
+            if (val) {
+                this.setAttribute('disabled', '');
+            } else {
+                this.removeAttribute('disabled');
+            }
+        }
+
+        static get observedAttributes() {
+            return ['disabled', 'otvoreno'];
+        }
+
+        attributeChangedCallback(name, oldValue, newValue) {
+            // When the drawer is disabled, update keyboard/screen reader behavior.
+            if (this.disabled) {
+                this.setAttribute('tabindex', '-1');
+                this.setAttribute('aria-disabled', 'true');
+            } else {
+                this.setAttribute('tabindex', '0');
+                this.setAttribute('aria-disabled', 'false');
+            }
+            // TODO: also react to the open attribute changing.
+        }
+
+        pomeriFioku() {
+            this.otvoreno = !this.otvoreno;
+            console.log(`Fioka je pomerena. Status fioke: ${this.hasAttribute('otvoreno') ? 'otovoreno' : 'zatvoreno'}`);
+        }
+
+    }
+
+    // нови елеменат
+    customElements.define('uvit-fioka', Fioka);
+}
