@@ -10,9 +10,9 @@ function addEntry(events, didITurnIntoASquirrel) {
 function phi(table) {
   return (table[3] * table[0] - table[2] * table[1]) /
     Math.sqrt((table[2] + table[3]) *
-              (table[0] + table[1]) *
-              (table[1] + table[3]) *
-              (table[0] + table[2]));
+      (table[0] + table[1]) *
+      (table[1] + table[3]) *
+      (table[0] + table[2]));
 }
 
 function hasEvent(event, entry) {
@@ -48,7 +48,7 @@ var correlations = gatherCorrelations(JOURNAL);
 for (var i = 0; i < JOURNAL.length; i++) {
   var entry = JOURNAL[i];
   if (hasEvent("peanuts", entry) &&
-     !hasEvent("brushed teeth", entry))
+    !hasEvent("brushed teeth", entry))
     entry.events.push("peanut teeth");
 }
 
