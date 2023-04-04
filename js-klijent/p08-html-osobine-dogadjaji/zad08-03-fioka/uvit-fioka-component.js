@@ -15,7 +15,7 @@ function define(html) {
             this.statusElement = senkaKoren.querySelector('h2');
             // постављање ослушкивача догађаја за click
             this.addEventListener('click', e => {
-                // АКо је ослушкивач онемогућен, клик се игнорише
+                // ако је ослушкивач онемогућен, клик се игнорише
                 if (this.disabled)
                     return;
                 this.pomeriFioku();
@@ -27,7 +27,7 @@ function define(html) {
 
         disconnectedCallback() { }
 
-        // A getter/setter for an open property.
+        // особина отворено
         get otvoreno() {
             return this.hasAttribute('otvoreno');
         }
@@ -41,7 +41,7 @@ function define(html) {
             }
         }
 
-        // A getter/setter for a disabled property.
+        // особина disabled
         get disabled() {
             return this.hasAttribute('disabled');
         }
@@ -60,21 +60,19 @@ function define(html) {
         }
 
         attributeChangedCallback(name, oldValue, newValue) {
-            // When the drawer is disabled, update keyboard/screen reader behavior.
             if (this.disabled) {
                 this.setAttribute('tabindex', '-1');
                 this.setAttribute('aria-disabled', 'true');
             } else {
                 this.setAttribute('tabindex', '0');
                 this.setAttribute('aria-disabled', 'false');
-            }
-            // react to the otvoreno attribute changing.
-            if (this.otvoreno) {
-                this.statusElement.innerHTML = "otvoreno";
-                this.statusElement.setAttribute('style', 'background-color:green');
-            } else {
-                this.statusElement.innerHTML = "zatvoreno";
-                this.statusElement.setAttribute('style', 'background-color:red');
+                if (this.otvoreno) {
+                    this.statusElement.innerHTML = "otvoreno";
+                    this.statusElement.setAttribute('style', 'background-color:green');
+                } else {
+                    this.statusElement.innerHTML = "zatvoreno";
+                    this.statusElement.setAttribute('style', 'background-color:red');
+                }
             }
         }
 
