@@ -3,7 +3,6 @@ fetch("uvit-student-component.html")
     .then(text => define(text));
 
 function define(html) {
-
     class Student extends HTMLElement {
         constructor() {
             // увек у конструктору на почетку позвати super()
