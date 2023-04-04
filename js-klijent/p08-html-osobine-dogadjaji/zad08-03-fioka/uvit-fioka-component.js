@@ -11,6 +11,8 @@ function define(html) {
             // придруживање ДОМ сенке уз корен 
             let senkaKoren = this.attachShadow({ mode: 'open' });
             senkaKoren.innerHTML = html;
+            // реферисње на визуелни елеменат
+            this.statusElement = senkaKoren.querySelector('h2');
             // постављање ослушкивача догађаја за click
             this.addEventListener('click', e => {
                 // АКо је ослушкивач онемогућен, клик се игнорише
@@ -66,12 +68,19 @@ function define(html) {
                 this.setAttribute('tabindex', '0');
                 this.setAttribute('aria-disabled', 'false');
             }
-            // TODO: also react to the open attribute changing.
+            // react to the otvoreno attribute changing.
+            if (this.otvoreno) {
+                this.statusElement.innerHTML = "otvoreno";
+                this.statusElement.setAttribute('style', 'background-color:green');
+            } else {
+                this.statusElement.innerHTML = "zatvoreno";
+                this.statusElement.setAttribute('style', 'background-color:red');
+            }
         }
 
         pomeriFioku() {
             this.otvoreno = !this.otvoreno;
-            console.log(`Fioka je pomerena. Status fioke: ${this.hasAttribute('otvoreno') ? 'otovoreno' : 'zatvoreno'}`);
+            console.log(`Fioka je pomerena. Status fioke: ${this.hasAttribute('otvoreno') ? 'otvoreno' : 'zatvoreno'}`);
         }
 
     }
