@@ -7,6 +7,7 @@ console.log('Tri plus sest je ' + (x + 6) + '.');
 console.log(`Tri plus sest je ${x + 6}.`);
 // "Tri plus sest je 9."
 
+console.log("---");
 let sin = 'Vlado';
 // spajanje niski
 console.log('Draga mama,\n' +

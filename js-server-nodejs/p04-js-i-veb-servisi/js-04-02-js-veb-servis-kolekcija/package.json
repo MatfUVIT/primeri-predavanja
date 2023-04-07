@@ -9,6 +9,9 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "fs": "0.0.1-security"
+    "fs": "^0.0.1-security",
+    "fs.promises": "^0.1.2",
+    "url": "^0.11.0",
+    "http": "0.0.1-security"
   }
 }

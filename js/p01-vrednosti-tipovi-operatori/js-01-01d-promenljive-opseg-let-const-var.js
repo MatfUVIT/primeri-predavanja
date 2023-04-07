@@ -1,12 +1,12 @@
 const osoba1 = "Никола";
 console.log(osoba1);
 
-let osoba2 = osoba1 + "!!!!";
+let osoba2 = osoba1 + "!!!!"
 console.log(osoba2);
 
 // nemoguce - pokusaj postavljanja 
 // vrednosti za konstantnu promenljivu
-//osoba1 = "Драгослав"
+//osoba1 = "Драгослав";
 
 // rad sa promenljivom deklarisanom
 // pomocu var

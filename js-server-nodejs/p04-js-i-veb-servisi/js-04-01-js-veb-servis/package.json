@@ -4,11 +4,13 @@
   "description": "",
   "main": "veb-servis.js",
   "scripts": {
+    "run": "",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "fs": "0.0.1-security"
+    "fs": "^0.0.1-security",
+    "url": "^0.11.0"
   }
 }

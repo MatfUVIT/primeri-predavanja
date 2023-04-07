@@ -1,6 +1,6 @@
 const url = require('url');
 
-const fs = require('fs/promises');
+const fs = require('fs.promises');
 
 exports.listRequest = function (req, res) {
     const reqUrl = url.parse(req.url, true);
