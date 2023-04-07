@@ -1,0 +1,37 @@
+[
+    {
+        "Name": "Anakin",
+        "Gender": "male",
+        "Homeworld": "Tatooine",
+        "Born": "41.9BBY",
+        "Jedi": "yes"
+    },
+    {
+        "Name": "Amidala",
+        "Gender": "female",
+        "Homeworld": "Naboo",
+        "Born": "46 BBY",
+        "Jedi": "no"
+    },
+    {
+        "Name": "Obi Van Kenoby",
+        "Gender": "male",
+        "Homeworld": "Tatooine",
+        "Born": "41.8BBY",
+        "Jedi": "yes"
+    },
+    {
+        "Name": "Luk Skywalker",
+        "Gender": "male",
+        "Homeworld": "Tatooine",
+        "Born": "42.9BBY",
+        "Jedi": "yes"
+    },
+    {
+        "Name": "R2-D2",
+        "Gender": "unknown",
+        "Homeworld": "Naboo",
+        "Born": "33BBY",
+        "Jedi": "no"
+    }
+]
