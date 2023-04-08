@@ -2,7 +2,7 @@ const url = require('url');
 
 const fs = require('fs.promises');
 
-exports.listRequest = function (req, res) {
+exports.pretragaRequest = function (req, res) {
     const reqUrl = url.parse(req.url, true);
     let name = '';
     if (reqUrl.query.name) {
