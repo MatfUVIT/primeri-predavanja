@@ -16,8 +16,8 @@ function obradiPostZahtev(zahtev, odgovor) {
 
         zahtev.on('end', function () {
             zahtev.post = querystring.parse(podaci);
-            odgovor.write(`Post parametri:\n`)
-            odgovor.write(`${zahtev.post}\n`)
+            odgovor.write(`Post parametri:\n`);
+            odgovor.write(JSON.stringify(zahtev.post));
             odgovor.end();
         });
 

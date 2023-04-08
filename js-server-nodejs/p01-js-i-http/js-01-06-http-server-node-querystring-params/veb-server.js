@@ -3,18 +3,22 @@ let url = require('url');
 let fs = require('fs');
 
 function obradiGetZahtev(zahtev, odgovor) {
-    let upit = url.parse(zahtev.url).query;
-    odgovor.write(`Upit: ${upit}\n`);
-    if (upit != null) {
-        let sekcije = upit.split('&')
-        for (sekcija of sekcije) {
-            let par = sekcija.split('=')
-            if (par.length == 2) {
-                let naziv = par[0];
-                let vrednost = par[1];
-                odgovor.write(`${naziv} = ${vrednost}\n`);
+    try {
+        let upit = url.parse(zahtev.url).query;
+        odgovor.write(`Upit: ${upit}\n`);
+        if (upit != null) {
+            let sekcije = upit.split('&')
+            for (sekcija of sekcije) {
+                let par = sekcija.split('=')
+                if (par.length == 2) {
+                    let naziv = par[0];
+                    let vrednost = par[1];
+                    odgovor.write(`${naziv} = ${vrednost}\n`);
+                }
             }
         }
+    } catch (error) {
+        odgovor.write(`Error description: ${error}`);
     }
 }
 
