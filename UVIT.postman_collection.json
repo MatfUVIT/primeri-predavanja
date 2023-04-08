@@ -1,0 +1,2803 @@
+{
+	"info": {
+		"_postman_id": "11d901ae-bbec-4391-8126-79672e4c50e7",
+		"name": "UVIT",
+		"description": "Zahtevi za UVIT",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1399169"
+	},
+	"item": [
+		{
+			"name": "pr-01-01-get",
+			"item": [
+				{
+					"name": "https://matfuvit.github.io/UVIT/",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://matfuvit.github.io/UVIT/",
+							"protocol": "https",
+							"host": [
+								"matfuvit",
+								"github",
+								"io"
+							],
+							"path": [
+								"UVIT",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "https://matfuvit.github.io/UVIT/",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://matfuvit.github.io/UVIT/",
+									"protocol": "https",
+									"host": [
+										"matfuvit",
+										"github",
+										"io"
+									],
+									"path": [
+										"UVIT",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "server",
+									"value": "ecstatic-3.3.1"
+								},
+								{
+									"key": "cache-control",
+									"value": "max-age=3600"
+								},
+								{
+									"key": "last-modified",
+									"value": "Fri, 05 Mar 2021 20:37:38 GMT"
+								},
+								{
+									"key": "etag",
+									"value": "W/\"281474977154627-28-2021-03-05T20:37:38.174Z\""
+								},
+								{
+									"key": "content-length",
+									"value": "28"
+								},
+								{
+									"key": "content-type",
+									"value": "text/markdown; charset=UTF-8"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 19 Mar 2021 16:02:59 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "# primeri-predavanja-2020-21"
+						}
+					]
+				},
+				{
+					"name": "https://github.com/MatfUVIT/UVIT",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://github.com/MatfUVIT/UVIT",
+							"protocol": "https",
+							"host": [
+								"github",
+								"com"
+							],
+							"path": [
+								"MatfUVIT",
+								"UVIT"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "https://github.com/MatfUVIT/UVIT",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://github.com/MatfUVIT/UVIT",
+									"protocol": "https",
+									"host": [
+										"github",
+										"com"
+									],
+									"path": [
+										"MatfUVIT",
+										"UVIT"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "js-01-01-clear",
+			"item": [
+				{
+					"name": "http://localhost:7000",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:7000",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7000"
+						},
+						"description": "liss2-uvit"
+					},
+					"response": [
+						{
+							"name": "qs: not exist",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:7000",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "7000"
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "qs: param=vrednost",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:7000?param=vrednost",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "7000",
+									"query": [
+										{
+											"key": "param",
+											"value": "vrednost"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "veb-server",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{osnovni_url}}",
+							"host": [
+								"{{osnovni_url}}"
+							]
+						},
+						"description": "liss2-uvit"
+					},
+					"response": [
+						{
+							"name": "bd: not exist",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{osnovni_url}}",
+									"host": [
+										"{{osnovni_url}}"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "bd: param=vrednost",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "param",
+											"value": "vrednost",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{osnovni_url}}",
+									"host": [
+										"{{osnovni_url}}"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "veb-server",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:7000",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7000"
+						},
+						"description": "liss2-uvit"
+					},
+					"response": [
+						{
+							"name": "bd: not exist",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "{{osnovni_url}}",
+									"host": [
+										"{{osnovni_url}}"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "bd: param=vrednost",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "param",
+											"value": "vrednost",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{osnovni_url}}",
+									"host": [
+										"{{osnovni_url}}"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "veb-server",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{osnovni_url}}",
+							"host": [
+								"{{osnovni_url}}"
+							]
+						},
+						"description": "liss2-uvit"
+					},
+					"response": [
+						{
+							"name": "bd: not exist",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{osnovni_url}}",
+									"host": [
+										"{{osnovni_url}}"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "bd: param=vrednost",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "param",
+											"value": "vrednost",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{osnovni_url}}",
+									"host": [
+										"{{osnovni_url}}"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "js-01-02-log",
+			"item": [
+				{
+					"name": "veb-server",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{osnovni_url}}",
+							"host": [
+								"{{osnovni_url}}"
+							]
+						},
+						"description": "liss2-uvit"
+					},
+					"response": [
+						{
+							"name": "qs: not exist",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{osnovni_url}}",
+									"host": [
+										"{{osnovni_url}}"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "qs: param=vrednost",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{osnovni_url}}?param=vrednost",
+									"host": [
+										"{{osnovni_url}}"
+									],
+									"query": [
+										{
+											"key": "param",
+											"value": "vrednost"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "veb-server",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{osnovni_url}}",
+							"host": [
+								"{{osnovni_url}}"
+							]
+						},
+						"description": "liss2-uvit"
+					},
+					"response": [
+						{
+							"name": "bd: not exist",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{osnovni_url}}",
+									"host": [
+										"{{osnovni_url}}"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "bd: param=vrednost",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "param",
+											"value": "vrednost",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{osnovni_url}}",
+									"host": [
+										"{{osnovni_url}}"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "veb-server",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{osnovni_url}}",
+							"host": [
+								"{{osnovni_url}}"
+							]
+						},
+						"description": "liss2-uvit"
+					},
+					"response": [
+						{
+							"name": "bd: not exist",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "{{osnovni_url}}",
+									"host": [
+										"{{osnovni_url}}"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "bd: param=vrednost",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "param",
+											"value": "vrednost",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{osnovni_url}}",
+									"host": [
+										"{{osnovni_url}}"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "veb-server",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{osnovni_url}}",
+							"host": [
+								"{{osnovni_url}}"
+							]
+						},
+						"description": "liss2-uvit"
+					},
+					"response": [
+						{
+							"name": "bd: not exist",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{osnovni_url}}",
+									"host": [
+										"{{osnovni_url}}"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "bd: param=vrednost",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "param",
+											"value": "vrednost",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{osnovni_url}}",
+									"host": [
+										"{{osnovni_url}}"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "js-01-03-log-path-time",
+			"item": [
+				{
+					"name": "veb-server",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{osnovni_url}}",
+							"host": [
+								"{{osnovni_url}}"
+							]
+						},
+						"description": "liss2-uvit"
+					},
+					"response": [
+						{
+							"name": "qs: not exist",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{osnovni_url}}",
+									"host": [
+										"{{osnovni_url}}"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "qs: param=vrednost",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{osnovni_url}}?param=vrednost",
+									"host": [
+										"{{osnovni_url}}"
+									],
+									"query": [
+										{
+											"key": "param",
+											"value": "vrednost"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "/miki qs: not exist",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{osnovni_url}}/miki",
+									"host": [
+										"{{osnovni_url}}"
+									],
+									"path": [
+										"miki"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "/miki qs: param=vrednost",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{osnovni_url}}/miki?param=vrednost",
+									"host": [
+										"{{osnovni_url}}"
+									],
+									"path": [
+										"miki"
+									],
+									"query": [
+										{
+											"key": "param",
+											"value": "vrednost"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "/miki/maus qs: param=vrednost",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{osnovni_url}}/miki/maus?param=vrednost",
+									"host": [
+										"{{osnovni_url}}"
+									],
+									"path": [
+										"miki",
+										"maus"
+									],
+									"query": [
+										{
+											"key": "param",
+											"value": "vrednost"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "veb-server",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:7000",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7000"
+						},
+						"description": "liss2-uvit"
+					},
+					"response": [
+						{
+							"name": "/miki",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{osnovni_url}}/miki",
+									"host": [
+										"{{osnovni_url}}"
+									],
+									"path": [
+										"miki"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "/miki/maus bd: param=vrednost",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "param",
+											"value": "vrednost",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{osnovni_url}}/miki/maus",
+									"host": [
+										"{{osnovni_url}}"
+									],
+									"path": [
+										"miki",
+										"maus"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "veb-server",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:7000",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7000"
+						},
+						"description": "liss2-uvit"
+					},
+					"response": [
+						{
+							"name": "/miki-maus/dizni param=vrednost",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "param",
+											"value": "vrednost",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{osnovni_url}}/miki-maus/dizni",
+									"host": [
+										"{{osnovni_url}}"
+									],
+									"path": [
+										"miki-maus",
+										"dizni"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "veb-server",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:7000",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7000"
+						},
+						"description": "liss2-uvit"
+					},
+					"response": [
+						{
+							"name": "/miki-maus/dizni param=vrednost",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "param",
+											"value": "vrednost",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{osnovni_url}}/miki-maus/dizni",
+									"host": [
+										"{{osnovni_url}}"
+									],
+									"path": [
+										"miki-maus",
+										"dizni"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "js-01-04-ret-log-path-qs-time",
+			"item": [
+				{
+					"name": "veb-server",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{osnovni_url}}",
+							"host": [
+								"{{osnovni_url}}"
+							]
+						},
+						"description": "liss2-uvit"
+					},
+					"response": [
+						{
+							"name": "qs: not exist",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{osnovni_url}}",
+									"host": [
+										"{{osnovni_url}}"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "qs: param=vrednost",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{osnovni_url}}?param=vrednost",
+									"host": [
+										"{{osnovni_url}}"
+									],
+									"query": [
+										{
+											"key": "param",
+											"value": "vrednost"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "qs: param=vrednost param2=v2",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{osnovni_url}}?param=vrednost&param2=v2",
+									"host": [
+										"{{osnovni_url}}"
+									],
+									"query": [
+										{
+											"key": "param",
+											"value": "vrednost"
+										},
+										{
+											"key": "param2",
+											"value": "v2"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "/miki qs: not exist",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{osnovni_url}}/miki",
+									"host": [
+										"{{osnovni_url}}"
+									],
+									"path": [
+										"miki"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "/miki qs: param=vrednost",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{osnovni_url}}/miki?param=vrednost",
+									"host": [
+										"{{osnovni_url}}"
+									],
+									"path": [
+										"miki"
+									],
+									"query": [
+										{
+											"key": "param",
+											"value": "vrednost"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "/miki/maus qs: param=vrednost",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{osnovni_url}}/miki/maus?param=vrednost",
+									"host": [
+										"{{osnovni_url}}"
+									],
+									"path": [
+										"miki",
+										"maus"
+									],
+									"query": [
+										{
+											"key": "param",
+											"value": "vrednost"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "/miki/maus qs: param=vrednost p2=v2",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{osnovni_url}}/miki/maus?param=vrednost&p2=v2",
+									"host": [
+										"{{osnovni_url}}"
+									],
+									"path": [
+										"miki",
+										"maus"
+									],
+									"query": [
+										{
+											"key": "param",
+											"value": "vrednost"
+										},
+										{
+											"key": "p2",
+											"value": "v2"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "veb-server",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:7000",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7000"
+						},
+						"description": "liss2-uvit"
+					},
+					"response": [
+						{
+							"name": "/miki",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{osnovni_url}}/miki",
+									"host": [
+										"{{osnovni_url}}"
+									],
+									"path": [
+										"miki"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "/miki qs: p1 = v1 p2=v2 bd: notexist",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{osnovni_url}}/miki?p1=v1&p2=v2",
+									"host": [
+										"{{osnovni_url}}"
+									],
+									"path": [
+										"miki"
+									],
+									"query": [
+										{
+											"key": "p1",
+											"value": "v1"
+										},
+										{
+											"key": "p2",
+											"value": "v2"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "/miki/maus bd: param=vrednost",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "param",
+											"value": "vrednost",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{osnovni_url}}/miki/maus",
+									"host": [
+										"{{osnovni_url}}"
+									],
+									"path": [
+										"miki",
+										"maus"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "/miki/maus qs: p1=v1 p2=v2 bd: param=vrednost",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "param",
+											"value": "vrednost",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{osnovni_url}}/miki/maus?p1=v1&p2=v2",
+									"host": [
+										"{{osnovni_url}}"
+									],
+									"path": [
+										"miki",
+										"maus"
+									],
+									"query": [
+										{
+											"key": "p1",
+											"value": "v1"
+										},
+										{
+											"key": "p2",
+											"value": "v2"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "js-01-05-ret-file",
+			"item": [
+				{
+					"name": "veb-server",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{osnovni_url}}",
+							"host": [
+								"{{osnovni_url}}"
+							]
+						},
+						"description": "liss2-uvit"
+					},
+					"response": [
+						{
+							"name": "miki-maus.txt (postoji)",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{osnovni_url}}/miki-maus.txt",
+									"host": [
+										"{{osnovni_url}}"
+									],
+									"path": [
+										"miki-maus.txt"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "paja-patak.txt (ne postoji)",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{osnovni_url}}/paja-patak.txt",
+									"host": [
+										"{{osnovni_url}}"
+									],
+									"path": [
+										"paja-patak.txt"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "veb-strana1.html (postoji)",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{osnovni_url}}/veb-strana1.html",
+									"host": [
+										"{{osnovni_url}}"
+									],
+									"path": [
+										"veb-strana1.html"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "veb-strana2.html (postoji)",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{osnovni_url}}/veb-strana2.html",
+									"host": [
+										"{{osnovni_url}}"
+									],
+									"path": [
+										"veb-strana2.html"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "veb-strana3.html (ne postoji)",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{osnovni_url}}/veb-strana3.html",
+									"host": [
+										"{{osnovni_url}}"
+									],
+									"path": [
+										"veb-strana3.html"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "download.jfif (postoji)",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{osnovni_url}}/download.jfif",
+									"host": [
+										"{{osnovni_url}}"
+									],
+									"path": [
+										"download.jfif"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "veb-server",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{osnovni_url}}",
+							"host": [
+								"{{osnovni_url}}"
+							]
+						},
+						"description": "liss2-uvit"
+					},
+					"response": [
+						{
+							"name": "miki-maus.txt (postoji)",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{osnovni_url}}/miki-maus.txt",
+									"host": [
+										"{{osnovni_url}}"
+									],
+									"path": [
+										"miki-maus.txt"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "paja-patak.txt (ne postoji)",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{osnovni_url}}/paja-patak.txt",
+									"host": [
+										"{{osnovni_url}}"
+									],
+									"path": [
+										"paja-patak.txt"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "veb-strana1.html (postoji)",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{osnovni_url}}/veb-strana1.html",
+									"host": [
+										"{{osnovni_url}}"
+									],
+									"path": [
+										"veb-strana1.html"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "veb-strana2.html (postoji)",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{osnovni_url}}/veb-strana2.html",
+									"host": [
+										"{{osnovni_url}}"
+									],
+									"path": [
+										"veb-strana2.html"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "veb-strana3.html (ne postoji)",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{osnovni_url}}/veb-strana3.html",
+									"host": [
+										"{{osnovni_url}}"
+									],
+									"path": [
+										"veb-strana3.html"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "js-01-06-ret-get-params",
+			"item": [
+				{
+					"name": "veb-server",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{osnovni_url}}",
+							"host": [
+								"{{osnovni_url}}"
+							]
+						},
+						"description": "liss2-uvit"
+					},
+					"response": [
+						{
+							"name": "qs: param1=vrednost01",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{osnovni_url}}?param1=vrednost01",
+									"host": [
+										"{{osnovni_url}}"
+									],
+									"query": [
+										{
+											"key": "param1",
+											"value": "vrednost01"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "/miki qs: param=vrednost",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{osnovni_url}}/miki?param=vrednost",
+									"host": [
+										"{{osnovni_url}}"
+									],
+									"path": [
+										"miki"
+									],
+									"query": [
+										{
+											"key": "param",
+											"value": "vrednost"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "qs: p1=vr1 param2=v2",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{osnovni_url}}?p1=vr1&param2=v2",
+									"host": [
+										"{{osnovni_url}}"
+									],
+									"query": [
+										{
+											"key": "p1",
+											"value": "vr1"
+										},
+										{
+											"key": "param2",
+											"value": "v2"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "/miki/maus qs: param=vrednost p2=v2",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{osnovni_url}}/miki/maus?param=vrednost&p2=v2",
+									"host": [
+										"{{osnovni_url}}"
+									],
+									"path": [
+										"miki",
+										"maus"
+									],
+									"query": [
+										{
+											"key": "param",
+											"value": "vrednost"
+										},
+										{
+											"key": "p2",
+											"value": "v2"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "/miki/maus qs: notexist",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{osnovni_url}}/miki/maus",
+									"host": [
+										"{{osnovni_url}}"
+									],
+									"path": [
+										"miki",
+										"maus"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "/miki/maus qs: invalid",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{osnovni_url}}/miki/maus paja patak",
+									"host": [
+										"{{osnovni_url}}"
+									],
+									"path": [
+										"miki",
+										"maus paja patak"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "veb-server",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:54492/api/Category",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "54492",
+							"path": [
+								"api",
+								"Category"
+							]
+						},
+						"description": "zahtev za liss2"
+					},
+					"response": [
+						{
+							"name": "/miki/maus qs: p1=v1 p2=v2 bd: param=vrednost",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "param",
+											"value": "vrednost",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{osnovni_url}}/miki/maus?p1=v1&p2=v2",
+									"host": [
+										"{{osnovni_url}}"
+									],
+									"path": [
+										"miki",
+										"maus"
+									],
+									"query": [
+										{
+											"key": "p1",
+											"value": "v1"
+										},
+										{
+											"key": "p2",
+											"value": "v2"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "js-01-07-post-params",
+			"item": [
+				{
+					"name": "veb-server",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{osnovni_url}}",
+							"host": [
+								"{{osnovni_url}}"
+							]
+						},
+						"description": "liss2-uvit"
+					},
+					"response": [
+						{
+							"name": "/miki/maus qs: param=vrednost p2=v2",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{osnovni_url}}/miki/maus?param=vrednost&p2=v2",
+									"host": [
+										"{{osnovni_url}}"
+									],
+									"path": [
+										"miki",
+										"maus"
+									],
+									"query": [
+										{
+											"key": "param",
+											"value": "vrednost"
+										},
+										{
+											"key": "p2",
+											"value": "v2"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "veb-server",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:7000",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7000"
+						},
+						"description": "liss2-uvit"
+					},
+					"response": [
+						{
+							"name": "/miki",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{osnovni_url}}/miki",
+									"host": [
+										"{{osnovni_url}}"
+									],
+									"path": [
+										"miki"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "/miki qs: p1 = v1 p2=v2 bd: notexist",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{osnovni_url}}/miki?p1=v1&p2=v2",
+									"host": [
+										"{{osnovni_url}}"
+									],
+									"path": [
+										"miki"
+									],
+									"query": [
+										{
+											"key": "p1",
+											"value": "v1"
+										},
+										{
+											"key": "p2",
+											"value": "v2"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "/miki/maus bd: param=vrednost",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "param",
+											"value": "vrednost",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{osnovni_url}}/miki/maus",
+									"host": [
+										"{{osnovni_url}}"
+									],
+									"path": [
+										"miki",
+										"maus"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "/miki/maus qs: p1=v1 p2=v2 bd: param=vrednost",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "param",
+											"value": "vrednost",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{osnovni_url}}/miki/maus?p1=v1&p2=v2",
+									"host": [
+										"{{osnovni_url}}"
+									],
+									"path": [
+										"miki",
+										"maus"
+									],
+									"query": [
+										{
+											"key": "p1",
+											"value": "v1"
+										},
+										{
+											"key": "p2",
+											"value": "v2"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "/miki/maus bd: par1=vr1 par2=vr2 par3=vr3",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "par1",
+											"value": "vr1",
+											"type": "text"
+										},
+										{
+											"key": "par3",
+											"value": "vr3",
+											"type": "text"
+										},
+										{
+											"key": "par2",
+											"value": "vr2",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{osnovni_url}}/miki/maus",
+									"host": [
+										"{{osnovni_url}}"
+									],
+									"path": [
+										"miki",
+										"maus"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "js-03-01-form-processing-get",
+			"item": [
+				{
+					"name": "veb-server",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{osnovni_url}}",
+							"host": [
+								"{{osnovni_url}}"
+							]
+						},
+						"description": "liss2-uvit"
+					},
+					"response": [
+						{
+							"name": "qs: not exist",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{osnovni_url}}",
+									"host": [
+										"{{osnovni_url}}"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "js-04-04-01-veb-servis",
+			"item": [
+				{
+					"name": "veb-servis/sample",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{osnovni_url}}/sample",
+							"host": [
+								"{{osnovni_url}}"
+							],
+							"path": [
+								"sample"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "qs: not exist",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{osnovni_url}}/sample",
+									"host": [
+										"{{osnovni_url}}"
+									],
+									"path": [
+										"sample"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 07 Apr 2023 20:44:25 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Content-Length",
+									"value": "22"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"text\": \"Hello World\"\n}"
+						},
+						{
+							"name": "qs: name=Marko",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{osnovni_url}}/sample?name=Marko",
+									"host": [
+										"{{osnovni_url}}"
+									],
+									"path": [
+										"sample"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "Marko"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 07 Apr 2023 20:44:25 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Content-Length",
+									"value": "22"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"text\": \"Hello World\"\n}"
+						},
+						{
+							"name": "qs: name=Janko+123",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{osnovni_url}}/sample?name=Janko 123",
+									"host": [
+										"{{osnovni_url}}"
+									],
+									"path": [
+										"sample"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "Janko 123"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 07 Apr 2023 20:44:25 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Content-Length",
+									"value": "22"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"text\": \"Hello World\"\n}"
+						},
+						{
+							"name": "qs: name=Janko+123 power=10",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{osnovni_url}}?name=Janko123&power=10",
+									"host": [
+										"{{osnovni_url}}"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "Janko123"
+										},
+										{
+											"key": "power",
+											"value": "10"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 07 Apr 2023 20:44:25 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Content-Length",
+									"value": "22"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"text\": \"Hello World\"\n}"
+						},
+						{
+							"name": "qs: Name=Janko+123",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{osnovni_url}}/sample?Name=Janko 123",
+									"host": [
+										"{{osnovni_url}}"
+									],
+									"path": [
+										"sample"
+									],
+									"query": [
+										{
+											"key": "Name",
+											"value": "Janko 123"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 07 Apr 2023 20:44:25 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Content-Length",
+									"value": "22"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"text\": \"Hello World\"\n}"
+						}
+					]
+				},
+				{
+					"name": "veb-servis/test",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"proba\":{\"num\":123, \"str\": \"456\"},\n\t\"proba2\":\"miki2\",\n\t\"value\": 987\n}"
+						},
+						"url": {
+							"raw": "{{osnovni_url}}/test",
+							"host": [
+								"{{osnovni_url}}"
+							],
+							"path": [
+								"test"
+							]
+						},
+						"description": "zahtev-za-veb-servis"
+					},
+					"response": [
+						{
+							"name": "bd: value=987",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"value\": 987\n}"
+								},
+								"url": {
+									"raw": "{{osnovni_url}}/test",
+									"host": [
+										"{{osnovni_url}}"
+									],
+									"path": [
+										"test"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 07 Apr 2023 20:41:17 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Content-Length",
+									"value": "37"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"text\": \"Post Request Value is  987\"\n}"
+						},
+						{
+							"name": "bd: value=1234 etc.",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"proba\":{\"num\":123, \"str\": \"456\"},\n\t\"proba2\":\"miki2\",\n\t\"value\": 1234\n}"
+								},
+								"url": {
+									"raw": "{{osnovni_url}}/test",
+									"host": [
+										"{{osnovni_url}}"
+									],
+									"path": [
+										"test"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 07 Apr 2023 20:41:17 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Content-Length",
+									"value": "37"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"text\": \"Post Request Value is  987\"\n}"
+						},
+						{
+							"name": "bd: incorrect",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"proba\":{\"num\":123, \"str\": \"456\"},\n\t\"proba2\":\"miki2\",\n}"
+								},
+								"url": {
+									"raw": "{{osnovni_url}}/test",
+									"host": [
+										"{{osnovni_url}}"
+									],
+									"path": [
+										"test"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 07 Apr 2023 20:41:17 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Content-Length",
+									"value": "37"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"text\": \"Post Request Value is  987\"\n}"
+						},
+						{
+							"name": "bd: not exist",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{osnovni_url}}/test",
+									"host": [
+										"{{osnovni_url}}"
+									],
+									"path": [
+										"test"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "bd: without value",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"proba\":{\"num\":123, \"str\": \"456\"},\n\t\"proba2\":\"miki2\"\n}"
+								},
+								"url": {
+									"raw": "{{osnovni_url}}/test",
+									"host": [
+										"{{osnovni_url}}"
+									],
+									"path": [
+										"test"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 07 Apr 2023 20:41:17 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Content-Length",
+									"value": "37"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"text\": \"Post Request Value is  987\"\n}"
+						},
+						{
+							"name": "bd: empty",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{}"
+								},
+								"url": {
+									"raw": "{{osnovni_url}}/test",
+									"host": [
+										"{{osnovni_url}}"
+									],
+									"path": [
+										"test"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "js-04-04-02-veb-servis-kolekcija",
+			"item": [
+				{
+					"name": "veb-servis/pretraga",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{osnovni_url}}/pretraga/ime=svi",
+							"host": [
+								"{{osnovni_url}}"
+							],
+							"path": [
+								"pretraga",
+								"ime=svi"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "qs: not exist",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{osnovni_url}}/sample",
+									"host": [
+										"{{osnovni_url}}"
+									],
+									"path": [
+										"sample"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 07 Apr 2023 20:44:25 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Content-Length",
+									"value": "22"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"text\": \"Hello World\"\n}"
+						},
+						{
+							"name": "qs: name=Marko",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{osnovni_url}}/sample?name=Marko",
+									"host": [
+										"{{osnovni_url}}"
+									],
+									"path": [
+										"sample"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "Marko"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 07 Apr 2023 20:44:25 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Content-Length",
+									"value": "22"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"text\": \"Hello World\"\n}"
+						},
+						{
+							"name": "qs: name=Janko+123",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{osnovni_url}}/sample?name=Janko 123",
+									"host": [
+										"{{osnovni_url}}"
+									],
+									"path": [
+										"sample"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "Janko 123"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 07 Apr 2023 20:44:25 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Content-Length",
+									"value": "22"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"text\": \"Hello World\"\n}"
+						},
+						{
+							"name": "qs: name=Janko+123 power=10",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{osnovni_url}}?name=Janko123&power=10",
+									"host": [
+										"{{osnovni_url}}"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "Janko123"
+										},
+										{
+											"key": "power",
+											"value": "10"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 07 Apr 2023 20:44:25 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Content-Length",
+									"value": "22"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"text\": \"Hello World\"\n}"
+						},
+						{
+							"name": "qs: Name=Janko+123",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{osnovni_url}}/sample?Name=Janko 123",
+									"host": [
+										"{{osnovni_url}}"
+									],
+									"path": [
+										"sample"
+									],
+									"query": [
+										{
+											"key": "Name",
+											"value": "Janko 123"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 07 Apr 2023 20:44:25 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Content-Length",
+									"value": "22"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"text\": \"Hello World\"\n}"
+						}
+					]
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "osnovni_url",
+			"value": "http://localhost:7000",
+			"type": "string"
+		}
+	]
+}
