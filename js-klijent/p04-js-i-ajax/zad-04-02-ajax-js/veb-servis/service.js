@@ -3,6 +3,10 @@ const url = require('url');
 const fs = require('fs');
 
 exports.pretragaRequest = function (req, res) {
+    res.setHeader('Content-Type', 'application/json');
+    res.setHeader('Access-Control-Allow-Origin', '*'); /* @dev First, read about security */
+    res.setHeader('Access-Control-Allow-Methods', 'OPTIONS, GET');
+    res.setHeader('Access-Control-Max-Age', 2592000); // 30 days
     const reqUrl = url.parse(req.url, true);
     let ime = '';
     if (reqUrl.query.ime) {
@@ -38,14 +42,13 @@ exports.pretragaRequest = function (req, res) {
             }
             if (dzedaj != '') {
                 dzedaj = dzedaj[0].toLowerCase();
-                if(dzedaj =='y' || dzedaj == 'd')
+                if (dzedaj == 'y' || dzedaj == 'd')
                     dzedaj = 'yes';
-                else 
+                else
                     dzedaj = 'no'
                 response = response.filter(x => x.Jedi == dzedaj);
             }
             res.statusCode = 200;
-            res.setHeader('Content-Type', 'application/json');
             res.end(JSON.stringify(response));
         });
 };

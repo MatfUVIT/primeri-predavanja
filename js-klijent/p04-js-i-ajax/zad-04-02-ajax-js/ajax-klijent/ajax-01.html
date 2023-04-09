@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>AJAX StarWars demo</title>
+    <script type="text/javascript">
+        function loadXMLDoc(deoImena, pol, dzedaj) {
+            let xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange = function () {
+                if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                    document.getElementById("myDiv").innerText =xmlhttp.responseText;
+                    console.log("Odgovor veb servisa je uspešno učitan!");
+                } else
+                    if (xmlhttp.status != 200 && xmlhttp.status != 0)
+                        console.log("Greška: " + xmlhttp.status + ": " + xmlhttp.statusText);
+            }
+            xmlhttp.open('GET', `http://127.0.0.1:7000/pretraga?ime=${deoImena}&pol=${pol}&dzedaj=${dzedaj}`);
+            xmlhttp.send();
+        }
+    </script>
+</head>
+
+<body>
+    <h2>StarWars heroji i AJAX</h2>
+    <button type="button" onclick="loadXMLDoc('a', '','')"> Pošalji AJAX zahtev</button>
+    <div id="myDiv"></div>
+
+</body>
+
+</html>

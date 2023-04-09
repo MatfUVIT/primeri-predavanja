@@ -1,0 +1,17 @@
+{
+  "name": "js-04-02-js-veb-servis-kolekcija",
+  "version": "1.0.0",
+  "main": "veb-servis.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "fs.promises": "^0.1.2",
+    "url": "^0.11.0",
+    "http": "0.0.1-security"
+  }
+}
