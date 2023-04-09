@@ -1,31 +1,37 @@
 const url = require('url');
 
-const fs = require('fs.promises');
+const fs = require('fs');
 
 exports.pretragaRequest = function (req, res) {
     const reqUrl = url.parse(req.url, true);
-    let name = '';
-    if (reqUrl.query.name) {
-        name = reqUrl.query.name;
+    let ime = '';
+    if (reqUrl.query.ime) {
+        ime = reqUrl.query.ime;
     }
 
-    if (name == "listByName") {
-        let response = {};
-        fs.readFile("star-wars.json")
-            .then((data) => {
-                response = JSON.parse(data);
-                response = response.filter(x => x.name)
-            })
-            .catch((error) => {
+    let pol = ''
+    if (reqUrl.query.pol) {
+        pol = reqUrl.query.pol;
+    }
+
+    let response = {};
+    fs.readFile("star-wars.json",
+        (err, data) => {
+            if (err) {
                 res.statusCode = 404;
                 res.setHeader('Content-Type', 'text/plain');
-                res.end('Invalid Request' + error);
-            });
-
-        res.statusCode = 200;
-        res.setHeader('Content-Type', 'application/json');
-        res.end(JSON.stringify(response));
-    }
+                res.end('Invalid Request' + err);
+                return;
+            }
+            response = JSON.parse(data);
+            if (ime != 'svi' && ime != '')
+                response = response.filter(x => x.Name.indexOf(ime) >= 0);
+            if (pol != '')
+                response = response.filter(x => x.Gender[0] == pol[0]);
+            res.statusCode = 200;
+            res.setHeader('Content-Type', 'application/json');
+            res.end(JSON.stringify(response));
+        });
 };
 
 exports.testRequest = function (req, res) {

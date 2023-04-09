@@ -22,6 +22,15 @@ module.exports = http.createServer((req, res) => {
 
         service.testRequest(req, res);
 
+    } else if (reqUrl.pathname == '/pomnozi' && req.method === 'GET') {
+        // POST Endpoint
+        console.log('Request Type:' +
+            req.method + ' Endpoint: ' +
+            reqUrl.pathname);
+
+        service.pomnoziRequest(req, res);
+
+
     } else {
         console.log('Request Type:' +
             req.method + ' Invalid Endpoint: ' +

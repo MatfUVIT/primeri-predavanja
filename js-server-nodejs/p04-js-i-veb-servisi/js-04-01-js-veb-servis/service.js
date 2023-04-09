@@ -44,6 +44,41 @@ exports.testRequest = function (req, res) {
     });
 };
 
+exports.pomnoziRequest = function (req, res) {
+    const reqUrl = url.parse(req.url, true);
+    let arg1 = '';
+    if (reqUrl.query.arg1) {
+        arg1 = reqUrl.query.arg1;
+    }
+    let arg2 = '';
+    if (reqUrl.query.arg2) {
+        arg2 = reqUrl.query.arg2;
+    }
+    let arg3 = '';
+    if (reqUrl.query.arg3) {
+        arg3 = reqUrl.query.arg3;
+    }
+
+    let rezultat = '';
+    if (arg1 == '' && arg2 == '' && arg3 == '')
+        rezultat = 'No arguments supplied';
+    else {
+        if (arg1 == '')
+            arg1 = 1;
+        if (arg2 == '')
+            arg2 = 1;
+        if (arg3 == '')
+            arg3 = 1;
+        rezultat = Number(arg1) * Number(arg2) * Number(arg3);
+    }
+    let response = {
+        "result": rezultat
+    };
+    res.statusCode = 200;
+    res.setHeader('Content-Type', 'application/json');
+    res.end(JSON.stringify(response));
+};
+
 exports.invalidRequest = function (req, res) {
     res.statusCode = 404;
     res.setHeader('Content-Type', 'text/plain');

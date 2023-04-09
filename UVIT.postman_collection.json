@@ -2284,6 +2284,304 @@
 					]
 				},
 				{
+					"name": "veb-servis/pomnozi",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{osnovni_url}}/pomnozi",
+							"host": [
+								"{{osnovni_url}}"
+							],
+							"path": [
+								"pomnozi"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "qs: not exist",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{osnovni_url}}/pomnozi",
+									"host": [
+										"{{osnovni_url}}"
+									],
+									"path": [
+										"pomnozi"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 07 Apr 2023 20:44:25 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Content-Length",
+									"value": "22"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"text\": \"Hello World\"\n}"
+						},
+						{
+							"name": "qs: arg=23",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{osnovni_url}}/pomnozi?arg=23",
+									"host": [
+										"{{osnovni_url}}"
+									],
+									"path": [
+										"pomnozi"
+									],
+									"query": [
+										{
+											"key": "arg",
+											"value": "23"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 07 Apr 2023 20:44:25 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Content-Length",
+									"value": "22"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"text\": \"Hello World\"\n}"
+						},
+						{
+							"name": "qs: arg1=42",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{osnovni_url}}/pomnozi?arg1=42",
+									"host": [
+										"{{osnovni_url}}"
+									],
+									"path": [
+										"pomnozi"
+									],
+									"query": [
+										{
+											"key": "arg1",
+											"value": "42"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 07 Apr 2023 20:44:25 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Content-Length",
+									"value": "22"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"text\": \"Hello World\"\n}"
+						},
+						{
+							"name": "qs: arg1=42 miki=2",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{osnovni_url}}/pomnozi?arg1=42&miki=2",
+									"host": [
+										"{{osnovni_url}}"
+									],
+									"path": [
+										"pomnozi"
+									],
+									"query": [
+										{
+											"key": "arg1",
+											"value": "42"
+										},
+										{
+											"key": "miki",
+											"value": "2"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 07 Apr 2023 20:44:25 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Content-Length",
+									"value": "22"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"text\": \"Hello World\"\n}"
+						},
+						{
+							"name": "qs: arg1=42 arg3=2",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{osnovni_url}}/pomnozi?arg1=42&arg3=2",
+									"host": [
+										"{{osnovni_url}}"
+									],
+									"path": [
+										"pomnozi"
+									],
+									"query": [
+										{
+											"key": "arg1",
+											"value": "42"
+										},
+										{
+											"key": "arg3",
+											"value": "2"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 07 Apr 2023 20:44:25 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Content-Length",
+									"value": "22"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"text\": \"Hello World\"\n}"
+						},
+						{
+							"name": "qs: arg1=42 arg3=2 arg2=0.25",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{osnovni_url}}/pomnozi?arg1=42&arg3=2&arg2=0.25",
+									"host": [
+										"{{osnovni_url}}"
+									],
+									"path": [
+										"pomnozi"
+									],
+									"query": [
+										{
+											"key": "arg1",
+											"value": "42"
+										},
+										{
+											"key": "arg3",
+											"value": "2"
+										},
+										{
+											"key": "arg2",
+											"value": "0.25"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 07 Apr 2023 20:44:25 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Content-Length",
+									"value": "22"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"text\": \"Hello World\"\n}"
+						}
+					]
+				},
+				{
 					"name": "veb-servis/test",
 					"request": {
 						"method": "POST",
@@ -2537,73 +2835,35 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{osnovni_url}}/pretraga/ime=svi",
+							"raw": "{{osnovni_url}}/pretraga/ime/svi",
 							"host": [
 								"{{osnovni_url}}"
 							],
 							"path": [
 								"pretraga",
-								"ime=svi"
+								"ime",
+								"svi"
 							]
 						}
 					},
 					"response": [
 						{
-							"name": "qs: not exist",
+							"name": "qs: ime=svi",
 							"originalRequest": {
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{osnovni_url}}/sample",
+									"raw": "{{osnovni_url}}/pretraga?ime=svi",
 									"host": [
 										"{{osnovni_url}}"
 									],
 									"path": [
-										"sample"
-									]
-								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "application/json"
-								},
-								{
-									"key": "Date",
-									"value": "Fri, 07 Apr 2023 20:44:25 GMT"
-								},
-								{
-									"key": "Connection",
-									"value": "keep-alive"
-								},
-								{
-									"key": "Content-Length",
-									"value": "22"
-								}
-							],
-							"cookie": [],
-							"body": "{\n    \"text\": \"Hello World\"\n}"
-						},
-						{
-							"name": "qs: name=Marko",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "{{osnovni_url}}/sample?name=Marko",
-									"host": [
-										"{{osnovni_url}}"
-									],
-									"path": [
-										"sample"
+										"pretraga"
 									],
 									"query": [
 										{
-											"key": "name",
-											"value": "Marko"
+											"key": "ime",
+											"value": "svi"
 										}
 									]
 								}
@@ -2633,22 +2893,22 @@
 							"body": "{\n    \"text\": \"Hello World\"\n}"
 						},
 						{
-							"name": "qs: name=Janko+123",
+							"name": "qs: ime=an",
 							"originalRequest": {
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{osnovni_url}}/sample?name=Janko 123",
+									"raw": "{{osnovni_url}}/pretraga?ime=an",
 									"host": [
 										"{{osnovni_url}}"
 									],
 									"path": [
-										"sample"
+										"pretraga"
 									],
 									"query": [
 										{
-											"key": "name",
-											"value": "Janko 123"
+											"key": "ime",
+											"value": "an"
 										}
 									]
 								}
@@ -2678,23 +2938,22 @@
 							"body": "{\n    \"text\": \"Hello World\"\n}"
 						},
 						{
-							"name": "qs: name=Janko+123 power=10",
+							"name": "qs: pol=m",
 							"originalRequest": {
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{osnovni_url}}?name=Janko123&power=10",
+									"raw": "{{osnovni_url}}/pretraga?pol=m",
 									"host": [
 										"{{osnovni_url}}"
 									],
+									"path": [
+										"pretraga"
+									],
 									"query": [
 										{
-											"key": "name",
-											"value": "Janko123"
-										},
-										{
-											"key": "power",
-											"value": "10"
+											"key": "pol",
+											"value": "m"
 										}
 									]
 								}
@@ -2724,23 +2983,101 @@
 							"body": "{\n    \"text\": \"Hello World\"\n}"
 						},
 						{
-							"name": "qs: Name=Janko+123",
+							"name": "/pol/z",
 							"originalRequest": {
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{osnovni_url}}/sample?Name=Janko 123",
+									"raw": "{{osnovni_url}}/pretraga/pol/z",
 									"host": [
 										"{{osnovni_url}}"
 									],
 									"path": [
-										"sample"
+										"pretraga",
+										"pol",
+										"z"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 07 Apr 2023 20:44:25 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Content-Length",
+									"value": "22"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"text\": \"Hello World\"\n}"
+						},
+						{
+							"name": "/dzedaj/da",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{osnovni_url}}/pretraga/dzedaj/da",
+									"host": [
+										"{{osnovni_url}}"
 									],
-									"query": [
-										{
-											"key": "Name",
-											"value": "Janko 123"
-										}
+									"path": [
+										"pretraga",
+										"dzedaj",
+										"da"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 07 Apr 2023 20:44:25 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Content-Length",
+									"value": "22"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"text\": \"Hello World\"\n}"
+						},
+						{
+							"name": "/dzedaj/ne",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{osnovni_url}}/pretraga/dzedaj/ne",
+									"host": [
+										"{{osnovni_url}}"
+									],
+									"path": [
+										"pretraga",
+										"dzedaj",
+										"ne"
 									]
 								}
 							},
@@ -2769,6 +3106,29 @@
 							"body": "{\n    \"text\": \"Hello World\"\n}"
 						}
 					]
+				},
+				{
+					"name": "qs: ime=An",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{osnovni_url}}/pretraga?ime=An",
+							"host": [
+								"{{osnovni_url}}"
+							],
+							"path": [
+								"pretraga"
+							],
+							"query": [
+								{
+									"key": "ime",
+									"value": "An"
+								}
+							]
+						}
+					},
+					"response": []
 				}
 			]
 		}
