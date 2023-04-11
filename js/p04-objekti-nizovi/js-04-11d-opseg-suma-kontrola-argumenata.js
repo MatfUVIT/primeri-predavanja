@@ -1,13 +1,11 @@
-function opseg(start, end, step) {
-    if (step == undefined)
-        step = 1;
+function opseg(start, end, step=1) {
     if (step == 0)
         return undefined;
     if (step > 0) {
         if (start > end)
             return [];
-        var niz = [];
-        for (var i = start; i <= end; i += step)
+        let niz = [];
+        for (let i = start; i <= end; i += step)
             niz.push(i);
         return niz;
     }

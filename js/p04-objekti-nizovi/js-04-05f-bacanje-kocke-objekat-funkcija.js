@@ -1,5 +1,5 @@
 const ukupnoEksperimenata = 15;
-const ukupnoBacanjaUEksperimentu = 100;
+const ukupnoBacanjaUEksperimentu = 150;
 
 const azurirajStatistiku = function (ishod, statistika) {
     switch (ishod) {

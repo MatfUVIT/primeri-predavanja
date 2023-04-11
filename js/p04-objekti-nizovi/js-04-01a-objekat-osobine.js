@@ -1,3 +1,4 @@
+
 // jedan jednostavan objekat
 let obj = {
     ime: 'Miki',

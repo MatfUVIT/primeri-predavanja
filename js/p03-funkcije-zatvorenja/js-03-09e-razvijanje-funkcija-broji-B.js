@@ -4,8 +4,8 @@ Napredniji pristup u razvijanju funkcija
 Prebrojiti pojave slova B
 */
 function prebrojZnak(niska, znak) {
-    var ret = 0;
-    for (var i = 0; i < niska.length; i++)
+    let ret = 0;
+    for (let i = 0; i < niska.length; i++)
         if (niska.charAt(i) == znak)
             ret++;
     return ret;

@@ -14,8 +14,8 @@ const pejsaz = function() {
     ravnica(1);
     planina(3);
     planina(2);
-    ravnica(4);
-    planina(2);
+    ravnica(1);
+    planina(3);
     return rezultat;
 };
 console.log(pejsaz());

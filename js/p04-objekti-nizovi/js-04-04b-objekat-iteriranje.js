@@ -1,4 +1,4 @@
-// kreiranje objekta
+//kreiranje objekta
 let obj = {
    drvo: 'Grljenje drveća',
    pica: 'Jedenje pice',
@@ -18,13 +18,13 @@ let obj = {
 for (let osobina in obj)
    console.log(`${osobina} - ${obj[osobina]}`)
 
-// console.log('---')
+console.log('---')
 
-// obj = {
-//    ime: 'Miki',
-//    length: 4
-// }
+obj = {
+   ime: 'Miki',
+   length: 4
+}
 
-// for (let osobina in obj)
-//    console.log(`${osobina} - ${obj[osobina]}`)
+for (let osobina in obj)
+   console.log(`${osobina} - ${obj[osobina]}`)
 
