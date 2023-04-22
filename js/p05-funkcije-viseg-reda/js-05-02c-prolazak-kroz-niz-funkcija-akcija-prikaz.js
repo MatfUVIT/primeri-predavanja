@@ -1,10 +1,26 @@
-let nizSvacega = ["Paja Patak", 1, 2, 3, "Miki Maus"];
+let nekiNiz = [1, 2, 3, 4, "mika", "zika"];
 
 // opštiji, način, pomoću  povratnog poziva
-const zaSvaki = function (niz, akcija) {
-    for (let i = 0; i < niz.length; i++)
-        akcija(niz[i]);
-}
+const zaSvaki = function(niz, akcija) {
+    for (let x of niz)
+        akcija(x);
+};
 
-zaSvaki(nizBrojeva, console.log);
+console.log("---");
+const prikazNaKonzolu = function(x) {
+    console.log(x);
+};
+zaSvaki(nekiNiz, prikazNaKonzolu);
+
+console.log("---");
+const prikazNaKonzolu2 = x=> console.log(x);
+zaSvaki(nekiNiz, prikazNaKonzolu2);
+
+console.log("---");
+zaSvaki(nekiNiz, function(x) {
+    console.log(x);
+});
+
+console.log("---");
+zaSvaki(nekiNiz, x => console.log(x));
 

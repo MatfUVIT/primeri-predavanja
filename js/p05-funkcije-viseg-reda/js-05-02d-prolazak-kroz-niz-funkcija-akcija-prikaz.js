@@ -1,28 +1,9 @@
-let nekiNiz = [1, 2, 3, 4, "mika", "zika"];
+let nizSvacega = ["Paja Patak", 1, 2, 3, "Miki Maus"];
 
-const zaSvaki = function(niz, akcija) {
-    for (let x of niz)
-        akcija(x);
-};
+const zaSvaki = function (niz, akcija) {
+    for (let i = 0; i < niz.length; i++)
+        akcija(niz[i]);
+}
 
-console.log("---");
-const prikazNaKonzolu = function(x) {
-    console.log(x);
-};
+zaSvaki(nizSvacega, console.log);
 
-zaSvaki(nekiNiz, prikazNaKonzolu);
-
-console.log("---");
-const prikazNaKonzolu2 = x => console.log(x);
-zaSvaki(nekiNiz, prikazNaKonzolu2);
-
-console.log("---");
-zaSvaki(nekiNiz, function(x) {
-    console.log(x);
-});
-
-console.log("---");
-zaSvaki(nekiNiz, x => console.log(x));
-
-console.log("---");
-zaSvaki(nekiNiz, console.log);

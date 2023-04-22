@@ -6,7 +6,10 @@ console.log(rez1);
 
 console.log('---')
 let niz = [1, 2, 3];
-rez2 = Array.from(niz, x => x + x);
+dupliraj = function(x){
+    return x+x;
+}
+rez2 = Array.from(niz, dupliraj);
 console.log(rez2);
 
 console.log('---')
@@ -14,7 +17,7 @@ console.log(niska);
 let rez3 = Array.from(niska, x => x.toUpperCase());
 console.log(rez3);
 
-// ако објекат није итерабилан, враће се празн низ
+// ако објекат није итерабилан, враће се празaн низ
 console.log('---')
 let objekat = {
     x: 2.5,

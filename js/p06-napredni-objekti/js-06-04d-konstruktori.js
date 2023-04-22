@@ -24,5 +24,4 @@ Tacka.prototype.centralnaSimetrija = function(xC, yC) {
 
 const tackaD = new Tacka(12, 12);
 tackaD.prikazi();
-const tackaE = tackaD.centralnaSimetrija(tackaC.x, tackaC.y);
-tackaE.prikazi();
+tackaD.centralnaSimetrija(tackaC.x, tackaC.y).prikazi();
