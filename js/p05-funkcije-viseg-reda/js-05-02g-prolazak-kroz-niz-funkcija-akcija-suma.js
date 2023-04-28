@@ -1,4 +1,4 @@
-let nizBrojeva = [1, 2, 30];
+let nizBrojeva = [1, 2, 30, -4];
 
 const zaSvaki = function(niz, akcija) {
     for (let elemenat of niz)

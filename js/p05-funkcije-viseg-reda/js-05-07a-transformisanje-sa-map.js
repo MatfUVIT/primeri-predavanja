@@ -7,10 +7,10 @@ const filter = function(niz, uslov) {
     return ispuniliUslov;
 };
 
-const map = function(niz, tarnsformacija) {
+const map = function(niz, transformacija) {
     let mapirano = [];
     for (let i = 0; i < niz.length; i++)
-        mapirano.push(tarnsformacija(niz[i]));
+        mapirano.push(transformacija(niz[i]));
     return mapirano;
 };
 
@@ -58,7 +58,7 @@ console.log(starijiOd90);
 // transformisanje starijih od 90 pomoću map
 console.log('---');
 console.log(map(starijiOd90, function(person) {
-    return person.name + " " + (person.died - person.born);
+    return person.name + " " + person.sex + " " + (person.died - person.born);
 }));
 
 

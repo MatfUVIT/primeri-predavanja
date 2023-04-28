@@ -17,5 +17,5 @@ let tackaB = {
 
 console.log('---');
 tackaA.pojaviSe.call(tackaB, 'B');
-tackaA.pojaviSe.apply(tackaB, ['B']);
+tackaA.pojaviSe.apply(tackaB, ['B', 'C']);
 tackaA.pojaviSe.bind(tackaB)('B');

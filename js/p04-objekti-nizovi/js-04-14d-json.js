@@ -3,5 +3,5 @@ let opis = '[{"name":"Emma de Milliano","sex":"f","born":1876,"died":1956,"fathe
 
 let family = JSON.parse(opis);
 console.log(family.length);
-for (var i = 0; i < family.length; i++)
+for (let i = 0; i < family.length; i++)
     console.log(family[i].name + " " + family[i].sex + " " + family[i].born + " " + family[i].died);

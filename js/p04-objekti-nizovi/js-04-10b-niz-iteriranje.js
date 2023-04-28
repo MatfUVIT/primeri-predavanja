@@ -3,6 +3,8 @@ let niz = [1, 3, 'Mika', 'Pera', false];
 
 niz[7] = 'novo!!!';
 
+niz[3.5] = 'Paja';
+
 console.log('---');
 for (let i = 0; i < niz.length; i++)
    console.log(niz[i]);

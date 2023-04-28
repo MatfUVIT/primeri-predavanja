@@ -13,7 +13,7 @@ const prikazNaKonzolu = function(x) {
 zaSvaki(nekiNiz, prikazNaKonzolu);
 
 console.log("---");
-const prikazNaKonzolu2 = x=> console.log(x);
+const prikazNaKonzolu2 = x => console.log(x);
 zaSvaki(nekiNiz, prikazNaKonzolu2);
 
 console.log("---");

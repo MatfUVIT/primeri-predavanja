@@ -31,7 +31,7 @@ console.log(brojevi.reduce((a, b) => a + b, 0));
 console.log('--- Suma pozitivnih ---');
 console.log(
     brojevi
-    .filter(a => a >= 0)
+    .filter(a => a > 0)
     .reduce((a, b) => a + b, 0));
 
 // odredjivanje proizvoda svih clanova niza

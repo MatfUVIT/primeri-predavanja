@@ -17,5 +17,9 @@ rezultat = opseg(1, 10, 0.3);
 console.log(rezultat);
 
 console.log("---");
-rezultat = opseg('A'.charCodeAt(0), 'Z'.charCodeAt(0), 1).map(x => String.fromCharCode(x));
+rezultat = opseg('a'.charCodeAt(0), 'z'.charCodeAt(0), 1).map(x => String.fromCharCode(x));
+console.log(rezultat);
+
+console.log("---");
+rezultat = opseg(32, 255, 1).map(x => String.fromCharCode(x));
 console.log(rezultat);

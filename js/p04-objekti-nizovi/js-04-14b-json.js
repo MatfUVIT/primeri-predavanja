@@ -1,4 +1,4 @@
-let opis = '{"name":"Miki Maus","born":1924, "father":"Volt Dizni"}';
+let opis = '{"ime":"Miki Maus","born":1980,"father":"Volt Dizni","wife":"Mini Maus","funClub":["Paja Patak","Dusko Dugousko"],"dog":"Pluton"}';
 
 let miki = JSON.parse(opis);
 console.log(miki);

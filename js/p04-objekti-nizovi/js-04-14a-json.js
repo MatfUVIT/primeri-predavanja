@@ -1,5 +1,5 @@
 let person = {
-    name: "Miki Maus",
+    ime: "Miki Maus",
     born: 1980,
     father: "Volt Dizni",
     wife: "Mini Maus",
