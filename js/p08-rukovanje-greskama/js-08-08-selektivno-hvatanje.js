@@ -52,7 +52,7 @@ for (let i = 0; i < 50; i++)
         if (error instanceof NeMozeIspodZemljeError)
             console.log("Podzemlje: " + error + " ***");
         else if (error instanceof NeMozePrekoNebaError)
-            console.log("Nembeski svod: " + error + " ***");
+            console.log("Nebeski svod: " + error + " ***");
         else {
             console.log("Nesto je jako pogresno: *** " + error + " ***");
             throw error;

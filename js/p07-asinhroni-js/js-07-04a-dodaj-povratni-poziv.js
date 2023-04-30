@@ -11,7 +11,7 @@ function dodajSveRedom() {
     dodajNisku('', 'A', result => {
         dodajNisku(result, 'Б', result2 => {
             dodajNisku(result2, 'В', result3 => {
-                console.log(result3);
+                console.log(result3 );
             });
         });
     });

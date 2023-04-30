@@ -16,7 +16,7 @@ function kvadratniKoren(izvorPodataka) {
         throw err;
     }
     if (broj < 0) {
-        const err = new Error("nemoguce korenovati nesto sto nije broj")
+        const err = new Error("nemoguce korenovati negativan broj")
         throw err;
     }
     let rezultat = Math.sqrt(broj);

@@ -6,6 +6,7 @@ const proracun = function () {
         return x * x;
     }
 
+    
     // publikovanje "javne" funkcije
     return {
         proracunaj: kvadrat,
