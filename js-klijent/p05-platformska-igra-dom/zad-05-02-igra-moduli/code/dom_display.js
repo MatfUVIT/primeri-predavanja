@@ -72,6 +72,3 @@ DOMDisplay.prototype.scrollPlayerIntoView = function () {
         this.wrap.scrollTop = center.y + margin - height;
 };
 
-DOMDisplay.prototype.clear = function () {
-    this.wrap.parentNode.removeChild(this.wrap);
-};

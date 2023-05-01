@@ -1,8 +1,8 @@
 var results = [
-  {name: "Satisfied", count: 1043, color: "lightblue"},
-  {name: "Neutral", count: 563, color: "lightgreen"},
-  {name: "Unsatisfied", count: 510, color: "pink"},
-  {name: "No comment", count: 175, color: "silver"}
+  { name: "Satisfied", count: 1043, color: "lightblue" },
+  { name: "Neutral", count: 563, color: "lightgreen" },
+  { name: "Unsatisfied", count: 510, color: "pink" },
+  { name: "No comment", count: 175, color: "silver" }
 ];
 
 function flipHorizontally(context, around) {
@@ -34,11 +34,11 @@ function CanvasDisplay(parent, level) {
   this.drawFrame(0);
 }
 
-CanvasDisplay.prototype.clear = function() {
+CanvasDisplay.prototype.clear = function () {
   this.canvas.parentNode.removeChild(this.canvas);
 };
 
-CanvasDisplay.prototype.drawFrame = function(step) {
+CanvasDisplay.prototype.drawFrame = function (step) {
   this.animationTime += step;
 
   this.updateViewport();
@@ -47,7 +47,7 @@ CanvasDisplay.prototype.drawFrame = function(step) {
   this.drawActors();
 };
 
-CanvasDisplay.prototype.updateViewport = function() {
+CanvasDisplay.prototype.updateViewport = function () {
   var view = this.viewport, margin = view.width / 3;
   var player = this.level.player;
   var center = player.pos.plus(player.size.times(0.5));
@@ -56,15 +56,15 @@ CanvasDisplay.prototype.updateViewport = function() {
     view.left = Math.max(center.x - margin, 0);
   else if (center.x > view.left + view.width - margin)
     view.left = Math.min(center.x + margin - view.width,
-                         this.level.width - view.width);
+      this.level.width - view.width);
   if (center.y < view.top + margin)
     view.top = Math.max(center.y - margin, 0);
   else if (center.y > view.top + view.height - margin)
     view.top = Math.min(center.y + margin - view.height,
-                        this.level.height - view.height);
+      this.level.height - view.height);
 };
 
-CanvasDisplay.prototype.clearDisplay = function() {
+CanvasDisplay.prototype.clearDisplay = function () {
   if (this.level.status == "won")
     this.cx.fillStyle = "rgb(68, 191, 255)";
   else if (this.level.status == "lost")
@@ -72,13 +72,13 @@ CanvasDisplay.prototype.clearDisplay = function() {
   else
     this.cx.fillStyle = "rgb(52, 166, 251)";
   this.cx.fillRect(0, 0,
-                   this.canvas.width, this.canvas.height);
+    this.canvas.width, this.canvas.height);
 };
 
 var otherSprites = document.createElement("img");
 otherSprites.src = "img/sprites.png";
 
-CanvasDisplay.prototype.drawBackground = function() {
+CanvasDisplay.prototype.drawBackground = function () {
   var view = this.viewport;
   var xStart = Math.floor(view.left);
   var xEnd = Math.ceil(view.left + view.width);
@@ -93,8 +93,8 @@ CanvasDisplay.prototype.drawBackground = function() {
       var screenY = (y - view.top) * scale;
       var tileX = tile == "lava" ? scale : 0;
       this.cx.drawImage(otherSprites,
-                        tileX,         0, scale, scale,
-                        screenX, screenY, scale, scale);
+        tileX, 0, scale, scale,
+        screenX, screenY, scale, scale);
     }
   }
 };
@@ -103,8 +103,8 @@ var playerSprites = document.createElement("img");
 playerSprites.src = "img/player.png";
 var playerXOverlap = 4;
 
-CanvasDisplay.prototype.drawPlayer = function(x, y, width,
-                                              height) {
+CanvasDisplay.prototype.drawPlayer = function (x, y, width,
+  height) {
   var sprite = 8, player = this.level.player;
   width += playerXOverlap * 2;
   x -= playerXOverlap;
@@ -121,14 +121,14 @@ CanvasDisplay.prototype.drawPlayer = function(x, y, width,
     flipHorizontally(this.cx, x + width / 2);
 
   this.cx.drawImage(playerSprites,
-                    sprite * width, 0, width, height,
-                    x,              y, width, height);
+    sprite * width, 0, width, height,
+    x, y, width, height);
 
   this.cx.restore();
 };
 
-CanvasDisplay.prototype.drawActors = function() {
-  this.level.actors.forEach(function(actor) {
+CanvasDisplay.prototype.drawActors = function () {
+  this.level.actors.forEach(function (actor) {
     var width = actor.size.x * scale;
     var height = actor.size.y * scale;
     var x = (actor.pos.x - this.viewport.left) * scale;
@@ -138,8 +138,8 @@ CanvasDisplay.prototype.drawActors = function() {
     } else {
       var tileX = (actor.type == "coin" ? 2 : 1) * scale;
       this.cx.drawImage(otherSprites,
-                        tileX, 0, width, height,
-                        x,     y, width, height);
+        tileX, 0, width, height,
+        x, y, width, height);
     }
   }, this);
 };

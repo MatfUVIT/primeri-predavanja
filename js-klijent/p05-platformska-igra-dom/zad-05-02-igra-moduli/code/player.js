@@ -1,3 +1,5 @@
+import { Vector } from './vector.js'
+
 function Player(pos) {
     this.pos = pos.plus(new Vector(0, -0.5));
     this.size = new Vector(0.8, 1.5);
@@ -56,4 +58,5 @@ Player.prototype.act = function (step, level, keys) {
     }
 };
 
+export { Player };
 

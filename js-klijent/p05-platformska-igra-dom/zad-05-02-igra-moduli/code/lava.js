@@ -1,3 +1,5 @@
+import { Vector } from './vector.js'
+
 function Lava(pos, ch) {
     this.pos = pos;
     this.size = new Vector(1, 1);
@@ -12,3 +14,5 @@ function Lava(pos, ch) {
 }
 
 Lava.prototype.type = "lava";
+
+export { Lava };

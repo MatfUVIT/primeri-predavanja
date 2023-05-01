@@ -1,3 +1,5 @@
+import { Vector } from './vector.js'
+
 function Coin(pos) {
     this.basePos = this.pos = pos.plus(new Vector(0.2, 0.1));
     this.size = new Vector(0.6, 0.6);
@@ -14,3 +16,4 @@ Coin.prototype.act = function (step) {
     this.pos = this.basePos.plus(new Vector(0, wobblePos));
 };
 
+export { Coin };

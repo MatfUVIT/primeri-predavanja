@@ -1,5 +1,4 @@
 
-
 var arrowCodes = { 37: "left", 38: "up", 39: "right" };
 
 function trackKeys(codes) {
@@ -49,14 +48,19 @@ function runLevel(level, Display, andThen) {
 
 function runGame(plans, Display) {
   function startLevel(n) {
-    runLevel(new Level(plans[n]), Display, function (status) {
-      if (status == "lost")
-        startLevel(n);
-      else if (n < plans.length - 1)
-        startLevel(n + 1);
-      else
-        console.log("You win!");
-    });
+    (async () => {
+      let levelModule = await import("./level.js");
+      let lvl = new levelModule.Level(plans[n]);
+      runLevel(lvl, Display, function (status) {
+        if (status == "lost")
+          startLevel(n);
+        else if (n < plans.length - 1)
+          startLevel(n + 1);
+        else
+          console.log("You win!");
+      });
+    })();
   }
   startLevel(0);
 }
+

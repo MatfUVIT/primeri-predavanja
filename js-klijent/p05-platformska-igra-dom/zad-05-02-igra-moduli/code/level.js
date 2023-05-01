@@ -1,3 +1,8 @@
+import { Vector } from './vector.js'
+import { Coin } from './coin.js'
+import { Lava } from './lava.js';
+import { Player } from './player.js';
+
 var simpleLevelPlan = [
     "                      ",
     "                      ",
@@ -122,3 +127,4 @@ Level.prototype.playerTouched = function (type, actor) {
 
 var simpleLevel = new Level(simpleLevelPlan);
 
+export {Level};

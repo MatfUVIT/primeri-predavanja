@@ -9,3 +9,5 @@ Vector.prototype.plus = function (other) {
 Vector.prototype.times = function (factor) {
     return new Vector(this.x * factor, this.y * factor);
 };
+
+export { Vector };
