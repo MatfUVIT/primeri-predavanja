@@ -937,9 +937,22 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{osnovni_url}}",
+							"raw": "{{osnovni_url}}/paja?teca=Baja&zena=Pata",
 							"host": [
 								"{{osnovni_url}}"
+							],
+							"path": [
+								"paja"
+							],
+							"query": [
+								{
+									"key": "teca",
+									"value": "Baja"
+								},
+								{
+									"key": "zena",
+									"value": "Pata"
+								}
 							]
 						},
 						"description": "liss2-uvit"
@@ -1124,12 +1137,15 @@
 						"method": "POST",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:7000",
+							"raw": "http://localhost:7000/miki",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "7000"
+							"port": "7000",
+							"path": [
+								"miki"
+							]
 						},
 						"description": "liss2-uvit"
 					},
@@ -1264,14 +1280,156 @@
 			"name": "js-01-05-ret-file",
 			"item": [
 				{
-					"name": "veb-server",
+					"name": "veb-server-slika",
 					"request": {
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{osnovni_url}}",
+							"raw": "{{osnovni_url}}/download.jfif",
 							"host": [
 								"{{osnovni_url}}"
+							],
+							"path": [
+								"download.jfif"
+							]
+						},
+						"description": "liss2-uvit"
+					},
+					"response": [
+						{
+							"name": "miki-maus.txt (postoji)",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{osnovni_url}}/miki-maus.txt",
+									"host": [
+										"{{osnovni_url}}"
+									],
+									"path": [
+										"miki-maus.txt"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "paja-patak.txt (ne postoji)",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{osnovni_url}}/paja-patak.txt",
+									"host": [
+										"{{osnovni_url}}"
+									],
+									"path": [
+										"paja-patak.txt"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "veb-strana1.html (postoji)",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{osnovni_url}}/veb-strana1.html",
+									"host": [
+										"{{osnovni_url}}"
+									],
+									"path": [
+										"veb-strana1.html"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "veb-strana2.html (postoji)",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{osnovni_url}}/veb-strana2.html",
+									"host": [
+										"{{osnovni_url}}"
+									],
+									"path": [
+										"veb-strana2.html"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "veb-strana3.html (ne postoji)",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{osnovni_url}}/veb-strana3.html",
+									"host": [
+										"{{osnovni_url}}"
+									],
+									"path": [
+										"veb-strana3.html"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "download.jfif (postoji)",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{osnovni_url}}/download.jfif",
+									"host": [
+										"{{osnovni_url}}"
+									],
+									"path": [
+										"download.jfif"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "veb-server-strana",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{osnovni_url}}/veb-strana1.html",
+							"host": [
+								"{{osnovni_url}}"
+							],
+							"path": [
+								"veb-strana1.html"
 							]
 						},
 						"description": "liss2-uvit"
@@ -1405,9 +1563,12 @@
 						"method": "POST",
 						"header": [],
 						"url": {
-							"raw": "{{osnovni_url}}",
+							"raw": "{{osnovni_url}}/miki-maus.txt",
 							"host": [
 								"{{osnovni_url}}"
+							],
+							"path": [
+								"miki-maus.txt"
 							]
 						},
 						"description": "liss2-uvit"
@@ -1521,14 +1682,738 @@
 			"name": "js-01-06-ret-get-params",
 			"item": [
 				{
-					"name": "veb-server",
+					"name": "veb-server-paja-patak",
 					"request": {
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{osnovni_url}}",
+							"raw": "{{osnovni_url}}/paja/patak",
 							"host": [
 								"{{osnovni_url}}"
+							],
+							"path": [
+								"paja",
+								"patak"
+							]
+						},
+						"description": "liss2-uvit"
+					},
+					"response": [
+						{
+							"name": "qs: param1=vrednost01",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{osnovni_url}}?param1=vrednost01",
+									"host": [
+										"{{osnovni_url}}"
+									],
+									"query": [
+										{
+											"key": "param1",
+											"value": "vrednost01"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "/miki qs: param=vrednost",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{osnovni_url}}/miki?param=vrednost",
+									"host": [
+										"{{osnovni_url}}"
+									],
+									"path": [
+										"miki"
+									],
+									"query": [
+										{
+											"key": "param",
+											"value": "vrednost"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "qs: p1=vr1 param2=v2",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{osnovni_url}}?p1=vr1&param2=v2",
+									"host": [
+										"{{osnovni_url}}"
+									],
+									"query": [
+										{
+											"key": "p1",
+											"value": "vr1"
+										},
+										{
+											"key": "param2",
+											"value": "v2"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "/miki/maus qs: param=vrednost p2=v2",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{osnovni_url}}/miki/maus?param=vrednost&p2=v2",
+									"host": [
+										"{{osnovni_url}}"
+									],
+									"path": [
+										"miki",
+										"maus"
+									],
+									"query": [
+										{
+											"key": "param",
+											"value": "vrednost"
+										},
+										{
+											"key": "p2",
+											"value": "v2"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "/miki/maus qs: notexist",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{osnovni_url}}/miki/maus",
+									"host": [
+										"{{osnovni_url}}"
+									],
+									"path": [
+										"miki",
+										"maus"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "/miki/maus qs: invalid",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{osnovni_url}}/miki/maus paja patak",
+									"host": [
+										"{{osnovni_url}}"
+									],
+									"path": [
+										"miki",
+										"maus paja patak"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "veb-server-paja-patak-zena",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{osnovni_url}}/paja/patak?zena=Pata",
+							"host": [
+								"{{osnovni_url}}"
+							],
+							"path": [
+								"paja",
+								"patak"
+							],
+							"query": [
+								{
+									"key": "zena",
+									"value": "Pata"
+								}
+							]
+						},
+						"description": "liss2-uvit"
+					},
+					"response": [
+						{
+							"name": "qs: param1=vrednost01",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{osnovni_url}}?param1=vrednost01",
+									"host": [
+										"{{osnovni_url}}"
+									],
+									"query": [
+										{
+											"key": "param1",
+											"value": "vrednost01"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "/miki qs: param=vrednost",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{osnovni_url}}/miki?param=vrednost",
+									"host": [
+										"{{osnovni_url}}"
+									],
+									"path": [
+										"miki"
+									],
+									"query": [
+										{
+											"key": "param",
+											"value": "vrednost"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "qs: p1=vr1 param2=v2",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{osnovni_url}}?p1=vr1&param2=v2",
+									"host": [
+										"{{osnovni_url}}"
+									],
+									"query": [
+										{
+											"key": "p1",
+											"value": "vr1"
+										},
+										{
+											"key": "param2",
+											"value": "v2"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "/miki/maus qs: param=vrednost p2=v2",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{osnovni_url}}/miki/maus?param=vrednost&p2=v2",
+									"host": [
+										"{{osnovni_url}}"
+									],
+									"path": [
+										"miki",
+										"maus"
+									],
+									"query": [
+										{
+											"key": "param",
+											"value": "vrednost"
+										},
+										{
+											"key": "p2",
+											"value": "v2"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "/miki/maus qs: notexist",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{osnovni_url}}/miki/maus",
+									"host": [
+										"{{osnovni_url}}"
+									],
+									"path": [
+										"miki",
+										"maus"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "/miki/maus qs: invalid",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{osnovni_url}}/miki/maus paja patak",
+									"host": [
+										"{{osnovni_url}}"
+									],
+									"path": [
+										"miki",
+										"maus paja patak"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "veb-server-paja-patak-zena-ujak",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{osnovni_url}}/paja/patak?zena=Pata&ujak=Baja",
+							"host": [
+								"{{osnovni_url}}"
+							],
+							"path": [
+								"paja",
+								"patak"
+							],
+							"query": [
+								{
+									"key": "zena",
+									"value": "Pata"
+								},
+								{
+									"key": "ujak",
+									"value": "Baja"
+								}
+							]
+						},
+						"description": "liss2-uvit"
+					},
+					"response": [
+						{
+							"name": "qs: param1=vrednost01",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{osnovni_url}}?param1=vrednost01",
+									"host": [
+										"{{osnovni_url}}"
+									],
+									"query": [
+										{
+											"key": "param1",
+											"value": "vrednost01"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "/miki qs: param=vrednost",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{osnovni_url}}/miki?param=vrednost",
+									"host": [
+										"{{osnovni_url}}"
+									],
+									"path": [
+										"miki"
+									],
+									"query": [
+										{
+											"key": "param",
+											"value": "vrednost"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "qs: p1=vr1 param2=v2",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{osnovni_url}}?p1=vr1&param2=v2",
+									"host": [
+										"{{osnovni_url}}"
+									],
+									"query": [
+										{
+											"key": "p1",
+											"value": "vr1"
+										},
+										{
+											"key": "param2",
+											"value": "v2"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "/miki/maus qs: param=vrednost p2=v2",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{osnovni_url}}/miki/maus?param=vrednost&p2=v2",
+									"host": [
+										"{{osnovni_url}}"
+									],
+									"path": [
+										"miki",
+										"maus"
+									],
+									"query": [
+										{
+											"key": "param",
+											"value": "vrednost"
+										},
+										{
+											"key": "p2",
+											"value": "v2"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "/miki/maus qs: notexist",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{osnovni_url}}/miki/maus",
+									"host": [
+										"{{osnovni_url}}"
+									],
+									"path": [
+										"miki",
+										"maus"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "/miki/maus qs: invalid",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{osnovni_url}}/miki/maus paja patak",
+									"host": [
+										"{{osnovni_url}}"
+									],
+									"path": [
+										"miki",
+										"maus paja patak"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "veb-server-paja-patak-zena-ujak-sestrici",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{osnovni_url}}/paja/patak?sestrici=Raja,Gaja,Vlaja&zena=Pata&ujak=Baja",
+							"host": [
+								"{{osnovni_url}}"
+							],
+							"path": [
+								"paja",
+								"patak"
+							],
+							"query": [
+								{
+									"key": "sestrici",
+									"value": "Raja,Gaja,Vlaja"
+								},
+								{
+									"key": "zena",
+									"value": "Pata"
+								},
+								{
+									"key": "ujak",
+									"value": "Baja"
+								}
+							]
+						},
+						"description": "liss2-uvit"
+					},
+					"response": [
+						{
+							"name": "qs: param1=vrednost01",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{osnovni_url}}?param1=vrednost01",
+									"host": [
+										"{{osnovni_url}}"
+									],
+									"query": [
+										{
+											"key": "param1",
+											"value": "vrednost01"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "/miki qs: param=vrednost",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{osnovni_url}}/miki?param=vrednost",
+									"host": [
+										"{{osnovni_url}}"
+									],
+									"path": [
+										"miki"
+									],
+									"query": [
+										{
+											"key": "param",
+											"value": "vrednost"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "qs: p1=vr1 param2=v2",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{osnovni_url}}?p1=vr1&param2=v2",
+									"host": [
+										"{{osnovni_url}}"
+									],
+									"query": [
+										{
+											"key": "p1",
+											"value": "vr1"
+										},
+										{
+											"key": "param2",
+											"value": "v2"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "/miki/maus qs: param=vrednost p2=v2",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{osnovni_url}}/miki/maus?param=vrednost&p2=v2",
+									"host": [
+										"{{osnovni_url}}"
+									],
+									"path": [
+										"miki",
+										"maus"
+									],
+									"query": [
+										{
+											"key": "param",
+											"value": "vrednost"
+										},
+										{
+											"key": "p2",
+											"value": "v2"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "/miki/maus qs: notexist",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{osnovni_url}}/miki/maus",
+									"host": [
+										"{{osnovni_url}}"
+									],
+									"path": [
+										"miki",
+										"maus"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "/miki/maus qs: invalid",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{osnovni_url}}/miki/maus paja patak",
+									"host": [
+										"{{osnovni_url}}"
+									],
+									"path": [
+										"miki",
+										"maus paja patak"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "veb-server-paja-patak-zena-ujak-sestrici2",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{osnovni_url}}/paja/patak?sestrici=Raja, Gaja, i Vlaja&zena=Pata&ujak=Baja",
+							"host": [
+								"{{osnovni_url}}"
+							],
+							"path": [
+								"paja",
+								"patak"
+							],
+							"query": [
+								{
+									"key": "sestrici",
+									"value": "Raja, Gaja, i Vlaja"
+								},
+								{
+									"key": "zena",
+									"value": "Pata"
+								},
+								{
+									"key": "ujak",
+									"value": "Baja"
+								}
 							]
 						},
 						"description": "liss2-uvit"
@@ -1691,15 +2576,9 @@
 						"method": "POST",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:54492/api/Category",
-							"protocol": "http",
+							"raw": "{{osnovni_url}}",
 							"host": [
-								"localhost"
-							],
-							"port": "54492",
-							"path": [
-								"api",
-								"Category"
+								"{{osnovni_url}}"
 							]
 						},
 						"description": "zahtev za liss2"
