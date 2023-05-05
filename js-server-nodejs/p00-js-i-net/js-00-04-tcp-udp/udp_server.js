@@ -21,7 +21,8 @@ server.on('error', (error) => {
 
 // emits on new datagram msg
 server.on('message', (msg,info) => {
-    log("udp_server", "info", msg.toString() + ` | Received ${msg.length} bytes from ${info.address}:${info.port}`)
+    log("udp_server", "info", msg.toString() 
+        + ` | Received ${msg.length} bytes from ${info.address}:${info.port}`)
 
     let timestp = new Date()
     const response = {
