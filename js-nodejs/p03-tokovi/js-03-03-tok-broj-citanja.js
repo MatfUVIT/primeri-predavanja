@@ -8,7 +8,7 @@ let brojac = 0;
 tokZaCitanje.on('data',
     (procitano) => {
         brojac++;
-        console.log(brojac + '---'+ procitano.length);
+        console.log(brojac);
     });
 tokZaCitanje.on('end',
     () => console.log("---\n" + brojac));
