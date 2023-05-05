@@ -9,6 +9,6 @@ http.createServer(function (zahtev, odgovor) {
 
     let tekuceVreme = new Date();
     console.log("---" + tekuceVreme + "---");
-    console.log(zahtev);
+    //console.log(zahtev);
 }).listen(port);
 console.log(`Veb server osluskuje zahteve na portu ${port}...\n`);

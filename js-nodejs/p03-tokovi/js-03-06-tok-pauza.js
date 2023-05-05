@@ -6,7 +6,7 @@ let brojac = 0;
 tokZaCitanje.on('data',
     (prispeliPodaci) => {
         brojac++;
-        console.log(brojac);
+        console.log(brojac + '---' + prispeliPodaci.length);
         if (brojac == 3)
             tokZaCitanje.pause();
     });

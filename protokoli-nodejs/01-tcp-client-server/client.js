@@ -1,6 +1,6 @@
 const net = require('net');
 
-const server = 'liss2.math.rs'; //'192.168.100.11'; //'127.0.0.1';//'localhost';
+const server = '127.0.0.1';//'localhost';
 const listeningPort = 55351;
 
 // creating a custom socket client and connecting it....
@@ -22,7 +22,7 @@ client.on('connect',
         console.log('Klijent osluškuje na portu: ' + port);
         console.log('IP adresa klijenta:' + ipaddr);
         console.log('Vrsta IP protokola za klijenta (IP4/IP6) : ' + family);
-        client.write('pozdrav\r\nod klijenta\r\n');
+        client.write('miki maus');
     });
 
 client.setEncoding('utf8');

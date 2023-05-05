@@ -1,4 +1,4 @@
-let datoteka = require('fs')
+const datoteka = require('fs')
 
 datoteka.readFile('test.txt',
     (err, data) => {
