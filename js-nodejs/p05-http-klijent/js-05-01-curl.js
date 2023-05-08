@@ -2,19 +2,20 @@ const https = require('https');
 
 let adresa = 'https://www.b92.net/';
 
-https.get(adresa, res => {
+https.get(adresa, odgovor => {
     let podaci = [];
-    const zaglavljeDatum = res.headers && res.headers.date ? res.headers.date : 'no response date';
-    console.log('Status:', res.statusCode);
+
+    const zaglavljeDatum = odgovor.headers && odgovor.headers.date ? odgovor.headers.date : 'no response date';
+    console.log('Status:', odgovor.statusCode);
     console.log('Datum u zaglavlju:', zaglavljeDatum);
 
-    res.on('data', sekcija => {
-        podaci.push(Buffer(sekcija).toString());
+    odgovor.on('data', deo => {
+        podaci.push(Buffer(deo).toString());
     });
 
-    res.on('end', () => {
+    odgovor.on('end', () => {
         console.log('Kraj odgovora: ');
-        for( deo of podaci)
+        for(deo of podaci)
             console.log(deo);
     });
 

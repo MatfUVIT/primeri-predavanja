@@ -14,7 +14,7 @@ emiter.on('pokrenut', (a, b) => {
     console.log(a, b, this, this === emiter);
 });
 
-emiter.emit('pokrenut', 'a', 6);
+emiter.emit('pokrenut', 'a', 6, 7);
 
 emiter.emit('pokrenut', 'mika');
 

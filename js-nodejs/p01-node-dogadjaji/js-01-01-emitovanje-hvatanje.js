@@ -4,8 +4,8 @@ class EmiterDogadjaja extends Dogadjaj {}
 
 const emiter = new EmiterDogadjaja();
 
-emiter.on('dogadjaj', () => console.log('Odgovaram na emitovani dogadjaj!'));
+emiter.on('dogadjaj', x => console.log(`Odgovaram na emitovani dogadjaj (sa argumentom ${x})!`));
 
-emiter.emit('dogadjaj');
+emiter.emit('dogadjaj', 'miki');
 
-emiter.emit('dogadjaj');
+emiter.emit('dogadjaj', 2, 3);

@@ -9,4 +9,5 @@ export { _setPodatak as setPodatak };
 const _getPodatak = function() {
     return podatakKojiSeCuva;
 };
+
 export { _getPodatak as getPodatak };

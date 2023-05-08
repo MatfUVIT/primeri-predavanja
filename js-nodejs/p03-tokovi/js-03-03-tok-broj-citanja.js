@@ -5,10 +5,12 @@ console.log('\n');
 let tokZaCitanje = fs.createReadStream('lorem.txt');
 tokZaCitanje.setEncoding('utf8');
 let brojac = 0;
+
 tokZaCitanje.on('data',
-    (procitano) => {
+    procitano => {
         brojac++;
-        console.log(brojac);
+        console.log(brojac + ' ' + procitano.length);
     });
+
 tokZaCitanje.on('end',
     () => console.log("---\n" + brojac));
