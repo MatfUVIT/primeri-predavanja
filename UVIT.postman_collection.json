@@ -2888,6 +2888,54 @@
 			"item": [
 				{
 					"name": "veb-server",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "{{osnovni_url}}/pozdrav",
+							"host": [
+								"{{osnovni_url}}"
+							],
+							"path": [
+								"pozdrav"
+							]
+						},
+						"description": "liss2-uvit"
+					},
+					"response": [
+						{
+							"name": "qs: not exist",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{osnovni_url}}",
+									"host": [
+										"{{osnovni_url}}"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "js-03-02-form-processing-post",
+			"item": [
+				{
+					"name": "veb-server",
 					"request": {
 						"method": "GET",
 						"header": [],
@@ -2895,6 +2943,77 @@
 							"raw": "{{osnovni_url}}",
 							"host": [
 								"{{osnovni_url}}"
+							]
+						},
+						"description": "liss2-uvit"
+					},
+					"response": [
+						{
+							"name": "start",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{osnovni_url}}",
+									"host": [
+										"{{osnovni_url}}"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "start-get",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{osnovni_url}}/d-d-get",
+									"host": [
+										"{{osnovni_url}}"
+									],
+									"path": [
+										"d-d-get"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "veb-server",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "ime",
+									"value": "Paja",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "donald.duck@disney.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{osnovni_url}}/pozdrav",
+							"host": [
+								"{{osnovni_url}}"
+							],
+							"path": [
+								"pozdrav"
 							]
 						},
 						"description": "liss2-uvit"
