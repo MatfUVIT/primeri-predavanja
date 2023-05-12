@@ -16,7 +16,10 @@
       console.log("Middle button");
     else if (event.which == 3)
       console.log("Right button");
-    console.log(`(x,y):(${event.pageX},${event.pageY})`);
+    console.log(`(Px,Py):(${event.pageX},${event.pageY})`);
+    console.log(`(Cx,Cy):(${event.clientX},${event.clientY})`);
+    console.log(`(Sx,Sy):(${event.screenX},${event.screenY})`);
+    console.log(`(x,y):(${event.x},${event.y})`);
   });
 </script>
 </body>

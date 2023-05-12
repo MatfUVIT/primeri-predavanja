@@ -1,14 +1,14 @@
-const curl = url => {
+const curl = adresa => {
     return new Promise((resolve, reject) => {
         const http = require('http');
         const https = require('https');
 
         let client = http;
-        if (url.toString().indexOf("https") === 0) {
+        if (adresa.toString().indexOf("https") === 0) {
             client = https;
         }
 
-        client.get(url, (resp) => {
+        client.get(adresa, (resp) => {
             let data = '';
 
             // A chunk of data has been recieved.
@@ -29,4 +29,4 @@ const curl = url => {
 
 (async (url) => {
     console.log(await curl(url));
-})('https://www.b92.net/');
+})('http://www.math.rs/');

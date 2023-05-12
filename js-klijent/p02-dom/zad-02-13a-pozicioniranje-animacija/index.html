@@ -7,7 +7,7 @@
   var angle = 0, lastTime = null;
   function animate(time) {
     if (lastTime != null)
-      angle += (time - lastTime) * 0.001;
+      angle += (time - lastTime) * 0.01;
     lastTime = time;
     cat.style.top = 250+(Math.sin(angle) * 300) + "px";
     cat.style.left = (Math.cos(angle) * 300) + "px";

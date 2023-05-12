@@ -1,6 +1,6 @@
-document.title = 'Probni dokument'; //naziv dokumenta (title)
-document.bgColor = '#070707';
-document.fgColor = '#00FFFF';
+document.title = 'Документ'; //naziv dokumenta (title)
+document.bgColor = '#0f0f0f';
+document.fgColor = '#FF0000';
 
 history.length = 7;
 

@@ -8,7 +8,7 @@ function prikazStrane(response, pathName, queryData) {
         if (izbor == "pozdrav") {
             response.writeHead(200);
             response.write(
-                `<html>
+    `<html>
       <body>
       Dobro dosli, ${queryData.ime}<br>
       Vasa email adresa je: ${queryData.email} <br>
@@ -16,7 +16,7 @@ function prikazStrane(response, pathName, queryData) {
       </html>`);
             response.end();
         } else {
-            fs.readFile(__dirname + '/' + izbor, function(err, data) {
+            fs.readFile(__dirname + '/' + izbor, function (err, data) {
                 if (err) {
                     response.writeHead(500, { 'Content-type': 'text/plan' });
                     response.write(

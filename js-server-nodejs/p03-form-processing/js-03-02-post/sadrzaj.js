@@ -1,7 +1,7 @@
 const contentMap = {
     '/': 'dobro-dosli-post.html',
-    '/dobro-dosli-post': 'dobro-dosli-post.html',
-    '/dobro-dosli-get': 'dobro-dosli-get.html',
+    '/d-d-post': 'dobro-dosli-post.html',
+    '/d-d-get': 'dobro-dosli-get.html',
     '/pozdrav': 'pozdrav'
 };
 
