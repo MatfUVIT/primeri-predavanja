@@ -27,6 +27,15 @@ const curl = adresa => {
     });
 };
 
+//const adresa = 'http://www.math.rs/';
+const adresa = 'https://www.b92.net/';
+
+// aget = (async (url) => {
+//     console.log(await curl(url));
+// });
+
+// aget(adresa);
+
 (async (url) => {
     console.log(await curl(url));
-})('http://www.math.rs/');
+})(adresa);

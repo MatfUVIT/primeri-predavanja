@@ -1,4 +1,3 @@
-const adresa = 'https://www.b92.net/';
 
 async function fetchSite(adresa) {
 	try {
@@ -13,6 +12,8 @@ async function fetchSite(adresa) {
 		console.log(error);
 	}
 }
+
+const adresa = 'https://www.b92.net/';
 
 fetchSite(adresa);
 

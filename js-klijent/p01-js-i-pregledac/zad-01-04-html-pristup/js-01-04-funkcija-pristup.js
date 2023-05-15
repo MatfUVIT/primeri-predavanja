@@ -1,4 +1,4 @@
-document.title = 'Документ'; //naziv dokumenta (title)
+document.title = 'Документ XXX'; //naziv dokumenta (title)
 document.bgColor = '#0f0f0f';
 document.fgColor = '#FF0000';
 

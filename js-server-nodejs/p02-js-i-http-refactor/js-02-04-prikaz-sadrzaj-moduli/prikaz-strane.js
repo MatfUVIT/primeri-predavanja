@@ -12,4 +12,4 @@ function prikazStrane(response, pathName) {
     }
 }
 
-exports.prikazStrane = prikazStrane;
+exports.prikazVebStrane = prikazStrane;

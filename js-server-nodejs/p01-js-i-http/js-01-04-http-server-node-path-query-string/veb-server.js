@@ -10,10 +10,11 @@ http.createServer(function (zahtev, odgovor) {
     console.log("---" + tekuceVreme + "---");
     odgovor.write('url:     ' + zahtev.url + "\n");
     console.log('url:     ' + zahtev.url);
-    let putanja = url.parse(zahtev.url).pathname;
+    const parsirano = url.parse(zahtev.url); 
+    let putanja = parsirano.pathname;
     odgovor.write('putanja: ' + putanja + "\n");
     console.log('putanja: ' + putanja);
-    let upit = url.parse(zahtev.url).query;
+    let upit = parsirano.query;
     odgovor.write('upit:    ' + upit + "\n");
     console.log('upit:    ' + upit);
     odgovor.end();
