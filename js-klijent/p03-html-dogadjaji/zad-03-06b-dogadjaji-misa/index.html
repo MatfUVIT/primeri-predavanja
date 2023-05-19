@@ -1,6 +1,7 @@
 <p>Drag the bar to change its width:</p>
 <div style="background: orange; width: 60px; height: 20px">
 </div>
+
 <script>
   var lastX; // Tracks the last observed mouse X position
   var rect = document.querySelector("div");
@@ -18,6 +19,7 @@
     else
       return event.buttons != 0;
   }
+
   function moved(event) {
     if (!buttonPressed(event)) {
       removeEventListener("mousemove", moved);
