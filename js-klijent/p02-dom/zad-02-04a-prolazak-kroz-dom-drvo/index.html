@@ -7,8 +7,8 @@
 
 <body>
     <h1>My home page</h1>
-    <p>Hello, I am Marijn and this is my home page.</p>
-    <p>I also wrote a book! Read it
+    <p id="p1">Hello, I am Marijn and this is my home page.</p>
+    <p id="p2">I also wrote a book! Read it
         <a href="http://eloquentjavascript.net">here</a>.
     </p>
 
@@ -16,7 +16,7 @@
 
         function talksAbout(node, string) {
             if (node.nodeType == document.ELEMENT_NODE) {
-                for (var i = 0; i < node.childNodes.length; i++) {
+                for (let i = 0; i < node.childNodes.length; i++) {
                     if (talksAbout(node.childNodes[i], string))
                         return true;
                 }
@@ -25,8 +25,10 @@
                 return node.nodeValue.indexOf(string) > -1;
             }
         }
-        console.log(talksAbout(document.body, "miki"));
-        console.log(talksAbout(document.body, "here"));
+        let para = document.getElementById("p1");
+        console.log(talksAbout(para, "here"));
+        para = document.getElementById("p2");
+        console.log(talksAbout(para, "here"));
     </script>
 
 </body>

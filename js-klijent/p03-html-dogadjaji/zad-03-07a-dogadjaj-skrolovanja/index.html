@@ -14,7 +14,7 @@
   }
   
   body {
-    height: 2000px;
+    height: 4000px;
   }
 </style>
 <div class="progress">
@@ -22,10 +22,10 @@
 </div>
 <p>Scroll me...</p>
 <script>
-  var bar = document.querySelector(".progress div");
+  let bar = document.querySelector(".progress div");
   addEventListener("scroll", function() {
-    var max = document.body.scrollHeight - innerHeight;
-    var percent = (pageYOffset / max) * 100;
+    let max = document.body.scrollHeight - innerHeight;
+    let percent = (pageYOffset / max) * 100;
     bar.style.width = percent + "%";
   });
 
