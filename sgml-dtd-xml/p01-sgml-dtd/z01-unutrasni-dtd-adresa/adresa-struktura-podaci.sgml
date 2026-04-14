@@ -1,7 +1,7 @@
 <!DOCTYPE adresa [
    <!ELEMENT adresa (ime,kompanija,telefon)>
-   <!ELEMENT ime (#PCDATA)>
    <!ELEMENT kompanija (#PCDATA)>
+   <!ELEMENT ime (#PCDATA)>
    <!ELEMENT telefon (#PCDATA)>
 ]>
 
