@@ -17,4 +17,9 @@
             <st:gornja-frekfencija mera="Hz"> 3200.5 </st:gornja-frekfencija>
         </tanjir>
     </elemenat>
+    <elemenat>
+        <tanjir xmlns:pzr="http://uvit.math.rs/pzr">
+            <pzr:precnik mera="cm"> 2</pzr:precnik>
+        </tanjir>
+    </elemenat>
 </inventar>

@@ -4,7 +4,7 @@
 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 xsi:schemaLocation="http://uvit.math.rs zbirka-pesama.xsd">
 
-    <pesma autor="Čika Jova Zmaj">
+    <pesma autor="Čika Jova Zmaj" godina="1870">
         <naslov>Žaba čita novine</naslov>
         <strofa>
             <stih>Sedi žaba sama</stih>
@@ -25,7 +25,7 @@ xsi:schemaLocation="http://uvit.math.rs zbirka-pesama.xsd">
             <stih>odseliti rode.</stih>
         </strofa>
     </pesma>
-    <pesma autor="Душан Радовић">
+    <pesma autor="Душан Радовић" godina="1965">
         <naslov>Био једном један лав</naslov>
         <strofa>
             <stih>Био једном један лав</stih>

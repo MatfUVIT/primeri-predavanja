@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- ovde je sve Ok, iako se redosled ne poklapa sa redosledom elemenata u shemi 
+<!-- ovo nije OK, kad se koristi choice radi se o izboru jednog
 -->
 
 <pismo xmlns="http://uvit.math.rs" 
 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-xsi:schemaLocation="http://uvit.math.rs poruka-struktura-2.xsd">
+xsi:schemaLocation="http://uvit.math.rs poruka-struktura.xsd">
   <prima>Sanja</prima>
+  <salje>Vlado</salje>
   <naslov>Podsetnik</naslov>
   <tekst>Kupi karte za utakmicu</tekst>
-  <salje>Vlado</salje>
+  <medijum>
+  </medijum>
 </pismo>

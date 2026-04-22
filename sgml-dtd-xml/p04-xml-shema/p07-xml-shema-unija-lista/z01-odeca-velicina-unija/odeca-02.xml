@@ -3,7 +3,7 @@
 -->
 
 <odeca xmlns="http://uvit.math.rs" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-xsi:schemaLocation="http://uvit.math.rs odeca-struktura.xsd" velicina="extra-large">
+xsi:schemaLocation="http://uvit.math.rs odeca-struktura.xsd" velicina="15">
   <naziv>Jakna</naziv>
   <opis>Stara kožna jakna, kupljena u Turskoj</opis>
 

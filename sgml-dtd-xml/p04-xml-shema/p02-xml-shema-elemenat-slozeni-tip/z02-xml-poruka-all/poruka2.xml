@@ -2,7 +2,7 @@
 <!-- Ovde nedostaje elemenat naslov
 -->
 
-  <pismo xmlns="http://uvit.math.rs" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://uvit.math.rs poruka-struktura.xsd">
+  <pismo xmlns="http://uvit.math.rs" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://uvit.math.rs poruka-struktura-2.xsd">
   <prima>Sanja</prima>
   <salje>Vlado</salje>
   <tekst>Kupi karte za utakmicu</tekst>

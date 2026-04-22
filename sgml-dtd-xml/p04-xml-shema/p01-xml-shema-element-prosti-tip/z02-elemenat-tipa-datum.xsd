@@ -3,6 +3,7 @@
 targetNamespace="http://uvit.math.rs" 
 xmlns="http://uvit.math.rs" 
 elementFormDefault="qualified">
-  <xsd:element name="rodjen" type="xsd:date"  />
+
+<xsd:element name="rodjen" type="xsd:date"  />
 
 </xsd:schema>

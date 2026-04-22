@@ -9,7 +9,7 @@ xsi:schemaLocation="http://uvit.math.rs odeca-zalihe-struktura.xsd">
     <naziv>Jakna</naziv>
     <opis>Stara kožna jakna</opis>
   </naRaspolaganju>
-  <naRaspolaganju velicine="extra-large ">
+  <naRaspolaganju velicine="extra-large small medium">
     <naziv>Košulja</naziv>
     <opis>Nova košulja</opis>
   </naRaspolaganju>

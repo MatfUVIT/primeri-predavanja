@@ -14,6 +14,7 @@ elementFormDefault="qualified">
             <xsd:element name="strofa" type="StrofaType" maxOccurs="unbounded" />
         </xsd:sequence>
         <xsd:attribute name="autor" type="xsd:string" use="optional" />
+        <xsd:attribute name="godina" type="xsd:int" use="optional" />
     </xsd:complexType>
     <xsd:complexType name="StrofaType">
         <xsd:sequence>

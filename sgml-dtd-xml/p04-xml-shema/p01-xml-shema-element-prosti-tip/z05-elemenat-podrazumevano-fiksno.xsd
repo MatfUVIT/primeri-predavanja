@@ -4,8 +4,8 @@ targetNamespace="http://uvit.math.rs"
 xmlns="http://uvit.math.rs" 
 elementFormDefault="qualified">
 
-  <xsd:element name="redniBrojPrveKomponente" type="xsd:int" default="42"/>
+  <xsd:element name="prva-komponenta" type="xsd:int" default="42"/>
 
-  <xsd:element name="redniBrojDrugeKomponente" type="xsd:int" fixed="42" />
+  <xsd:element name="druga-komponenta" type="xsd:int" fixed="42" />
 
 </xsd:schema>

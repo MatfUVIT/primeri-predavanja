@@ -2,8 +2,8 @@
 <!-- Ovde nema problema
 -->
 
-<redniBrojPrveKomponente xmlns="http://uvit.math.rs" 
+<prva-komponenta xmlns="http://uvit.math.rs" 
 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 xsi:schemaLocation="http://uvit.math.rs z05-elemenat-podrazumevano-fiksno.xsd">
-  442
-</redniBrojPrveKomponente>
+  -442
+</prva-komponenta>
