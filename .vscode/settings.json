@@ -15,5 +15,6 @@
         "tekst",
         "telefon",
         "zbirka"
-    ]
+    ],
+    "livePreview.defaultPreviewPath": "/js-klijent/p01-js-i-pregledac/zad-01-01a-html-alert/index.html"
 }
