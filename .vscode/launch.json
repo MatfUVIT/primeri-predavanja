@@ -18,6 +18,7 @@
                 "<node_internals>/**"
             ], 
             "program": "${workspaceFolder}/js/p01-vrednosti-tipovi-operatori/js-01-01b-promenljive-objekti-primer.js",
+            "stopOnEntry": true, 
             "console": "integratedTerminal",
             "internalConsoleOptions": "neverOpen"
         }
