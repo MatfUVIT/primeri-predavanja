@@ -13,5 +13,5 @@ let kvadrat3 = x => {
 };
 console.log(kvadrat3(12));
 
-let kvadrat = x => x * x;
+let kvadrat = a => a * a;
 console.log(kvadrat(12));

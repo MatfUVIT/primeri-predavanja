@@ -11,11 +11,11 @@ const pejsaz = function() {
             rezultat += "'";
         rezultat += "\\";
     };
-    ravnica(1);
-    planina(3);
+    ravnica(2);
     planina(2);
-    ravnica(1);
-    planina(3);
+    planina(1);
+    ravnica(3);
+    planina(1);
     return rezultat;
 };
 console.log(pejsaz());

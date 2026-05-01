@@ -1,4 +1,4 @@
-//'use strict'
+'use strict'
 let pokusaja = 0;
 do {
     slucajan = Math.random();

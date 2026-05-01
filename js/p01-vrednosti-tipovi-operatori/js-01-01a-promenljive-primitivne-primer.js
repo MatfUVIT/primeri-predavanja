@@ -2,7 +2,7 @@
 let prom = 5 * 5;
 
 // prikaz vrednosti izraza koji sadrži promenljivu
-let broj = 10;
+const broj = 10;
 console.log(broj * broj);
 
 // promenljiva ne mora imati svo vreme istu vrednost
@@ -13,7 +13,7 @@ console.log(raspolozenje);
 
 // promenljiva se može uvećati i/ili umanjiti
 let dug = 200;
-dug = dug - 72;
+dug -= 72;
 console.log(dug);
 
 // jednom naredbm se mogu definisati dve promenljive

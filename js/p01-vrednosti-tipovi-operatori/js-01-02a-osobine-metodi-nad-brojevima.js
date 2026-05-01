@@ -10,4 +10,5 @@ console.log(x);
 console.log( Number.isFinite(x));
 console.log( Number.isInteger(x));
 console.log( x.toFixed(3));
+console.log(x.toExponential(7));
 

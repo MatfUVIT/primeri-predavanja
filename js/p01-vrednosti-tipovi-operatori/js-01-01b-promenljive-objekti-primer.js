@@ -1,9 +1,11 @@
 console.log("---");
-let x = { poruka: " Trla baba lan, da joj prođe dan ", ocena: 10 };
+let x = { 
+    poruka: " Trla baba lan, da joj prođe dan ", 
+    ocena: 10 };
 console.log(x);
 
 console.log("---");
-x.poruka = ' Miki maus !!!';
+x.poruka = ' Miki Maus !!!';
 console.log(x);
 
 console.log("---");

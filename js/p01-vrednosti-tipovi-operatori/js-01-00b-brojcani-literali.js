@@ -5,7 +5,7 @@ console.log(42);
 console.log(0x42);
 
 /* Zapis broja u fiksnom zarezu */
-console.log(5354576767321);
+console.log(535457676732153545767673215354576767321535457676732153545767673215354576767321);
 
 /* Zapis broja u pokretnom zarezu */
 console.log(9.81)

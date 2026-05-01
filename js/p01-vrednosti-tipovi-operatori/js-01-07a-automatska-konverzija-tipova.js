@@ -8,6 +8,9 @@ console.log('5' - 1);
 // prikazaće 51
 console.log('5' + 1);
 
+// prikazaće 51
+console.log(5 + "1");
+
 // prikazaće NaN
 console.log('pet' * 2);
 

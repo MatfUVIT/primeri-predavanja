@@ -1,14 +1,25 @@
 {
+    "version": "0.2.0",
     "configurations": [
         {
-            "name": "Launch Program",
-            "program": "${workspaceFolder}/js-01-01c-promenljive-primitivni-podaci-nezavisnost.js",
+            "name": "js-01-01a",
+            "program": "${workspaceFolder}/js/p01-vrednosti-tipovi-operatori/js-01-01a-promenljive-primitivne-primer.js",
             "request": "launch",
             "skipFiles": [
                 "<node_internals>/**"
             ],
             "type": "node"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "js-01-01b",
+            "skipFiles": [
+                "<node_internals>/**"
+            ], 
+            "program": "${workspaceFolder}/js/p01-vrednosti-tipovi-operatori/js-01-01b-promenljive-objekti-primer.js",
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen"
         }
-    
     ]
 }

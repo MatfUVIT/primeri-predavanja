@@ -1,3 +1,4 @@
+'option strict'
 const osoba1 = "Никола";
 console.log(osoba1);
 
@@ -25,4 +26,4 @@ console.log(osoba3 + " " + osoba2)
 // nemoguce - pokusaj pristupa
 // promenljvoj van njenog opsega
 // definisanosti
-console.log(оsoba4 + " " + osoba2)
+//console.log(оsoba4 + " " + osoba2)

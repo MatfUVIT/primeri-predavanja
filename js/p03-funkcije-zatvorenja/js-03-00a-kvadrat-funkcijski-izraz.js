@@ -1,5 +1,6 @@
 let kvadrat = function(x) {
-    return x * x;
+    let y = x * x;
+    return y;
 };
 
 console.log(`Kвадрат броја 12 је ${kvadrat(12)}`);
