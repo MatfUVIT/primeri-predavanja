@@ -11,6 +11,7 @@ console.log(tacka1["yKoordinata"]);
 
 // poziva metod
 tacka1.pojaviSe();
+tacka1["pojavi"+"Se"]();
 
 // provera da li je osobina sadržana u objektu
 console.log("xKoordinata" in tacka1);
@@ -18,7 +19,7 @@ console.log("xKoordinata" in tacka1);
 console.log("pojaviSe" in tacka1);
 
 // redefinisanje metoda
-tacka1.pojaviSe = (x,y) => console.log(`ja sam tacka 1(${x}, ${y})`); 
+tacka1.pojaviSe = (x,y) => console.log(`ja sam tacka 1 (${x}, ${y})`); 
 
 // poziv redefinisanog metoda
 tacka1.pojaviSe(tacka1.xKoordinata, tacka1.yKoordinata);

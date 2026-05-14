@@ -26,6 +26,7 @@ let dambo = {
 console.log('---');
 prikaz.call(tarzan, 1.9, 80);
 prikaz.call(dambo, 2.5, 300);
+
 duskoDugousko.prikazNaKonzolu.call(tarzan, 1.9, 80);
 duskoDugousko.prikazNaKonzolu.call(dambo, 2.5, 300);
 
@@ -37,6 +38,17 @@ duskoDugousko.prikazNaKonzolu.apply(dambo, [2.5, 300]);
 
 console.log('---');
 prikaz.bind(tarzan)(1.9, 80);
+let tarzanPrikaz = prikaz.bind(tarzan);
+tarzanPrikaz(1.9, 80);
+
 prikaz.bind(dambo)(2.5, 300);
+let damboPrikaz = prikaz.bind(dambo);
+damboPrikaz(2.5, 300);
+
 duskoDugousko.prikazNaKonzolu.bind(tarzan)(1.9, 80);
+let duskoTarzanPrikaz = duskoDugousko.prikazNaKonzolu.bind(tarzan);
+duskoTarzanPrikaz(1.9, 80);
+
 duskoDugousko.prikazNaKonzolu.bind(dambo)(2.5, 300);
+let duskoDamboPrikaz = duskoDugousko.prikazNaKonzolu.bind(dambo);
+duskoDamboPrikaz(2.5, 300);

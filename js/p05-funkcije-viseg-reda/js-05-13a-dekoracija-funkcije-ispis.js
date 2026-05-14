@@ -11,6 +11,6 @@ function bucna(f) {
 }
 
 bucna(Boolean)(0);
-bucna(Boolean)(2);
+bucna(Boolean)(7);
 bucna(Math.sin)(Math.PI / 2);
 bucna(Math.cos)(Math.PI / 2);

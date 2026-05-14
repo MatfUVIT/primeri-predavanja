@@ -1,8 +1,14 @@
 // prikazuje nut
 console.log('coconuts'.slice(4, 7));
 
-// prikazuje 5
-console.log('coconuts'.indexOf('u'));
+// prikazuje 0
+console.log('coconuts'.indexOf('c'));
+
+// prikazuje 2
+console.log('coconuts'.indexOf('c', 1));
+
+// prikazuje 2
+console.log('coconuts'.lastIndexOf('c'));
 
 // prikazuje 11
 console.log('one two three'.indexOf('ee'));

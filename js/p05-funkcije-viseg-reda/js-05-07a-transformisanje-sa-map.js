@@ -62,19 +62,18 @@ console.log(map(starijiOd90, function(person) {
 }));
 
 
-// // filtriranje tako da se zadrže samo stariji od 70
-// console.log('---');
-// let starijiOd70 = filter(family, person => person.died - person.born > 70);
-// console.log(starijiOd70);
+// filtriranje tako da se zadrže samo stariji od 70
+console.log('---');
+let starijiOd70 = filter(family, person => person.died - person.born > 70);
+console.log(starijiOd70);
 
-// // transformisanje starijih od 70 pomoću map
-// console.log('---');
-// console.log(map(starijiOd70, person => person.name + " " + (person.died - person.born)));
+// transformisanje starijih od 70 pomoću map
+console.log('---');
+console.log(map(starijiOd70, person => person.name + " " + (person.died - person.born)));
 
 // filtriranje i transformisanje pomoću metoda niza
 console.log('---');
 console.log(
-    family
-    .filter(x => x.died - x.born > 70)
-    .filter(x => x.sex == 'm')
-    .map(x => x.name + " " + (x.died - x.born)));
+    family.filter(x => x.died - x.born > 70)
+        .filter(x => x.sex == 'm')
+        .map(x => x.name + " " + (x.died - x.born)));

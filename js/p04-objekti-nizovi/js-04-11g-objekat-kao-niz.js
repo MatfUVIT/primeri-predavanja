@@ -27,3 +27,9 @@ objekat = { 0: 11, 1: 'aaa', 2: 42, 4: false, length: 6 };
 console.log(objekat);
 rezultat = Array.from(objekat);
 console.log(rezultat);
+
+console.log("---");
+objekat = { 0: 11, 1: 'aaa', 2: 42, 4: false, peti: "peti",length: 6 };
+console.log(objekat);
+rezultat = Array.from(objekat);
+console.log(rezultat);

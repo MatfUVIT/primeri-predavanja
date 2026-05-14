@@ -7,6 +7,7 @@ let person = {
 };
 
 person.dog = "Pluton";
+person.funClub.push(person.dog);
 
 let niska = JSON.stringify(person);
 

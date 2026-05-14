@@ -10,6 +10,10 @@ console.log(poruka.join(" "));
 
 console.log(poruka.join("+"));
 
+let x = { join: (a) => "nešto" + a };
+console.log(x.join("+"));
+
+
 console.log(poruka.pop());
 
 poruka.pop();

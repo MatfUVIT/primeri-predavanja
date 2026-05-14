@@ -1,5 +1,3 @@
-
-
 console.log("---");
 let objekat = 'Miki Maus';
 console.log(objekat);
@@ -8,7 +6,7 @@ console.log(rezultat);
 
 console.log('---')
 let niz = [1, 2, 3, "Miki"];
-dupliraj = function(x){
+const dupliraj = function(x){
     return x+x;
 }
 rez2 = Array.from(niz, dupliraj);

@@ -1,4 +1,4 @@
-let nekiNiz = [1, 2, 3, 4, "mika", "zika"];
+let nekiNiz = [true, 1, [2, 3], 4, "mika", "zika"];
 
 const zaSvaki = function(niz, akcija) {
     for (let ind in niz)

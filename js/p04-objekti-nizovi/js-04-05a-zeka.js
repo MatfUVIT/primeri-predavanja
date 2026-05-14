@@ -5,7 +5,6 @@ zec.kaze = function(tekst) {
 };
 
 console.log(zec.ime);
-
 zec.kaze("Који ти је враг, шефе?");
 
 let x = zec.ime;

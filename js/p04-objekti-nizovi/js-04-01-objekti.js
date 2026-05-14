@@ -18,9 +18,9 @@ object1.value = 15;
 console.log(object2.value);
 // Prikazuje 15
 
-object2.value = 17;
+object2.value = "miki maus";
 console.log(object1.value);
-// Prikazuje 17
+// Prikazuje miki maus
 
 console.log(object3.value);
 // Prikazuje 10

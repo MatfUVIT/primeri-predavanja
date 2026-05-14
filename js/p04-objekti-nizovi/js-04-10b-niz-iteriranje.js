@@ -2,8 +2,11 @@
 let niz = [1, 3, 'Mika', 'Pera', false];
 
 niz[7] = 'novo!!!';
-
+niz[-5] = 'Dule';
 niz[3.5] = 'Paja';
+niz["Paja"] = 'Laza';
+niz[false] = 'Istina';
+niz[true] = 'Laž';
 
 console.log('---');
 for (let i = 0; i < niz.length; i++)

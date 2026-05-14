@@ -1,15 +1,15 @@
-function brojačArgumenata() {
+let prikazBrojArgumenti = function() {
     console.log('---');
     let s = '';
     for (let i in arguments)
-        s += arguments[i];
+        s += arguments[i] + ' ';
     console.log(s);
-    console.log('Prilikom poziva su prosleđena ', arguments.length, ' argumenta.');
+    console.log(`Prilikom poziva su prosleđena ${arguments.length} argumenta.`);
 }
 
-// Prikazuje 'Prilikom poziva su prosleđena 4 argumenta.'
-brojačArgumenata('Ako kaniš ', 'pobijediti', ' ne smiješ ', 'izgubiti');
-brojačArgumenata('Ako kaniš pobijediti', ' ne smiješ izgubiti');
-brojačArgumenata('Ako kaniš pobijediti ne smiješ izgubiti');
-brojačArgumenata(() => "Danas nam je divan dan.");
-brojačArgumenata();
+prikazBrojArgumenti('Ako kaniš ', 'pobijediti', ' ne smiješ ', 'izgubiti');
+prikazBrojArgumenti('Ako kaniš pobijediti', ' ne smiješ izgubiti');
+prikazBrojArgumenti('Ako kaniš pobijediti ne smiješ izgubiti');
+prikazBrojArgumenti();
+prikazBrojArgumenti(() => "Danas nam je divan dan.");
+prikazBrojArgumenti(-3, -2, -1, prikazBrojArgumenti, 1, 2, 3);

@@ -44,4 +44,4 @@ console.log(family.reduce(function (min, cur) {
         return cur;
     else
         return min;
-}));
+}, family[0]));

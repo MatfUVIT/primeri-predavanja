@@ -24,3 +24,6 @@ zaSvaki(nekiNiz, function(x) {
 console.log("---");
 zaSvaki(nekiNiz, x => console.log(x));
 
+
+console.log("---");
+nekiNiz.forEach(x => console.log(x));

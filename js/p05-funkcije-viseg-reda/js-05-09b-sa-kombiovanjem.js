@@ -36,7 +36,7 @@ const prosek = function(niz) {
     function plus(a, b) {
         return a + b;
     }
-    return niz.reduce(plus) / niz.length;
+    return niz.reduce(plus,0) / niz.length;
 };
 
 const duzinaZivota = function(p) {

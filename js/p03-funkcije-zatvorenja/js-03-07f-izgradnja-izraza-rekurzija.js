@@ -15,7 +15,7 @@ const izgradiIzraz1 = function(cilj) {
     return izgradi1(1, "1");
 }
 
-for (let i = 1005; i <= 1125; i++)
+for (let i = 9; i <= 15; i++)
     console.log(i + " = " + izgradiIzraz1(i));
 
 /*

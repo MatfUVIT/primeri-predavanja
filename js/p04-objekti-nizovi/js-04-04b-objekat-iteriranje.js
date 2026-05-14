@@ -1,4 +1,4 @@
-//kreiranje objekta
+
 let obj = {
    drvo: 'Grljenje drveća',
    pica: 'Jedenje pice',
@@ -12,7 +12,6 @@ let obj = {
    brojSati: 14,
    umoran: false,
    satnica: 10.45,
-   uraditi: (x, y) => x + y
 }
 
 for (let osobina in obj)

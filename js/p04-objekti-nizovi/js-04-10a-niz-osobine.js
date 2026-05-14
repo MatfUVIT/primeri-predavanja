@@ -35,5 +35,5 @@ console.log(nizBrojeva['Miki']);
 nizBrojeva[42] = 17;
 
 console.log(nizBrojeva[42]);
-
+console.log(nizBrojeva.length);
 console.log(nizBrojeva);

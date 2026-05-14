@@ -17,17 +17,33 @@ console.log("xKoordinata" in tacka1);
 console.log("pojaviSe" in tacka1);
 
 // redefinisanje metoda
-tacka1.pojaviSe = (x,y) => console.log(`ja sam tacka 1(${x}, ${y})`); 
+tacka1.pojaviSe = (x,y) => console.log(`ja sam tacka sa koordinatama(${x}, ${y})`); 
 
 // poziv redefinisanog metoda
 tacka1.pojaviSe(tacka1.xKoordinata, tacka1.yKoordinata);
 // poziv redefinisanog metoda
 tacka1.pojaviSe();
 
+
+// redefinisanje metoda 2
+prikaz = function(){
+    console.log(`ja sam tacka 1(${this.xKoordinata}, ${this.yKoordinata})`);
+}
+tacka1.pojaviSe = prikaz; 
+// poziv redefinisanog metoda 2
+tacka1.pojaviSe();
+
 // uklanjanje osobine objekta
 delete tacka1.xKoordinata;
 // pokusaj pristupanja uklonjenoj osobini
 console.log(tacka1.xKoordinata);
+
+let tacka2 = {
+    xKoordinata: 5.6,
+    yKoordinata: 7.2,
+    pojaviSe: prikaz
+};
+tacka2.pojaviSe();
 
 // provera da li je osobina sadržana u objektu
 console.log("xKoordinata" in tacka1);

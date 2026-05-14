@@ -1,4 +1,5 @@
-const opseg = (pocetak, kraj, korak) => Array.from({ length: (kraj - pocetak) / korak + 1 }, (_, i) => pocetak + (i * korak));
+const opseg = (pocetak, kraj, korak) => 
+    Array.from({ length: (kraj - pocetak) / korak + 1 }, (_, i) => pocetak + (i * korak));
 
 console.log("---");
 let rezultat = opseg(1, 6, 1);

@@ -23,5 +23,6 @@ console.log("desno" in objekat);
 objekat.levo = `42`;
 
 delete objekat["desno"];
+delete objekat["nepostojecaOsobina"];
 
 console.log(objekat);

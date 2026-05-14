@@ -27,12 +27,13 @@ console.log(reduce(brojevi, (a, b) => a + b, 0));
 console.log('--- Suma ---');
 console.log(brojevi.reduce((a, b) => a + b, 0));
 
-// odredjivanje sume svih pozitivnih clanova niza
-console.log('--- Suma pozitivnih ---');
+// odredjivanje sume svih pozitivnih parnih clanova niza
+console.log('--- Suma pozitivnih parnih ---');
 console.log(
     brojevi
-    .filter(a => a > 0)
-    .reduce((a, b) => a + b, 0));
+        .filter(a => a > 0)
+        .filter(a => a % 2 === 0)
+        .reduce((a, b) => a + b, 0));
 
 // odredjivanje proizvoda svih clanova niza
 console.log('--- Proizvod ---');

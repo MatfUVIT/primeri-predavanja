@@ -11,7 +11,7 @@ const povecaj = function(broj) {
 };
 
 console.log("---");
-// racuna sumu niza brojeva pomoću funkcije zaSvaki
+// racuna sumu niza brojeva pomoću funkcije zaSvaki koja kao parametar koristi funkcijski izraz povecaj
 let sum = 0;
 zaSvaki(nizBrojeva, povecaj);
 console.log(sum);
