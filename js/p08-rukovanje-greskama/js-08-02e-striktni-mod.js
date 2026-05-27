@@ -1,4 +1,5 @@
 "use strict";
+
 function Osoba(ime) {
   this.ime = ime;
 }

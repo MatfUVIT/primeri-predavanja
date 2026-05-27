@@ -1,4 +1,4 @@
-let prototipTacke = {
+const prototipTacke = {
     x: 0,
     y: 0,
 

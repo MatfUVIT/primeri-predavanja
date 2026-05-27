@@ -8,13 +8,14 @@ let Tacka = function(x = 0, y = 0) {
 let tackaA = new Tacka(7, 9);
 tackaA.prikazi();
 
+let tackaB = new Tacka(1);
+tackaB.prikazi();
+
 Tacka.prototype.translacija = function(xV, yV) {
     this.x += xV;
     this.y += yV;
 };
 
-let tackaB = new Tacka(1);
-tackaB.prikazi();
 tackaB.translacija(tackaA.x, tackaA.y);
 tackaB.prikazi();
 

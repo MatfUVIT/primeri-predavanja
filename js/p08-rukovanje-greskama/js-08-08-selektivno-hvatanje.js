@@ -1,18 +1,18 @@
 "use strict";
 
-function NeMozeIspodZemljeError(message) {
+function AutoNeMozeIspodZemljeError(message) {
     this.message = message;
     this.stack = (new Error()).stack;
 }
-NeMozeIspodZemljeError.prototype = Object.create(Error.prototype);
-NeMozeIspodZemljeError.prototype.name = "NeMozeIspodZemljeError";
+AutoNeMozeIspodZemljeError.prototype = Object.create(Error.prototype);
+AutoNeMozeIspodZemljeError.prototype.name = "AutoNeMozeIspodZemljeError";
 
-function NeMozePrekoNebaError(message) {
+function AutoNeMozePrekoNebaError(message) {
     this.message = message;
     this.stack = (new Error()).stack;
 }
-NeMozePrekoNebaError.prototype = Object.create(Error.prototype);
-NeMozePrekoNebaError.prototype.name = "NeMozePrekoNebaError";
+AutoNeMozePrekoNebaError.prototype = Object.create(Error.prototype);
+AutoNeMozePrekoNebaError.prototype.name = "AutoNeMozePrekoNebaError";
 
 const pravac = function() {
     const slucajan = Math.random();
@@ -32,9 +32,9 @@ function voziAuto(usmerenje) {
     if (rezultat.toLowerCase() == "desno")
         return "R";
     if (rezultat.toLowerCase() == "gore")
-        throw new NeMozePrekoNebaError("Auto ne leti: " + rezultat);
+        throw new AutoNeMozePrekoNebaError("Auto ne leti: " + rezultat);
     if (rezultat.toLowerCase() == "dole")
-        throw new NeMozeIspodZemljeError("Auto nije krtica: " + rezultat);
+        throw new AutoNeMozeIspodZemljeError("Auto nije krtica: " + rezultat);
     throw new Error("Nekorektno usmerenje za auto");
 }
 
@@ -49,9 +49,9 @@ for (let i = 0; i < 50; i++)
     try {
         console.log(` ${i} Gledas iz auta. ${pogled()}`);
     } catch (error) {
-        if (error instanceof NeMozeIspodZemljeError)
+        if (error instanceof AutoNeMozeIspodZemljeError)
             console.log("Podzemlje: " + error + " ***");
-        else if (error instanceof NeMozePrekoNebaError)
+        else if (error instanceof AutoNeMozePrekoNebaError)
             console.log("Nebeski svod: " + error + " ***");
         else {
             console.log("Nesto je jako pogresno: *** " + error + " ***");

@@ -2,11 +2,11 @@
 
 let pravac = function() {
     const slucajan = Math.random()
-    if (slucajan < 0.3)
+    if (slucajan < 0.45)
         return "levo";
-    if (slucajan < 0.6)
+    if (slucajan < 0.90)
         return "desno";
-    if (slucajan < 0.8)
+    if (slucajan < 0.95)
         return "gore";
     return "dole";
 }

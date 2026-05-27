@@ -3,5 +3,5 @@ let povratniPoziv = () => {
 };
 
 console.log(`Pokrenuto...`);
-setTimeout(povratniPoziv, 2000);
+setTimeout(povratniPoziv, 3000);
 console.log(`Zavrsava...`);

@@ -10,10 +10,10 @@ smesti("sveska", -0.081);
 Object.prototype.nesto = "bez veze!";
 
 for (let kljuc in mapa)
-  console.log(kljuc);
-//>>> olovka
-//>>> sveska
-//>>> nesto
+  console.log(kljuc + ": " + mapa[kljuc]);
+//>>> olovka : 0.069
+//>>> sveska : -0.081
+//>>> nesto : bez veze!
 
 console.log("nesto" in mapa);
 //>>> true

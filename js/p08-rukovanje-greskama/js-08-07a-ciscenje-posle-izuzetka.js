@@ -21,9 +21,9 @@ console.log(kontekst);
 console.log("---")
 
 const korenujAkoMozes = function(x) {
-    if (kontekst < 0)
+    if (x < 0)
         throw new Error("Nemoguce izracunati koren negativnog broja!");
-    console.log(Math.sqrt(kontekst));
+    console.log(Math.sqrt(x));
 };
 
 try {

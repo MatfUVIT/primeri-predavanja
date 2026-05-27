@@ -15,4 +15,5 @@ function kvadratniKoren(izvorPodataka) {
   return { "broj": broj, "rezultat": rezultat };
 }
 
-console.log(kvadratniKoren(slucajanBrojIliMiki));
+for (let i = 0; i < 10; i++)
+  console.log(kvadratniKoren(slucajanBrojIliMiki));
