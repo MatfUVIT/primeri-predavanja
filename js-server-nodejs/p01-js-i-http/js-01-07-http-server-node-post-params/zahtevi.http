@@ -2,6 +2,7 @@
 @adresa = localhost
 @port = 7080
 
+###
 POST {{protokol}}//{{adresa}}:{{port}} HTTP/1.1
 content-type: application/json
 
@@ -9,4 +10,15 @@ content-type: application/json
     "paja": "patak",
     "miki": "mis",
     "silja": "pas"
+}
+
+
+###
+POST {{protokol}}//{{adresa}}:{{port}} HTTP/1.1
+content-type: application/json
+
+{
+    "1": "merkur",
+    "2": "venera",
+    "3": "zemlja"
 }

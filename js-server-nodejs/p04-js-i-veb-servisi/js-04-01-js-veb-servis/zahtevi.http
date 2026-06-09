@@ -2,29 +2,20 @@
 @adresa = localhost
 @port = 7080
 
-### get sample request
-GET {{protokol}}//{{adresa}}:{{port}}/sample?name=Vlado HTTP/1.1
+### concatenate with Hello get request
+GET {{protokol}}//{{adresa}}:{{port}}/sample?name=Мића HTTP/1.1
 content-type: application/json
 
 
-### post test request
+### show value field post request
 POST {{protokol}}//{{adresa}}:{{port}}/test HTTP/1.1
 content-type: application/json
 
 {
     "ime": "Pera",
     "prezime": "Peric",
-    "value": 123
+    "value": "Miki"
 }
-
-### opis
-GET {{protokol}}//{{adresa}}:{{port}}/opis HTTP/1.1
-content-type: application/json
-
-### korisnici
-GET {{protokol}}//{{adresa}}:{{port}}/korisnici HTTP/1.1
-content-type: application/json
-
 
 ### mnozenje
 GET {{protokol}}//{{adresa}}:{{port}}/pomnozi?arg1=2&arg2=3&arg3=4 HTTP/1.1

@@ -12,7 +12,7 @@ module.exports = http.createServer((req, res) => {
             req.method + ' Endpoint: ' +
             reqUrl.pathname);
 
-        service.sampleRequest(req, res);
+        service.concatenateRequest(req, res);
 
     } else if (reqUrl.pathname == '/test' && req.method === 'POST') {
         // POST Endpoint
@@ -20,7 +20,7 @@ module.exports = http.createServer((req, res) => {
             req.method + ' Endpoint: ' +
             reqUrl.pathname);
 
-        service.testRequest(req, res);
+        service.showValueRequest(req, res);
 
     } else if (reqUrl.pathname == '/pomnozi' && req.method === 'GET') {
         // POST Endpoint

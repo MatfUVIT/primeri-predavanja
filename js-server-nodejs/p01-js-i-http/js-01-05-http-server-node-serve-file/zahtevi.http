@@ -1,0 +1,12 @@
+@protokol = http:
+@adresa = localhost
+@port = 7080
+
+### GET zahtevza sliku
+GET {{protokol}}//{{adresa}}:{{port}}/download.jfif HTTP/1.1
+
+### GET zahtev za tekstualni fajl
+GET {{protokol}}//{{adresa}}:{{port}}/proba.txt HTTP/1.1
+
+### GET zahtev za html fajl
+GET {{protokol}}//{{adresa}}:{{port}}/veb-strana1.html HTTP/1.1

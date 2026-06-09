@@ -20,4 +20,8 @@ function onRequest(request, response) {
         console.log(queryText);
         prikaz.prikazStrane(response, pathName, queryData);
     }
+    else{
+        response.writeHead(405, {'Content-Type': 'text/plain'});
+        response.end('Metod nije podrzan. Podrzan je samo GET metod');
+    }
 }

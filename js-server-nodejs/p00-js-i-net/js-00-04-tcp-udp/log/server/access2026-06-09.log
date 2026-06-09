@@ -1,0 +1,12 @@
+{"timestamp":"2026-06-09 21:38:24.7300","service":"tcp_server","level":"info","message":"Server is listening at port 21000"}
+{"timestamp":"2026-06-09 21:38:24.7330","service":"tcp_server","level":"info","message":"Server ip :0.0.0.0"}
+{"timestamp":"2026-06-09 21:38:24.7340","service":"tcp_server","level":"info","message":"Server is IP4/IP6 : IPv4"}
+{"timestamp":"2026-06-09 21:38:48.0510","service":"tcp_server","level":"info","message":"Connected at 127.0.0.1:53587"}
+{"timestamp":"2026-06-09 21:38:48.0630","service":"tcp_server","level":"info","message":"Hello From Client 127.0.0.1 | Received 27 bytes from 127.0.0.1:53587"}
+{"timestamp":"2026-06-09 21:38:48.0760","service":"tcp_server","level":"info","message":"Socket closed with 127.0.0.1:53587"}
+{"timestamp":"2026-06-09 21:41:13.5000","service":"tcp_server","level":"info","message":"Connected at 127.0.0.1:29081"}
+{"timestamp":"2026-06-09 21:41:13.5020","service":"tcp_server","level":"info","message":"Hello From Client 127.0.0.1 | Received 27 bytes from 127.0.0.1:29081"}
+{"timestamp":"2026-06-09 21:41:13.5040","service":"tcp_server","level":"info","message":"Socket closed with 127.0.0.1:29081"}
+{"timestamp":"2026-06-09 21:41:17.9810","service":"tcp_server","level":"info","message":"Connected at 127.0.0.1:29082"}
+{"timestamp":"2026-06-09 21:41:17.9870","service":"tcp_server","level":"info","message":"Hello From Client 127.0.0.1 | Received 27 bytes from 127.0.0.1:29082"}
+{"timestamp":"2026-06-09 21:41:17.9920","service":"tcp_server","level":"info","message":"Socket closed with 127.0.0.1:29082"}

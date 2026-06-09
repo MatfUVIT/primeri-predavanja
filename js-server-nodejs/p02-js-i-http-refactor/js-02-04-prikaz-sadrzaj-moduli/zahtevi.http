@@ -20,6 +20,6 @@ GET {{protokol}}//{{adresa}}:{{port}}/korisnici HTTP/1.1
 content-type: application/json
 
 
-### kontakt strana
-GET {{protokol}}//{{adresa}}:{{port}}/kontakt HTTP/1.1
+### bez veze
+GET {{protokol}}//{{adresa}}:{{port}}/bez-veze HTTP/1.1
 content-type: application/json

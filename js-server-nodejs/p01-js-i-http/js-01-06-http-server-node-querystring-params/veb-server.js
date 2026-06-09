@@ -26,12 +26,12 @@ const port = 7080;
 http.createServer(function (zahtev, odgovor) {
     if (zahtev.method == 'GET') {
         odgovor.writeHead(200, { 'Content-type': 'text/plan' });
-        odgovor.write('Napravljeni veb servers koristi node.js \n');
+        odgovor.write('Napravljeni veb server koristi node.js \n');
         obradiGetZahtev(zahtev, odgovor);
         odgovor.end();
     } else {
-        odgovor.writeHead(200, "OK", { 'Content-Type': 'text/plain' });
-        odgovor.write('Napravljeni veb servers koristi node.js \n');
+        odgovor.writeHead(405, "Method Not Allowed", { 'Content-Type': 'text/plain' });
+        odgovor.write('Napravljeni veb server koristi node.js \n');
         odgovor.write('i ocekuje samo zahteve sa GET metodom \n');
         odgovor.end();
     }

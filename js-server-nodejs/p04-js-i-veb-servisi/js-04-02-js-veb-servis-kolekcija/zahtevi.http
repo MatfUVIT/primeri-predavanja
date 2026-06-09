@@ -1,0 +1,75 @@
+@protokol = http:
+@adresa = localhost
+@port = 7000
+
+### pretraga svi
+GET {{protokol}}//{{adresa}}:{{port}}/pretraga HTTP/1.1
+content-type: application/json
+
+### pretraga svi 
+@deoImena = svi
+GET {{protokol}}//{{adresa}}:{{port}}/pretraga?ime={{deoImena}} HTTP/1.1
+content-type: application/json
+
+
+### pretraga svi po delu imena 
+@deoImena = A
+GET {{protokol}}//{{adresa}}:{{port}}/pretraga?ime={{deoImena}} HTTP/1.1
+content-type: application/json
+
+
+### pretraga svi po pocetku imena 
+@deoImena = y
+GET {{protokol}}//{{adresa}}:{{port}}/pretraga?ime={{deoImena}} HTTP/1.1
+content-type: application/json
+
+### pretraga svi po polu 
+@pol = m
+GET {{protokol}}//{{adresa}}:{{port}}/pretraga?pol={{pol}} HTTP/1.1
+content-type: application/json
+
+### pretraga svi po polu 
+@pol = z
+GET {{protokol}}//{{adresa}}:{{port}}/pretraga?pol={{pol}} HTTP/1.1
+content-type: application/json
+
+### pretraga svi po polu 
+@pol = u
+GET {{protokol}}//{{adresa}}:{{port}}/pretraga?pol={{pol}} HTTP/1.1
+content-type: application/json
+
+### pretraga svi po delu imena i polu
+@deoImena = A
+@pol = m
+GET {{protokol}}//{{adresa}}:{{port}}/pretraga?ime={{deoImena}}&pol={{pol}} HTTP/1.1
+content-type: application/json
+
+### pretraga svi po delu imena i polu
+@deoImena = A
+@pol = z
+GET {{protokol}}//{{adresa}}:{{port}}/pretraga?ime={{deoImena}}&pol={{pol}} HTTP/1.1
+content-type: application/json
+
+### pretraga dzedaj po delu imena i polu
+@deoImena = A
+@pol = m
+@dzedaj = d
+GET {{protokol}}//{{adresa}}:{{port}}/pretraga?ime={{deoImena}}&pol={{pol}}&dzedaj={{dzedaj}} HTTP/1.1
+content-type: application/json
+
+
+### dodavanje novog dzedaja
+POST {{protokol}}//{{adresa}}:{{port}}/dodavanje HTTP/1.1
+content-type: application/json
+
+{
+    "Name": "Yoda",
+    "Gender": "male",
+    "Homeworld": "Dagobah",
+    "Born": "896 BBY",
+    "Jedi": "yes"
+}
+
+### brisanje dzedaja
+DELETE {{protokol}}//{{adresa}}:{{port}}/brisanje?ime=Yoda HTTP/1.1
+content-type: application/json

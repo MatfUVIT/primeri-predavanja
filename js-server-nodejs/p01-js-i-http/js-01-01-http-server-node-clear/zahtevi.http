@@ -1,1 +1,20 @@
-GET 127.0.0.1:7080
+@protokol = http:
+@adresa = localhost
+@port = 7080
+
+### GET zahtev
+GET {{protokol}}//{{adresa}}:{{port}} HTTP/1.1
+
+### GET zahtev sa dodatnim parametrima
+GET {{protokol}}//{{adresa}}:{{port}}?param1=vrednost1&param2=vrednost2 HTTP/1.1
+
+
+### Post zahtev sa JSON podacima
+POST {{protokol}}//{{adresa}}:{{port}} HTTP/1.1
+content-type: application/json
+
+{
+    "paja": "patak",
+    "miki": "mis",
+    "silja": "pas"
+}

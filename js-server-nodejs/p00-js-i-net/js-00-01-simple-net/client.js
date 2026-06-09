@@ -3,7 +3,7 @@ let net = require('net');
 let klijent = new net.Socket();
 
 adresa = '127.0.0.1';
-port = 1337;
+port = 80;
 
 klijent.connect(port, adresa,
     () => {

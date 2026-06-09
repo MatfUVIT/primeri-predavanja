@@ -2,7 +2,7 @@ const http = require('http');
 
 const port = 7080;
 http.createServer(function (zahtev, odgovor) {
-    odgovor.writeHead(200, { 'Content-type': 'text/plan' });
+    odgovor.writeHead(200, { 'Content-type': 'text/plain' });
     odgovor.write(`Napravljeni veb servers koristi node.js \n`);
     odgovor.write(`i zahteve upisuje u konzolu servera.`);
     odgovor.end();

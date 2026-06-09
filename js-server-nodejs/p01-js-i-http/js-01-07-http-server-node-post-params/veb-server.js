@@ -4,7 +4,7 @@ const querystring = require('querystring');
 function obradiPostZahtev(zahtev, odgovor) {
     let podaci = "";
     if (zahtev.method == 'POST') {
-
+        
         zahtev.on('data', function (data) {
             podaci += data;
             if (podaci.length > 1e6) {

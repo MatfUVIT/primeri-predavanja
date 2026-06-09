@@ -14,13 +14,21 @@ module.exports = http.createServer((req, res) => {
 
         service.pretragaRequest(req, res);
 
-    } else if (reqUrl.pathname == '/test' && req.method === 'POST') {
+    } else if (reqUrl.pathname == '/dodavanje' && req.method === 'POST') {
         // POST Endpoint
         console.log('Request Type:' +
             req.method + ' Endpoint: ' +
             reqUrl.pathname);
 
-        service.testRequest(req, res);
+        service.dodavanjeRequest(req, res);
+
+    } else if (reqUrl.pathname == '/brisanje' && req.method === 'DELETE') {
+        // DELETE Endpoint
+        console.log('Request Type:' +
+            req.method + ' Endpoint: ' +
+            reqUrl.pathname);
+
+        service.izbrisiRequest(req, res);
 
     } else {
         console.log('Request Type:' +

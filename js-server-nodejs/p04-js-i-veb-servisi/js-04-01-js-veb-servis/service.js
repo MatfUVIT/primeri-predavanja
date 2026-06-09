@@ -1,6 +1,6 @@
 const url = require('url');
 
-exports.sampleRequest = function (req, res) {
+exports.concatenateRequest = function (req, res) {
     const reqUrl = url.parse(req.url, true);
     var name = 'World';
     if (reqUrl.query.name) {
@@ -16,7 +16,7 @@ exports.sampleRequest = function (req, res) {
     res.end(JSON.stringify(response));
 };
 
-exports.testRequest = function (req, res) {
+exports.showValueRequest = function (req, res) {
     body = '';
 
     req.on('data', function (chunk) {
