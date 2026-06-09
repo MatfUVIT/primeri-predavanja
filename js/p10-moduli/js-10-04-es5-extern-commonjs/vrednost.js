@@ -12,5 +12,5 @@ function getPodatak() {
 }
 
 // publikovanje "javnih "funkcija 
-exports.setPodatak = setPodatak;
-exports.getPodatak = getPodatak;
+module.exports.postaviPodatak = setPodatak;
+module.exports.ocitajPodatak = getPodatak;

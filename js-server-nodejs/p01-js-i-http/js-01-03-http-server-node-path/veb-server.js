@@ -1,7 +1,7 @@
 const http = require('http');
 const url = require('url');
 
-const port = 7000;
+const port = 7080;
 http.createServer(function (zahtev, odgovor) {
     odgovor.writeHead(200, { 'Content-type': 'text/plan' });
     odgovor.write(`Napravljeni veb servers koristi node.js \n`);
@@ -10,7 +10,7 @@ http.createServer(function (zahtev, odgovor) {
 
     let tekuceVreme = new Date();
     console.log("---" + tekuceVreme + "---");
-    //console.log('url:     ' + zahtev.url);
+    console.log('url:     ' + zahtev.url);
     let putanja = url.parse(zahtev.url).pathname;
     console.log('putanja: ' + putanja);
 }).listen(port);

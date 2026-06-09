@@ -17,9 +17,10 @@ function lastElement(array) {
 
 function element(array, index) {
     assert(array.length > 0, "niz ne sme biti prazan");
-    assert(typeof(index) == Number, "indeks niza mora biti broj")
+    assert(typeof index === "number", "indeks niza mora biti broj");
     assert(index >= 0, "indeks niza ne sme biti negativan");
     assert(index < array.length, "indeks niza mora biti manji od broja clanova");
+    assert(Number.isInteger(index), "indeks niza mora biti ceo broj");
     return array[index];
 }
 
@@ -27,7 +28,7 @@ let niz1 = [];
 let niz2 = ["Paja", "Miki", "Mini", "Silja"];
 
 console.log(lastElement(niz2));
-//console.log(lastElement(niz1));
+console.log(lastElement(niz1));
 
 //console.log(element(niz1, 1));
 //console.log(element(niz1, 0));
@@ -36,3 +37,4 @@ console.log(element(niz2, 2));
 //console.log(element(niz2, "2"));
 //console.log(element(niz2, -2));
 //console.log(element(niz2, 4));
+console.log(element(niz2, 2.5));

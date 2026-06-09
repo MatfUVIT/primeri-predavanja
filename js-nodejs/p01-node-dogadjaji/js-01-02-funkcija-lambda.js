@@ -6,12 +6,14 @@ const emiter = new EmiterDogadjaja();
 
 emiter.on('pokrenut', function(a, b) {
     console.log(`--- rukovalac dogadjajem je funkcija ---`);
-    console.log(a, b, this, this === emiter);
+    console.log(a, b, this === emiter);
+    console.log(this);
 });
 
 emiter.on('pokrenut', (a, b) => {
     console.log(`--- rukovalac dogadjajem je lambda-izraz ---`);
-    console.log(a, b, this, this === emiter);
+    console.log(a, b, this === emiter);
+    console.log(this);
 });
 
 emiter.emit('pokrenut', 'a', 6, 7);

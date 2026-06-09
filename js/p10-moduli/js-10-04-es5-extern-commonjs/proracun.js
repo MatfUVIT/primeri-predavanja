@@ -2,9 +2,9 @@ const vrednost = require('./vrednost');
 
 function izracunajKvadrat() {
     // pozvan je metod iz vrednost.js
-    const x = vrednost.getPodatak();
+    const x = vrednost.ocitajPodatak();
     // ovde ide deo koda vezan za proracun
     return x * x;
 }
 
-exports.proracunajCommonJS = izracunajKvadrat;
+module.exports.proracunajCommonJS = izracunajKvadrat;

@@ -9,11 +9,11 @@ function prikazStrane(response, pathName, queryData) {
             response.writeHead(200);
             response.write(
     `<html>
-      <body>
-      Dobro dosli, ${queryData.ime}<br>
-      Vasa email adresa je: ${queryData.email} <br>
-      </body>
-      </html>`);
+        <body>
+        Dobro dosli, ${queryData.ime}<br>
+        Vasa email adresa je: ${queryData.email} <br>
+        </body>
+    </html>`);
             response.end();
         } else {
             fs.readFile(__dirname + '/' + izbor, function (err, data) {

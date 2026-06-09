@@ -14,7 +14,7 @@ const vrednost = function () {
 
     // publikovanje "javnih "funkcija 
     return {
-        setPodatak: setPodatak,
-        getPodatak: getPodatak
+        postaviPodatak: setPodatak,
+        ocitajPodatak: getPodatak
     };
 }();

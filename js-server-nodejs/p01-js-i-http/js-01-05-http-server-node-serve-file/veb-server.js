@@ -2,7 +2,7 @@ let http = require('http');
 let url = require('url');
 let fs = require('fs');
 
-const port = 7000;
+const port = 7080;
 http.createServer(function (zahtev, odgovor) {
     putanja = url.parse(zahtev.url).pathname;
     fs.readFile(__dirname + putanja, function (err, data) {

@@ -22,7 +22,7 @@ function obradiGetZahtev(zahtev, odgovor) {
     }
 }
 
-const port = 7000;
+const port = 7080;
 http.createServer(function (zahtev, odgovor) {
     if (zahtev.method == 'GET') {
         odgovor.writeHead(200, { 'Content-type': 'text/plan' });

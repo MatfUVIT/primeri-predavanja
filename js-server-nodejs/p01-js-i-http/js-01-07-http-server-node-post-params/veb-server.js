@@ -27,7 +27,7 @@ function obradiPostZahtev(zahtev, odgovor) {
     }
 }
 
-const port = 7000;
+const port = 7080;
 http.createServer(function (zahtev, odgovor) {
     if (zahtev.method == 'POST') {
         odgovor.writeHead(200, "OK", { 'Content-Type': 'text/plain' });

@@ -19,9 +19,14 @@ console.log('---');
 
 let n = 0;
 
+emitor.on('dogadjaj2', () => {
+    console.log("*");
+});
+
 emitor.once('dogadjaj2', () => {
     console.log(++n);
 });
+
 
 emitor.emit('dogadjaj2');
 emitor.emit('dogadjaj2');

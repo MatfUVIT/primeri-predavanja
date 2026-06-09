@@ -1,6 +1,6 @@
 const http = require('http');
 
-const port = 7000;
+const port = 7080;
 http.createServer(function (zahtev, odgovor) {
     odgovor.writeHead(200, { 'Content-type': 'text/plan' });
     odgovor.write(`Napravljeni veb servers koristi node.js \n`);

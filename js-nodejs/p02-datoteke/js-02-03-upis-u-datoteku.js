@@ -3,8 +3,8 @@ let fs = require('fs');
 fs.writeFile('text3.txt',
     `Ovo 
     je neka mala 
-       proba
-       !!!!`,
+        proba
+        kojom se nesto proba !!!!`,
     'utf8',
     (err) => {
         if (err) {

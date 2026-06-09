@@ -1,0 +1,12 @@
+@protokol = http:
+@adresa = localhost
+@port = 7080
+
+###
+GET {{protokol}}//{{adresa}}:{{port}}/crtani?paja=patak&miki=mis&silja=pas HTTP/1.1
+content-type: application/json
+
+
+###
+GET {{protokol}}//{{adresa}}:{{port}}/paja/patak?sestric1=raja&sestric2=gaja HTTP/1.1
+content-type: application/json

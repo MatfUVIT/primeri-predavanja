@@ -1,18 +1,18 @@
 "use strict";
 
-function AutoNeMozeIspodZemljeError(message) {
+function AutoNeKopaError(message) {
     this.message = message;
     this.stack = (new Error()).stack;
 }
-AutoNeMozeIspodZemljeError.prototype = Object.create(Error.prototype);
-AutoNeMozeIspodZemljeError.prototype.name = "AutoNeMozeIspodZemljeError";
+AutoNeKopaError.prototype = Object.create(Error.prototype);
+AutoNeKopaError.prototype.name = "AutoNeKopaError";
 
-function AutoNeMozePrekoNebaError(message) {
+function AutoNeLetiError(message) {
     this.message = message;
     this.stack = (new Error()).stack;
 }
-AutoNeMozePrekoNebaError.prototype = Object.create(Error.prototype);
-AutoNeMozePrekoNebaError.prototype.name = "AutoNeMozePrekoNebaError";
+AutoNeLetiError.prototype = Object.create(Error.prototype);
+AutoNeLetiError.prototype.name = "AutoNeLetiError";
 
 const pravac = function() {
     const slucajan = Math.random();
@@ -32,9 +32,9 @@ function voziAuto(usmerenje) {
     if (rezultat.toLowerCase() == "desno")
         return "R";
     if (rezultat.toLowerCase() == "gore")
-        throw new AutoNeMozePrekoNebaError("Auto ne leti: " + rezultat);
+        throw new AutoNeLetiError("Auto ne leti: " + rezultat);
     if (rezultat.toLowerCase() == "dole")
-        throw new AutoNeMozeIspodZemljeError("Auto nije krtica: " + rezultat);
+        throw new AutoNeKopaError("Auto nije krtica: " + rezultat);
     throw new Error("Nekorektno usmerenje za auto");
 }
 
@@ -49,12 +49,15 @@ for (let i = 0; i < 50; i++)
     try {
         console.log(` ${i} Gledas iz auta. ${pogled()}`);
     } catch (error) {
-        if (error instanceof AutoNeMozeIspodZemljeError)
+        if (error instanceof AutoNeKopaError)
             console.log("Podzemlje: " + error + " ***");
-        else if (error instanceof AutoNeMozePrekoNebaError)
+        else if (error instanceof AutoNeLetiError)
             console.log("Nebeski svod: " + error + " ***");
         else {
             console.log("Nesto je jako pogresno: *** " + error + " ***");
             throw error;
         }
+    }
+    finally{
+        console.log("****");
     }

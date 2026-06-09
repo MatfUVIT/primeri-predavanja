@@ -4,7 +4,7 @@ const querystring = require('querystring');
 
 const prikaz = require('./prikaz-strane');
 
-const PORT = 7000;
+const PORT = 7080;
 
 http.createServer(onRequest).listen(PORT);
 console.log('Server je pokrenut');

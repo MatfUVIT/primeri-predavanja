@@ -1,0 +1,48 @@
+@protokol = http:
+@adresa = localhost
+@port = 7080
+
+### get sample request
+GET {{protokol}}//{{adresa}}:{{port}}/sample?name=Vlado HTTP/1.1
+content-type: application/json
+
+
+### post test request
+POST {{protokol}}//{{adresa}}:{{port}}/test HTTP/1.1
+content-type: application/json
+
+{
+    "ime": "Pera",
+    "prezime": "Peric",
+    "value": 123
+}
+
+### opis
+GET {{protokol}}//{{adresa}}:{{port}}/opis HTTP/1.1
+content-type: application/json
+
+### korisnici
+GET {{protokol}}//{{adresa}}:{{port}}/korisnici HTTP/1.1
+content-type: application/json
+
+
+### mnozenje
+GET {{protokol}}//{{adresa}}:{{port}}/pomnozi?arg1=2&arg2=3&arg3=4 HTTP/1.1
+content-type: application/json
+
+### mnozenje
+GET {{protokol}}//{{adresa}}:{{port}}/pomnozi?arg1=2&arg2=3 HTTP/1.1
+content-type: application/json
+
+### mnozenje
+GET {{protokol}}//{{adresa}}:{{port}}/pomnozi?arg1=2 HTTP/1.1
+content-type: application/json
+
+
+### mnozenje
+GET {{protokol}}//{{adresa}}:{{port}}/pomnozi?arg1="MiKi" HTTP/1.1
+content-type: application/json
+
+### nije mnozi niti sample niti test
+GET {{protokol}}//{{adresa}}:{{port}}/pomnozi2?arg1="MiKi" HTTP/1.1
+content-type: application/json

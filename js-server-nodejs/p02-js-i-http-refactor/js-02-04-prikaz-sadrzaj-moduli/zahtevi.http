@@ -1,0 +1,25 @@
+@protokol = http:
+@adresa = localhost
+@port = 7080
+
+### root strana
+GET {{protokol}}//{{adresa}}:{{port}} HTTP/1.1
+content-type: application/json
+
+
+### kontakt strana
+GET {{protokol}}//{{adresa}}:{{port}}/kontakt HTTP/1.1
+content-type: application/json
+
+### opis
+GET {{protokol}}//{{adresa}}:{{port}}/opis HTTP/1.1
+content-type: application/json
+
+### korisnici
+GET {{protokol}}//{{adresa}}:{{port}}/korisnici HTTP/1.1
+content-type: application/json
+
+
+### kontakt strana
+GET {{protokol}}//{{adresa}}:{{port}}/kontakt HTTP/1.1
+content-type: application/json

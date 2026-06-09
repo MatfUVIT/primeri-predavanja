@@ -1,0 +1,12 @@
+@protokol = http:
+@adresa = localhost
+@port = 7080
+
+POST {{protokol}}//{{adresa}}:{{port}} HTTP/1.1
+content-type: application/json
+
+{
+    "paja": "patak",
+    "miki": "mis",
+    "silja": "pas"
+}
