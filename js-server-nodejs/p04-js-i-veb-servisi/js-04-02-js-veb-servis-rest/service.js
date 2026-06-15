@@ -170,6 +170,55 @@ exports.brisanje = function (req, res) {
         });
 };
 
+exports.azuriranje = function (req, res) {
+    const reqUrl = url.parse(req.url, true);
+    let ime = '';
+    if (reqUrl.query.ime) {
+        ime = reqUrl.query.ime;
+    }
+    body = '';
+    req.on('data', function (chunk) {
+        body += chunk;
+    });
+    req.on('end', function () {
+        postBody = JSON.parse(body);
+        fs.readFile("star-wars.json",
+            (err, data) => {
+                if (err) {
+                    res.statusCode = 404;
+                    res.setHeader('Content-Type', 'text/plain');
+                    res.end('Invalid Request' + err);
+                    return;
+                }
+                let characters = JSON.parse(data);
+                let index = characters.findIndex(x => x.Name.toLowerCase() == ime.toLowerCase());
+                if (index == -1) {
+                    res.statusCode = 404;
+                    res.setHeader('Content-Type', 'text/plain');
+                    res.end('Character not found');
+                    return;
+                }
+                characters[index] = postBody;
+                fs.writeFile("star-wars.json", JSON.stringify(characters, null, 4),
+                    (err) => {
+                        if (err) {
+                            res.statusCode = 500;
+                            res.setHeader('Content-Type', 'text/plain');
+                            res.end('Error writing to file' + err);
+                            return;
+                        }
+                        var response = {
+                            "message": "Character updated successfully",
+                            "character": postBody
+                        };
+                        res.statusCode = 200;
+                        res.setHeader('Content-Type', 'application/json');
+                        res.end(JSON.stringify(response));
+                    });
+            });
+    });
+};
+
 exports.invalidRequest = function (req, res) {
     res.statusCode = 404;
     res.setHeader('Content-Type', 'text/plain');

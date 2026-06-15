@@ -24,6 +24,12 @@ module.exports = http.createServer((req, res) => {
             req.method + ' Endpoint: ' +
             reqUrl.pathname);
         service.dodavanje(req, res);
+    } else if (reqUrl.pathname == '/star-wars' && req.method === 'PUT') {
+        // PUT Endpoint
+        console.log('Request Type:' +
+            req.method + ' Endpoint: ' +
+            reqUrl.pathname);
+        service.azuriranje(req, res);
     } else if (reqUrl.pathname == '/star-wars' && req.method === 'DELETE') {
         // DELETE Endpoint
         console.log('Request Type:' +

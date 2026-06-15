@@ -100,3 +100,39 @@ content-type: application/json
 ### brisanje nepostojeceg dzedaja
 DELETE {{protokol}}//{{adresa}}:{{port}}/star-wars?ime=Yoda HTTP/1.1
 content-type: application/json
+
+### azuriranje postojeceg dzedaja
+PUT {{protokol}}//{{adresa}}:{{port}}/star-wars?ime=Anakin HTTP/1.1
+content-type: application/json
+
+{
+    "Name": "Anakin Skywalker",
+    "Gender": "male",
+    "Homeworld": "Tatooine",
+    "Born": "41.9BBY",
+    "Jedi": "yes"
+}
+    
+### azuriranje postojeceg dzedaja
+PUT {{protokol}}//{{adresa}}:{{port}}/star-wars?ime=Anakin+Skywalker HTTP/1.1
+content-type: application/json
+
+{
+    "Name": "Anakin",
+    "Gender": "male",
+    "Homeworld": "Tatooine",
+    "Born": "41.9BBY",
+    "Jedi": "yes"
+}
+
+### azuriranje nepostojeceg dzedaja
+PUT {{protokol}}//{{adresa}}:{{port}}/star-wars?ime=Darth Vader HTTP/1.1
+content-type: application/json
+
+{
+    "Name": "Darth Vader",
+    "Gender": "male",
+    "Homeworld": "Tatooine",
+    "Born": "41.9BBY",
+    "Jedi": "no"
+}
