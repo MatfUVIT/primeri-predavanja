@@ -4,7 +4,7 @@ let adresa = 'https://www.b92.net/';
 
 https.get(adresa, odgovor => {
     let podaci = [];
-
+    
     const zaglavljeDatum = odgovor.headers && odgovor.headers.date ? odgovor.headers.date : 'no response date';
     console.log('Status:', odgovor.statusCode);
     console.log('Datum u zaglavlju:', zaglavljeDatum);

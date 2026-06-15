@@ -10,7 +10,6 @@ const curl = adresa => {
 
         client.get(adresa, (resp) => {
             let data = '';
-
             // A chunk of data has been recieved.
             resp.on('data', (chunk) => {
                 data += chunk;
@@ -20,7 +19,6 @@ const curl = adresa => {
             resp.on('end', () => {
                 resolve(data);
             });
-
         }).on("error", (err) => {
             reject(err);
         });

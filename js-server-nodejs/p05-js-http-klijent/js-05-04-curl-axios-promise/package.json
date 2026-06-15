@@ -1,5 +1,12 @@
 {
+  "name": "curl-axios-promise",
+  "version": "1.0.0",
+  "main": "curl.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node curl.js"
+  },
   "dependencies": {
-    "axios": "^0.27.2"
+    "axios": "^1.7.9"
   }
 }
