@@ -2,11 +2,47 @@ const url = require('url');
 
 const fs = require('fs');
 
-exports.pretragaRequest = function (req, res) {
+exports.preuzimanje = function (req, res) {
     const reqUrl = url.parse(req.url, true);
     let ime = '';
     if (reqUrl.query.ime) {
         ime = reqUrl.query.ime;
+    }
+    let response = {};
+    fs.readFile("star-wars.json",
+        (err, data) => {
+            if (err) {
+                res.statusCode = 404;
+                res.setHeader('Content-Type', 'text/plain');
+                res.end('Invalid Request' + err);
+                return;
+            }
+            response = JSON.parse(data)
+                    .filter(x => x.Name.toLowerCase() == ime.toLowerCase());
+            if(response.length == 0) {
+                res.statusCode = 404;
+                res.setHeader('Content-Type', 'text/plain');
+                res.end('Character not found');
+                return;
+            }
+            if(response.length > 1) {
+                res.statusCode = 500;
+                res.setHeader('Content-Type', 'text/plain');
+                res.end('Multiple characters found with the same name');
+                return;     
+            }
+            res.statusCode = 200;
+            res.setHeader('Content-Type', 'application/json');
+            res.end(JSON.stringify(response[0]));
+        });
+};
+
+exports.pretraga = function (req, res) {
+    const reqUrl = url.parse(req.url, true);
+    let ime = '';
+    if (reqUrl.query.ime) {
+        ime = reqUrl.query.ime;
+        console.log('Searching for character with name: ' + ime);
     }
     let pol = ''
     if (reqUrl.query.pol) {
@@ -50,13 +86,11 @@ exports.pretragaRequest = function (req, res) {
         });
 };
 
-exports.dodavanjeRequest = function (req, res) {
+exports.dodavanje = function (req, res) {
     body = '';
-
     req.on('data', function (chunk) {
         body += chunk;
     });
-
     req.on('end', function () {
         postBody = JSON.parse(body);
         fs.readFile("star-wars.json",
@@ -68,6 +102,12 @@ exports.dodavanjeRequest = function (req, res) {
                     return;
                 }
                 let characters = JSON.parse(data);
+                if (characters.find(x => x.Name.toLowerCase() == postBody.Name.toLowerCase())) {
+                    res.statusCode = 409;
+                    res.setHeader('Content-Type', 'text/plain');    
+                    res.end('Character with the same name already exists');
+                    return;
+                }
                 characters.push(postBody);
                 fs.writeFile("star-wars.json", JSON.stringify(characters, null, 4),
                     (err) => {
@@ -78,10 +118,10 @@ exports.dodavanjeRequest = function (req, res) {
                             return;
                         }
                         var response = {
-                            "text": "Post Request Value is  " + postBody.value,
+                            "text": "Post Request Value is  " + JSON.stringify(postBody),
                             "message": "Character added successfully"
                         };
-                        res.statusCode = 200;
+                        res.statusCode = 201;
                         res.setHeader('Content-Type', 'application/json');
                         res.end(JSON.stringify(response));
                     });
@@ -89,7 +129,7 @@ exports.dodavanjeRequest = function (req, res) {
     });
 };
 
-exports.izbrisiRequest = function (req, res) {
+exports.brisanje = function (req, res) {
     const reqUrl = url.parse(req.url, true);
     let ime = '';
     if (reqUrl.query.ime) {
@@ -117,7 +157,13 @@ exports.izbrisiRequest = function (req, res) {
                     var response = {
                         "message": "Deleted " + brojIzbrisanih + " character(s) successfully"
                     };
-                    res.statusCode = 200;
+                    if (brojIzbrisanih == 0) {
+                        res.statusCode = 404;
+                        res.setHeader('Content-Type', 'text/plain');
+                        res.end('No characters found to delete');
+                        return;
+                    }
+                    res.statusCode = 204;
                     res.setHeader('Content-Type', 'application/json');
                     res.end(JSON.stringify(response));
                 });
