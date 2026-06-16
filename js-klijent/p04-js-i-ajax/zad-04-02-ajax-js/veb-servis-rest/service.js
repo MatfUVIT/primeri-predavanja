@@ -42,7 +42,7 @@ exports.pretraga = function (req, res) {
     let ime = '';
     if (reqUrl.query.ime) {
         ime = reqUrl.query.ime;
-        console.log('Searching for character with name: ' + ime);
+        console.log('service::Searching for character with name: ' + ime);
     }
     let pol = ''
     if (reqUrl.query.pol) {
@@ -62,6 +62,7 @@ exports.pretraga = function (req, res) {
                 return;
             }
             response = JSON.parse(data);
+            console.log('service::After read found ' + response.length + ' characters in the database');
             if (ime != 'svi' && ime != '')
                 response = response.filter(x => x.Name.indexOf(ime) >= 0);
             if (pol != '') {
@@ -80,6 +81,7 @@ exports.pretraga = function (req, res) {
                     dzedaj = 'no'
                 response = response.filter(x => x.Jedi == dzedaj);
             }
+            console.log('service::After filter found ' + response.length + ' characters in the database');
             res.statusCode = 200;
             res.setHeader('Content-Type', 'application/json');
             res.end(JSON.stringify(response));

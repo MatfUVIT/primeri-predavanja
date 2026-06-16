@@ -1,0 +1,138 @@
+@protokol = http:
+@adresa = localhost
+@port = 7000
+
+### preuzimanje
+@ime = Anakin
+GET {{protokol}}//{{adresa}}:{{port}}/star-wars?ime={{ime}} HTTP/1.1
+content-type: application/json
+
+### preuzimanje
+@ime2 = Mickey
+GET {{protokol}}//{{adresa}}:{{port}}/star-wars?ime={{ime2}} HTTP/1.1
+content-type: application/json
+
+### pretraga svi
+GET {{protokol}}//{{adresa}}:{{port}}/star-wars/pretraga HTTP/1.1
+content-type: application/json
+
+### pretraga svi 
+@deoImena = svi
+GET {{protokol}}//{{adresa}}:{{port}}/star-wars/pretraga?ime={{deoImena}} HTTP/1.1
+content-type: application/json
+
+
+### pretraga svi po delu imena 
+@deoImena2 = A
+GET {{protokol}}//{{adresa}}:{{port}}/star-wars/pretraga?ime={{deoImena2}} HTTP/1.1
+content-type: application/json
+
+
+### pretraga svi po pocetku imena 
+@deoImena3 = y
+GET {{protokol}}//{{adresa}}:{{port}}/star-wars/pretraga?ime={{deoImena3}} HTTP/1.1
+content-type: application/json
+
+### pretraga svi po polu 
+@pol = m
+GET {{protokol}}//{{adresa}}:{{port}}/star-wars/pretraga?pol={{pol}} HTTP/1.1
+content-type: application/json
+
+### pretraga svi po polu 
+@pol2 = z
+GET {{protokol}}//{{adresa}}:{{port}}/star-wars/pretraga?pol={{pol2}} HTTP/1.1
+content-type: application/json
+
+### pretraga svi po polu 
+@pol3 = u
+GET {{protokol}}//{{adresa}}:{{port}}/star-wars/pretraga?pol={{pol3}} HTTP/1.1
+content-type: application/json
+
+### pretraga svi po delu imena i polu
+@deoImena5 = A
+@pol5 = m
+GET {{protokol}}//{{adresa}}:{{port}}/star-wars/pretraga?ime={{deoImena5}}&pol={{pol5}} HTTP/1.1
+content-type: application/json
+
+### pretraga svi po delu imena i polu
+@deoImena6 = A
+@pol6 = z
+GET {{protokol}}//{{adresa}}:{{port}}/star-wars/pretraga?ime={{deoImena6}}&pol={{pol6}} HTTP/1.1
+content-type: application/json
+
+### pretraga dzedaj po delu imena i polu
+@deoImena7 = A
+@pol7 = m
+@dzedaj7 = d
+GET {{protokol}}//{{adresa}}:{{port}}/star-wars/pretraga?ime={{deoImena7}}&pol={{pol7}}&dzedaj={{dzedaj7}} HTTP/1.1
+content-type: application/json
+
+
+### dodavanje novog dzedaja (dotad ne postoji u kolekciji)
+POST {{protokol}}//{{adresa}}:{{port}}/star-wars HTTP/1.1
+content-type: application/json
+
+{
+    "Name": "Yoda",
+    "Gender": "male",
+    "Homeworld": "Dagobah",
+    "Born": "896 BBY",
+    "Jedi": "yes"
+}
+
+### dodavanje novog dzedaja (vec postoji u kolekciji)
+POST {{protokol}}//{{adresa}}:{{port}}/star-wars HTTP/1.1
+content-type: application/json
+
+{
+    "Name": "Anakin",
+    "Gender": "male",
+    "Homeworld": "Tatooine",
+    "Born": "41.9BBY",
+    "Jedi": "yes"
+}
+
+
+### brisanje postojeceg dzedaja
+DELETE {{protokol}}//{{adresa}}:{{port}}/star-wars?ime=Yoda HTTP/1.1
+content-type: application/json
+
+### brisanje nepostojeceg dzedaja
+DELETE {{protokol}}//{{adresa}}:{{port}}/star-wars?ime=Yoda HTTP/1.1
+content-type: application/json
+
+### azuriranje postojeceg dzedaja
+PUT {{protokol}}//{{adresa}}:{{port}}/star-wars?ime=Anakin HTTP/1.1
+content-type: application/json
+
+{
+    "Name": "Anakin Skywalker",
+    "Gender": "male",
+    "Homeworld": "Tatooine",
+    "Born": "41.9BBY",
+    "Jedi": "yes"
+}
+    
+### azuriranje postojeceg dzedaja
+PUT {{protokol}}//{{adresa}}:{{port}}/star-wars?ime=Anakin+Skywalker HTTP/1.1
+content-type: application/json
+
+{
+    "Name": "Anakin",
+    "Gender": "male",
+    "Homeworld": "Tatooine",
+    "Born": "41.9BBY",
+    "Jedi": "yes"
+}
+
+### azuriranje nepostojeceg dzedaja
+PUT {{protokol}}//{{adresa}}:{{port}}/star-wars?ime=Darth Vader HTTP/1.1
+content-type: application/json
+
+{
+    "Name": "Darth Vader",
+    "Gender": "male",
+    "Homeworld": "Tatooine",
+    "Born": "41.9BBY",
+    "Jedi": "no"
+}
