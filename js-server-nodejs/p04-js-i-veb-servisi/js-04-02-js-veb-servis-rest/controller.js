@@ -3,7 +3,7 @@ const url = require('url');
 
 module.exports = http.createServer((req, res) => {
 
-    var service = require('./service.js');
+    var service = require('./star_wars_service.js');
     const reqUrl = url.parse(req.url, true);
 
     if (reqUrl.pathname == '/star-wars' && req.method === 'GET') {

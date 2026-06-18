@@ -60,7 +60,9 @@ function define(html) {
 
         disconnectedCallback() { }
 
-        attributeChangedCallback(attrName, oldVal, newVal) { }
+        attributeChangedCallback(attrName, oldVal, newVal) {
+
+        }
 
 
     }

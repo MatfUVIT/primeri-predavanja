@@ -1,1 +1,1 @@
-Ako se ovo pojavi, to će znaičti da je AJAX zahtev uspešno obrađen 
+Ako se ovo pojavi, to će značiti da je AJAX zahtev uspešno obrađen, pa se može dalje nastaviti sa planiranim radom.

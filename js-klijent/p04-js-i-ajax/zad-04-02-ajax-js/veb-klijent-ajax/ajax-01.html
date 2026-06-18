@@ -5,17 +5,17 @@
     <title>AJAX StarWars demo</title>
     <script>
         function loadXMLDoc(deoImena, pol, dzedaj) {
-            let xmlhttp = new XMLHttpRequest();
-            xmlhttp.onreadystatechange = function () {
-                if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-                    document.getElementById('result').innerText = xmlhttp.responseText;
+            let zahtev = new XMLHttpRequest();
+            zahtev.onreadystatechange = function () {
+                if (zahtev.readyState == 4 && zahtev.status == 200) {
+                    document.getElementById('result').innerText = zahtev.responseText;
                     console.log("Odgovor veb servisa je uspešno učitan!");
                 } else
-                    if (xmlhttp.status != 200 && xmlhttp.status != 0)
-                        console.log("Greška: " + xmlhttp.status + ": " + xmlhttp.statusText);
+                    if (zahtev.status != 200 && zahtev.status != 0)
+                        console.log("Greška: " + zahtev.status + ": " + zahtev.statusText);
             }
-            xmlhttp.open('GET', `http://127.0.0.1:7000/star-wars/pretraga?ime=${deoImena}&pol=${pol}&dzedaj=${dzedaj}`);
-            xmlhttp.send();
+            zahtev.open('GET', `http://127.0.0.1:7000/star-wars/pretraga?ime=${deoImena}&pol=${pol}&dzedaj=${dzedaj}`);
+            zahtev.send();
         }
     </script>
 </head>

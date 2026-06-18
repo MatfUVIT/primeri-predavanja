@@ -1,14 +1,14 @@
 {
-  "name": "js-04-02-js-veb-servis-kolekcija",
-  "version": "1.0.0",
+  "name": "js-04-02-js-veb-servis-rest",
+  "version": "1.0.1",
   "main": "veb-servis.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node veb-servis.js"
   },
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  "author": "Vladimir Filipovic",
+  "license": "Apache-2.0",
+  "description": "Imitacija rest veb servisa u Node.js-u",
   "dependencies": {
     "fs": "^0.0.1-security",
     "fs.promises": "^0.1.2",

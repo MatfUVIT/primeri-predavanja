@@ -7,13 +7,14 @@ module.exports = http.createServer((req, res) => {
     res.setHeader('Access-Control-Allow-Origin', '*');
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
     res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+
     // Handle preflight OPTIONS request
     if (req.method === 'OPTIONS') {
         res.statusCode = 204;
         res.end();
         return;
     }
-    var service = require('./service.js');
+    var service = require('./star_wars_service.js');
     const reqUrl = url.parse(req.url, true);
     if (reqUrl.pathname == '/star-wars' && req.method === 'GET') {
         // GET Endpoint

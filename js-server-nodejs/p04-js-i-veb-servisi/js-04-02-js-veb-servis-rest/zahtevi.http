@@ -27,12 +27,6 @@ content-type: application/json
 GET {{protokol}}//{{adresa}}:{{port}}/star-wars/pretraga?ime={{deoImena2}} HTTP/1.1
 content-type: application/json
 
-
-### pretraga svi po pocetku imena 
-@deoImena3 = y
-GET {{protokol}}//{{adresa}}:{{port}}/star-wars/pretraga?ime={{deoImena3}} HTTP/1.1
-content-type: application/json
-
 ### pretraga svi po polu 
 @pol = m
 GET {{protokol}}//{{adresa}}:{{port}}/star-wars/pretraga?pol={{pol}} HTTP/1.1
@@ -98,7 +92,7 @@ DELETE {{protokol}}//{{adresa}}:{{port}}/star-wars?ime=Yoda HTTP/1.1
 content-type: application/json
 
 ### brisanje nepostojeceg dzedaja
-DELETE {{protokol}}//{{adresa}}:{{port}}/star-wars?ime=Yoda HTTP/1.1
+DELETE {{protokol}}//{{adresa}}:{{port}}/star-wars?ime=Darth+Vader HTTP/1.1
 content-type: application/json
 
 ### azuriranje postojeceg dzedaja
@@ -109,7 +103,7 @@ content-type: application/json
     "Name": "Anakin Skywalker",
     "Gender": "male",
     "Homeworld": "Tatooine",
-    "Born": "41.9BBY",
+    "Born": "41.9BB777",
     "Jedi": "yes"
 }
     
@@ -126,7 +120,7 @@ content-type: application/json
 }
 
 ### azuriranje nepostojeceg dzedaja
-PUT {{protokol}}//{{adresa}}:{{port}}/star-wars?ime=Darth Vader HTTP/1.1
+PUT {{protokol}}//{{adresa}}:{{port}}/star-wars?ime=Darth+Vader HTTP/1.1
 content-type: application/json
 
 {
